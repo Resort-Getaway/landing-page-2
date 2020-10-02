@@ -724,3 +724,13 @@ video.fillWidth {
   font-weight: 400;
   margin-bottom: 20px !important;  
 }
+
+.btn-form-navigation{
+  background-color: white !important;
+  color: #20c997 !important;
+}
+
+.btn-form-navigation:hover{
+  background-image: -webkit-linear-gradient(left,#1976bc 0%,#8dc645 100%);
+  color: white !important;
+}

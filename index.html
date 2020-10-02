@@ -273,6 +273,24 @@
             </div>
         </section>
 
+        <section class="what-include-section" style="background-image: -webkit-linear-gradient(left,#1976bc 0%,#8dc645 100%); padding-top: 20px; padding-bottom: 20px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-8">
+                        <div class="center">
+                            <p class="main-head-text font-color-white">Do not wait more! Book your vacation today</p>
+                            <p class="gray-p-text text-c font-color-white">How can you say no to this vacation with this special, luxurious and affordable offer? Click on the button below, you deserve this vacation!</p>
+                            <button class="btn btn-success btn-lg btn-form-navigation">
+                            Get offer using this link
+                        </button>
+                        </div>
+                    </div>
+                    <div class="col-sm-2"></div>
+                </div>
+            </div>
+        </section>
+
         <section class="what-include-section">
             <!--            <img src="assets/images/vector/longsky.svg" class="image-sky">-->
             <div class="container">
@@ -351,7 +369,7 @@
         </section>
 
 
-        <section class="what-include-section"  style="background-image: -webkit-linear-gradient(left,#1976bc 0%,#8dc645 100%);">
+        <section class="what-include-section form-section-start" style="background-image: -webkit-linear-gradient(left,#1976bc 0%,#8dc645 100%);">
             <!--            <img src="assets/images/vector/longsky.svg" class="image-sky">-->
             <div class="container">
                 <!-- <div class="row">
@@ -706,5 +724,11 @@ function video_play_close(name_course){
 }
 
 video_play_close('course_model');
+
+$(".btn-form-navigation").click(function() {
+    $('html,body').animate({
+        scrollTop: $(".form-section-start").offset().top},
+        'slow');
+});
 
 </script>
