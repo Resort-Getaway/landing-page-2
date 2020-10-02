@@ -10,9 +10,19 @@
     <meta name="author" content="Xiaoying Riley at 3rd Wave Media">
 
     <link rel="shortcut icon" href="favicon.png">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- FontAwesome JS-->
+    <link rel="stylesheet" href="assets/fonts/fontawesome-free-5.14.0-web/css/fontawesome.min.css">
+    <script defer src="assets/fonts/fontawesome-free-5.14.0-web/js/all.min.js"></script>
 
     <!-- Theme CSS -->
     <link rel="stylesheet" href="assets/css/main.css">
@@ -22,211 +32,577 @@
 <body>
 
 <div class="main-body">
+    <header class="header">
+        <nav>
+            <div class="branding">
+                <div class="container-fluid position-relative py-3 min-pad">
+                    <div class="logo-wrapper">
+                        <div class="site-logo">
+                            <a class="" href="index.html">
+                                <img class="logo" src="assets/images/vector/logo-w.svg" alt="logo"
+                                     style="height: 50px">
+                            </a>
+                        </div>
+                    </div><!--//docs-logo-wrapper-->
+                </div><!--//container-->
+            </div><!--//branding-->
+        </nav>
+    </header><!--//header-->
 
-    <section class="shadow white bold gradient-animation">
-        <div class="container center-text">
-            <h1>I want to go to Cancun or Punta Cana !!</h1>
-            <h1><span class=" shadow">All Inclusive sale now</span> 2020-2021</h1>
-            <h3 class="">All Prices are not per person but for a family of 2 Adults 2 Children under 12 years old
-                <span class="bold shadow">FREE</span></h3>
-            <h3 class="bold">Only 2 packages per family allowed</h3>
+    <section class="hero-section">
+        <div class="slide-base">
+            <img src="assets/images/vector/beach.png" alt="" class="slide-image-beach">
+            <!--        <img src="assets/images/vector/beach.svg" alt="" class="slide-image-beach">-->
+            <img src="assets/images/vector/tropical.svg" alt="" class="slide-tropical">
+            <img src="assets/images/vector/wave.svg" alt="" class="slide-wave lg-only">
+            <div class="slide-overlay">
+                <div class="slide-content">
+                    <div class="slide-content-section">
+                    </div>
+                    <div class="col-sm-7">
+                        <div class="slide-content-text">
+                            <h1 class="header-h1-font">Never Overpay for your next Cancun Vacation</h1>
+                            <p class="header-p-font">We will help you to manage and book perfect vacation packages,
+                                hotels, cruises for your budget and requirements.</p>
+                        </div>
+                        <div>
+                            <button class="btn btn-success btn-lg header-btn-font form-btn">
+                                Get more details about packages
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section class="mask pattern-9">
+    <div class="handle sm-only">
+        <div class="floater"></div>
+    </div>
+
+    <div class="rectangle go-to-site-notification">
+        <div class="row">
+            <div class="col-sm-12">
+                <p class="main-notification-text font-color-white">
+                    <a href="https://resortgetaway.com/en/" style="color: white;"><i class="fas fa-link fa-1x"></i></a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="top-container">
+
         <div class="container">
             <div class="row">
-                <div class="col-lg-3">
-                    <div class="card">
-                        <div class="card-image img">
+                <div class="col-sm-6" style="margin-top: 70px;">
+                    <div class="center">
+                        <p class="main-head-text">Do not wait more! Book your vacation today</p>
+                        <p class="gray-p-text text-justify">How can you say no to this vacation with this special,
+                            luxurious and affordable offer? Click on the button below, you deserve this vacation!</p>
+                        <button class="btn btn-success btn-lg header-btn-font form-btn">
+                            Get offer using this link
+                        </button>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="laptop-wrapper">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/PAtu5ja1u70" frameborder="0"
+                                allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="about-section sky-tropical-background">
+            <!--            <img src="assets/images/vector/longsky.svg" class="image-sky">-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-8">
+                        <div class="center">
+                            <p class="main-head-text font-color-white">About Resort Getaway</p>
+                            <p class="gray-p-text text-c font-color-white">If you are seriously thinking about traveling
+                                and taking your family on a Disney Vacation in Orlando, the beach in Miami Beach and
+                                living the experience of sailing the waters of the Atlantic to the Bahamas on an All
+                                Inclusive Cruise we are the ones.</p>
                         </div>
-                        <div class="card-text">
-                            <span class="date">4 days ago</span>
-                            <h2>Post One</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur, Ducimus, repudiandae temporibus omnis illum maxime quod deserunt eligendi dolor</p>
+                    </div>
+                    <div class="col-sm-2"></div>
+                </div>
+                <div class="row" style=" margin-bottom: 2rem;">
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <img src="assets/images/vector/competitive-pricing.svg" class="icon">
+                                <p class="icon-margin-set-top">Competitive Pricing</p>
+                                <p class="gray-p-text">With 500+ suppliers and the purchasing power of 9 million clients
+                                    around the World.</p>
+                            </div>
                         </div>
-                        <div class="card-stats">
-                            <div class="stat">
-                                <div class="value">4<sup>m</sup></div>
-                                <div class="type">read</div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <img src="assets/images/vector/award.svg" class="icon">
+                                <p class="icon-margin-set-top">Award-Winning Service</p>
+                                <p class="gray-p-text">Travel worry-free knowing that we're here if you need us, 24
+                                    hours a day</p>
                             </div>
-                            <div class="stat border">
-                                <div class="value">5123</div>
-                                <div class="type">views</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <img src="assets/images/vector/worldwidecoverage.svg" class="icon">
+                                <p class="icon-margin-set-top">Worldwide Coverage</p>
+                                <p class="gray-p-text">Over 1,400,000 hotels in more than 200 countries and regions &
+                                    flights to over 5,000 cities</p>
                             </div>
-                            <div class="stat">
-                                <div class="value">32</div>
-                                <div class="type">comments</div>
-                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-8">
+                        <div class="center">
+                            <p class="main-head-text">Let's Start finding an amazing package in Cancun.</p>
+                            <p class="gray-p-text text-justify">Cancún, a Mexican city on the Yucatán Peninsula
+                                bordering the Caribbean Sea, is known for its beaches, numerous resorts and nightlife.
+                                Below has some main resorts in Cancun which you can visit.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-2"></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4 package-card">
+                        <figure class="snip1543">
+                            <img src="assets/images/packages/package-1.jpg" alt="sample108"/>
+                            <figcaption>
+                                <h3>Krystal Resort Cancun</h3>
+                                <p>5 Night Hotel Accommodation Includes All Meals & Drinks | PER COUPLE</p>
+                            </figcaption>
+                            <a href="https://resortgetaway.com/en/hotels/krystal_resort_cancun.php"></a>
+                        </figure>
+                    </div>
+                    <div class="col-sm-4 package-card">
+                        <figure class="snip1543">
+                            <img src="assets/images/packages/package-2.jpg" alt="sample108"/>
+                            <figcaption>
+                                <h3>Cancun Villa Resort</h3>
+                                <p>5 Night Hotel Accommodation One Bedroom Suite - All Inclusive | PER COUPLE</p>
+                            </figcaption>
+                            <a href="https://resortgetaway.com/en/hotels/cancun_villa_resort.php"></a>
+                        </figure>
+                    </div>
+                    <div class="col-sm-4 package-card">
+                        <figure class="snip1543">
+                            <img src="assets/images/packages/package-3.jpg" alt="sample108"/>
+                            <figcaption>
+                                <h3>Omni Cancun Resort</h3>
+                                <p>5 Night Hotel Accommodation Includes All Meals & Drinks | PER COUPLE</p>
+                            </figcaption>
+                            <a href="https://resortgetaway.com/en/hotels/omni_cancun_resort.php"></a>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <p class="main-head-text">Why are we the best?</p>
+            <div class="row im-1 round-corner lg-only">
+                <div class="col-sm-6 padding-top-bottom md-text">
+                    <h3 class="theme-colored">
+                        We are the tourism wholesaler par excellence!
+                    </h3>
+                    <p class="gray-p-text text-justify">We know, understand and understand your needs when
+                        traveling.</p>
+                    <p class="gray-p-text text-justify">By buying with us you are buying with tourism experts who are
+                        there for you.</p>
+                    <p class="gray-p-text text-justify">Our company has more than 250 agents, specially trained to
+                        attend to your needs when vacationing, answer your questions and assist you during your
+                        trip.</p>
+                    <p class="gray-p-text text-justify">We have our Travel and Tourism License in the State of Florida
+                        and a deposit guarantee of more than one million dollars that supports our operations and
+                        ensures your vacation.</p>
+                    <p class="gray-p-text text-justify">Acaciones al mundo offers you a personalized service through our
+                        international agents, to make your experience with us the best you have ever had.</p>
+                    <!--                 <p>¿Tienes preguntas?</p>
+                                    <p>No sabes qué plan seleccionar?</p>
+                                    <p>¿Quieres información acerca de alguno de nuestros destinos?</p>
+                                    <p>¡Llámanos, nuestros agentes esperan por tu llamada para asistirte!</p> -->
+                </div>
+                <div class="col-sm-6">
+                    <img class="round-corner full-width"
+                         src="https://images.assets-landingi.com/3ansIO2W/29004eccd4bb9b0781956ebb0c1e8a25.jpg"
+                         alt="no">
+                </div>
+            </div>
+
+            <div class="sm-only">
+                <div class="card">
+                    <img src="https://images.assets-landingi.com/3ansIO2W/29004eccd4bb9b0781956ebb0c1e8a25.jpg"
+                         alt="Avatar"
+                         style="width:100%">
+                    <div class="container padding-top-bottom md-text">
+                        <h3 class="theme-colored" style="font-size: 20px;">
+                            We are the tourism wholesaler par excellence!
+                        </h3>
+                        <p class="gray-p-text text-justify">We know, understand and understand your needs when
+                            traveling.</p>
+                        <p class="gray-p-text text-justify">By buying with us you are buying with tourism experts who
+                            are there for you.</p>
+                        <p class="gray-p-text text-justify">Our company has more than 250 agents, specially trained to
+                            attend to your needs when vacationing, answer your questions and assist you during your
+                            trip.</p>
+                        <p class="gray-p-text text-justify">We have our Travel and Tourism License in the State of
+                            Florida and a deposit guarantee of more than one million dollars that supports our
+                            operations and ensures your vacation.</p>
+                        <p class="gray-p-text text-justify">Acaciones al mundo offers you a personalized service through
+                            our international agents, to make your experience with us the best you have ever had.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="padding-top-bottom round-corner lg-only row">
+                <div class="col-sm-6">
+                    <img class="round-corner full-width" src="https://images.assets-landingi.com/U9dTQOSI/miami7.jpg"
+                         alt="no">
+                </div>
+                <div class="col-sm-6" style="margin-top: 50px;">
+                    <div class="center">
+                        <p class="main-head-text">What makes us different from the rest of the online travel
+                            agencies? </p>
+                        <p class="gray-p-text text-justify">We specialize in a range of vacation plans where the main
+                            destinations are: Miami, Orlando, Las Vegas, Bahamas, Cancun and Punta Cana, at the best
+                            prices, without competition. Checked.</p>
+                        <p class="gray-p-text text-justify">When you register online, we assign an international travel
+                            agent who will advise you, in the best way, so that you can select and quote your trip
+                            properly.</p>
+                        <p class="gray-p-text text-justify">In our philosophy, you are an essential part of our
+                            business. Single and final payment, with no hidden charges. Trust and an excellent service.
+                            Vacation plans that fit your pocket.</p>
+                        <p class="gray-p-text text-justify">We use secure connections to protect all your
+                            information.</p>
+                        <button class="btn btn-success btn-lg header-btn-font subscribe-btn">
+                            Subscribe for more details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sm-only">
+                <div class="card">
+                    <img src="https://images.assets-landingi.com/U9dTQOSI/miami7.jpg" alt="Avatar" style="width:100%">
+                    <div class="container padding-top-bottom md-text">
+                        <div class="center">
+                            <p class="main-head-text">What makes us different from the rest of the online travel
+                                agencies? </p>
+                            <p class="gray-p-text text-justify">We specialize in a range of vacation plans where the
+                                main destinations are: Miami, Orlando, Las Vegas, Bahamas, Cancun and Punta Cana, at the
+                                best prices, without competition. Checked.</p>
+                            <p class="gray-p-text text-justify">When you register online, we assign an international
+                                travel agent who will advise you, in the best way, so that you can select and quote your
+                                trip properly.</p>
+                            <p class="gray-p-text text-justify">In our philosophy, you are an essential part of our
+                                business. Single and final payment, with no hidden charges. Trust and an excellent
+                                service. Vacation plans that fit your pocket.</p>
+                            <p class="gray-p-text text-justify">We use secure connections to protect all your
+                                information.</p>
+                            <button class="btn btn-success btn-lg header-btn-font subscribe-btn">
+                                Subscribe for more details
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
 
-    <section class="about-section gradient-animation">
-
-        <script id="bx24_form_inline" data-skip-moving="true">
-            (function (w, d, u, b) {
-                w['Bitrix24FormObject'] = b;
-                w[b] = w[b] || function () {
-                    arguments[0].ref = u;
-                    (w[b].forms = w[b].forms || []).push(arguments[0])
-                };
-                if (w[b]['forms']) return;
-                var s = d.createElement('script');
-                s.async = 1;
-                s.src = u + '?' + (1 * new Date());
-                var h = d.getElementsByTagName('script')[0];
-                h.parentNode.insertBefore(s, h);
-            })(window, document, 'https://buenocrm.com/lo.js', 'b24form');
-
-            (async function () {
-                await b24form({"id": "31", "lang": "en", "sec": "57k1im", "type": "inline"});
-                setTimeout(function () {
-                    let s = $('iframe[name="bx_form_iframe_31"]');
-                    console.log(s);
-                    console.log($('iframe[name="bx_form_iframe_31"]').document.head);
-                    //your code to be executed after 1 second
-                }, 8000);
-            })();
-        </script>
-
-    </section>
-
-    <section class="footer-index sky-background">
-        <div class="container py-3">
-            <div class="mid mb-5">
-                <h2 class="text-white">Contact Numbers by Country</h2>
-            </div>
-            <div class="row">
-                <div class="col-sm-3">
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="tel:1159844025">Argentina:&nbsp;&nbsp;(11) 598-44025</a>
-                        </li>
-                        <li>
-                            <a href="tel:40018796">Costa Rica:&nbsp;&nbsp;400-18796</a>
-                        </li>
-                        <li>
-                            <a href="tel:0017867065249">Honduras:&nbsp;&nbsp;(001) 786-706-5249</a>
-                        </li>
-                        <li>
-                            <a href="tel:0017867065249">Paraguay:&nbsp;&nbsp;(001) 786-706-5249</a>
-                        </li>
-                        <li>
-                            <a href="tel:+17867065249">United States:&nbsp;&nbsp;1 786-706-5249</a>
-                        </li>
-                    </ul>
+        <section class="py-5 theme-colored-back text-white mob-card sky-only-background">
+            <div class="floater-bar sm-only"></div>
+            <div class="container py-5">
+                <p class="main-head-text text-center font-color-white">Up to 12 Months without interest</p>
+                <div class="text-center">
+                    <p class="gray-p-text text-center  font-color-white">Paying with</p>
+                    <i class="fab fa-cc-mastercard fa-6x"></i>
+                    <i class="fab fa-cc-visa fa-6x"></i>
+                    <i class="fab fa-cc-amex fa-6x"></i>
                 </div>
-                <div class="col-sm-3">
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="tel:0017867065249">Bolivia:&nbsp;&nbsp;(001) 786-706-5249</a>
-                        </li>
-                        <li>
-                            <a href="tel:8299463769">Dominican Rep:&nbsp;&nbsp;(829) 946-3769</a>
-                        </li>
-                        <li>
-                            <a href="tel:0017867065249">Guatemala:&nbsp;&nbsp;(001) 786-706-5249</a>
-                        </li>
-                        <li>
-                            <a href="tel:1507832760">Panamá:&nbsp;&nbsp;+1 507-832-760</a>
-                        </li>
-                        <li>
-                            <a href="tel:0017867065249">Uruguay:&nbsp;&nbsp;(001) 786-706-5249</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-sm-3">
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="tel:232104775">Chile:&nbsp;&nbsp;(23) 210-4775</a>
-                        </li>
-                        <li>
-                            <a href="tel:0017867065249">Ecuador:&nbsp;&nbsp;(001) 786-706-5249</a>
-                        </li>
-                        <li>
-                            <a href="tel:0017867065249">Nicaragua:&nbsp;&nbsp;(001) 786-706-5249</a>
-                        </li>
-                        <li>
-                            <a href="tel:17058267">Perú:&nbsp;&nbsp;(1) 705-8267</a>
-                        </li>
-                        <li>
-                            <a href="tel:0017867065249">Venezuela:&nbsp;&nbsp;(001) 786-706-5249</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-sm-3">
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="tel:0315141397">Colombia:&nbsp;&nbsp;(031) 514-1397</a>
-                        </li>
-                        <li>
-                            <a href="tel:21361298">El Salvador:&nbsp;&nbsp;213-61298</a>
-                        </li>
-                        <li>
-                            <a href="tel:5546319967">México:&nbsp;&nbsp;(55) 463-19967</a>
-                        </li>
-                        <li>
-                            <a href="tel:0017867065249">Puerto Rico:&nbsp;&nbsp;(001) 786-706-5249</a>
-                        </li>
-                    </ul>
+                <div class="small-l text-center mt-5">
+                    <p class="gray-p-text text-center font-color-white" style="margin-top: 2rem;">* Promotion of 12
+                        levels without interest only applies to Argentina, Mexico and Peru. Other countries may vary
+                        depending on your lender.</p>
                 </div>
             </div>
+        </section>
 
-            <hr style="border-top: 1px solid #FFFFFF;">
+        <section class="client-review-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-8">
+                        <div class="center">
+                            <p class="main-head-text">Our Clients Recommend Us!</p>
+                            <p class="gray-p-text text-justify">Clients are the most important part of our journey. So we get our client review seriously. Here we have some of our client reviews about "Resort Getaway".</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-2"></div>
+                </div>
 
-            <div class="row">
-                <div class="col-sm-4">
-                    <!-- <h5>Contact us</h5> -->
-                    <ul class="list-unstyled">
-                        <li><a><i class="fa fa-location-arrow" aria-hidden="true"></i>&nbsp;Millenia Boulevard
-                            Office Center, <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4700 Millenia Boulevard Suite 175,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Orlando,
-                            FL 32839</a></li>
-                        <li><a><i class="fa fa-location-arrow" aria-hidden="true"></i>&nbsp;Av. Sayil esquina con
-                            Av. Savigna <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Malecón Tajamar Piso 11,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            Cancun, 77503</a></li>
-                    </ul>
+                <div class="reviews-section">
+                    <div class="section-intro text-center single-col-max mx-auto mb-5"></div>
+                    <div class="row justify-content-center">
+                        <div class="item col-12 col-lg-6 p-3 mb-4">
+                            <div class="item-inner theme-bg-light rounded p-4">
+
+                                <blockquote class="quote text-justify comment-font-size">
+                                    "The staff at this resort were amazing from the moment you arrive to your departure.
+                                    They are attentive to your every need and go above and beyond to make sure your stay
+                                    is memorable. I highly recommend that you stay here."
+                                </blockquote><!--//item-->
+                                <div class="source media flex-column flex-md-row align-items-center">
+                                    <div class="mr-md-3 review-user-one review-user"></div>
+                                    <div class="source-info media-body text-center text-md-left">
+                                        <div class="source-name">Maria B.</div>
+                                        <div class="soure-title">Verified Client</div>
+                                        <div class="soure-title">
+                                            <div class="center-t">
+                                                <i class="fab fa-tripadvisor"></i>
+                                                <i class="fas fa-star theme-colored"></i>
+                                                <i class="fas fa-star theme-colored"></i>
+                                                <i class="fas fa-star theme-colored"></i>
+                                                <i class="fas fa-star theme-colored"></i>
+                                                <i class="fas fa-star theme-colored"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!--//source-->
+                                <div class="icon-holder theme-colored-back"><i class="fas fa-quote-right"></i></div>
+                            </div><!--//inner-->
+                        </div><!--//item-->
+                        <div class="item col-12 col-lg-6 p-3 mb-4">
+                            <div class="item-inner theme-bg-light rounded p-4">
+                                <blockquote class="quote text-justify comment-font-size">
+                                    "I love this place. The pools / restaurants are excellent! The amazing location and
+                                    the surrounding jungle walks are great ... great suite ... Gorgeous landscaped
+                                    gardens and grounds."
+                                </blockquote><!--//item-->
+                                <div class="source media flex-column flex-md-row align-items-center">
+                                    <div class="mr-md-3 review-user-two review-user"></div>
+                                    <div class="source-info media-body text-center text-md-left">
+                                        <div class="source-name">Carlos L.</div>
+                                        <div class="soure-title">Verified Client</div>
+                                        <div class="soure-title">
+                                            <div class="center-t">
+                                                <i class="fab fa-tripadvisor"></i>
+                                                <i class="fas fa-star theme-colored"></i>
+                                                <i class="fas fa-star theme-colored"></i>
+                                                <i class="fas fa-star theme-colored"></i>
+                                                <i class="fas fa-star theme-colored"></i>
+                                                <i class="fas fa-star theme-colored"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!--//source-->
+                                <div class="icon-holder theme-colored-back"><i class="fas fa-quote-right"></i></div>
+                            </div><!--//inner-->
+                        </div><!--//item-->
+                        <div class="item col-12 col-lg-6 p-3 mb-4">
+                            <div class="item-inner theme-bg-light rounded p-4">
+                                <blockquote class="quote text-justify comment-font-size">
+                                    "The resort was very clean, the staff were extremely friendly, pleasant, efficient
+                                    and helpful. We enjoyed the fun activities by the pool."
+                                </blockquote><!--//item-->
+                                <div class="source media flex-column flex-md-row align-items-center">
+                                    <div class="mr-md-3 review-user-three review-user"></div>
+                                    <div class="source-info media-body text-center text-md-left">
+                                        <div class="source-name">Luis F.</div>
+                                        <div class="soure-title">Verified Client</div>
+                                        <div class="soure-title">
+                                            <div class="center-t">
+                                                <i class="fab fa-tripadvisor"></i>
+                                                <i class="fas fa-star theme-colored"></i>
+                                                <i class="fas fa-star theme-colored"></i>
+                                                <i class="fas fa-star theme-colored"></i>
+                                                <i class="fas fa-star theme-colored"></i>
+                                                <i class="fas fa-star theme-colored"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!--//source-->
+                                <div class="icon-holder theme-colored-back"><i class="fas fa-quote-right"></i></div>
+                            </div><!--//inner-->
+                        </div><!--//item-->
+                        <div class="item col-12 col-lg-6 p-3 mb-4">
+                            <div class="item-inner theme-bg-light rounded p-4">
+                                <blockquote class="quote text-justify comment-font-size">
+                                    "Excellent service, all the pools are very clean and the rooms are also very clean,
+                                    walking day or night in the hotel is wonderful, as it has several places that you
+                                    can enjoy seeing. You will feel very comfortable anywhere."
+                                </blockquote><!--//item-->
+                                <div class="source media flex-column flex-md-row align-items-center">
+                                    <div class="mr-md-3 review-user-four user-t"></div>
+                                    <div class="source-info media-body text-center text-md-left">
+                                        <div class="source-name">Luz Helena R.</div>
+                                        <div class="soure-title">Verified Client</div>
+                                        <div class="soure-title">
+                                            <div class="center-t">
+                                                <i class="fab fa-tripadvisor"></i>
+                                                <i class="fas fa-star theme-colored"></i>
+                                                <i class="fas fa-star theme-colored"></i>
+                                                <i class="fas fa-star theme-colored"></i>
+                                                <i class="fas fa-star theme-colored"></i>
+                                                <i class="fas fa-star theme-colored"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!--//source-->
+                                <div class="icon-holder theme-colored-back"><i class="fas fa-quote-right"></i></div>
+                            </div><!--//inner-->
+                        </div><!--//item-->
+                    </div><!--//row-->
+                </div><!--//container-->
+
+            </div>
+        </section>
+
+        <section class="footer-index sky-background">
+            <div class="container py-3">
+                <div class="mid mb-5">
+                    <h2 class="text-white">Contact Numbers by Country</h2>
                 </div>
-                <div class="col-sm-4">
-                    <!-- <h5>Contact us</h5> -->
-                    <ul class="list-unstyled">
-                        <li><a href="tel:+17867065249"><i class="fa fa-phone-square" aria-hidden="true"></i>&nbsp; 1
-                            786-706-5249</a></li>
-                        <li><a href="mailto:info@resortgetaway.com?cc=other@domain.com"><i class="fa fa-envelope"
-                                                                                           aria-hidden="true"></i>&nbsp;
-                            info@resortgetaway.com</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-4">
-                    <div class="center">
-                        <!-- <h5>Follow Us</h5> -->
-                        <ul class="social-network social-circle">
-                            <li><a href="https://www.facebook.com/Resort-Getaway-101142228322560" target="_blank"
-                                   class="icoFacebook" title="Facebook"><i class="fab fa-facebook-f"
-                                                                           style="color: #237db2;"></i></a></li>
-                            <li><a href="https://www.instagram.com/resortgetaway/" target="_blank"
-                                   class="icoInstagram" title="Instagram"><i class="fab fa-instagram"
-                                                                             style="color: #237db2;"></i></a></li>
-                            <!-- <li><a class="icoLinkedin" title="youtube"><i class="fab fa-youtube" style="color: #237db2;"></i></a></li> -->
+                <div class="row">
+                    <div class="col-sm-3">
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="tel:1159844025">Argentina:&nbsp;&nbsp;(11) 598-44025</a>
+                            </li>
+                            <li>
+                                <a href="tel:40018796">Costa Rica:&nbsp;&nbsp;400-18796</a>
+                            </li>
+                            <li>
+                                <a href="tel:0017867065249">Honduras:&nbsp;&nbsp;(001) 786-706-5249</a>
+                            </li>
+                            <li>
+                                <a href="tel:0017867065249">Paraguay:&nbsp;&nbsp;(001) 786-706-5249</a>
+                            </li>
+                            <li>
+                                <a href="tel:+17867065249">United States:&nbsp;&nbsp;1 786-706-5249</a>
+                            </li>
                         </ul>
-                        <a href="https://resortgetaway.com/en/terminos-condiciones.php"><p class="text-center">TERMS
-                            AND CONDITIONS</p></a>
-                        <a style="font-size: 14px;">Bueno incorporated DBA Resort Gateway</a>
+                    </div>
+                    <div class="col-sm-3">
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="tel:0017867065249">Bolivia:&nbsp;&nbsp;(001) 786-706-5249</a>
+                            </li>
+                            <li>
+                                <a href="tel:8299463769">Dominican Rep:&nbsp;&nbsp;(829) 946-3769</a>
+                            </li>
+                            <li>
+                                <a href="tel:0017867065249">Guatemala:&nbsp;&nbsp;(001) 786-706-5249</a>
+                            </li>
+                            <li>
+                                <a href="tel:1507832760">Panamá:&nbsp;&nbsp;+1 507-832-760</a>
+                            </li>
+                            <li>
+                                <a href="tel:0017867065249">Uruguay:&nbsp;&nbsp;(001) 786-706-5249</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3">
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="tel:232104775">Chile:&nbsp;&nbsp;(23) 210-4775</a>
+                            </li>
+                            <li>
+                                <a href="tel:0017867065249">Ecuador:&nbsp;&nbsp;(001) 786-706-5249</a>
+                            </li>
+                            <li>
+                                <a href="tel:0017867065249">Nicaragua:&nbsp;&nbsp;(001) 786-706-5249</a>
+                            </li>
+                            <li>
+                                <a href="tel:17058267">Perú:&nbsp;&nbsp;(1) 705-8267</a>
+                            </li>
+                            <li>
+                                <a href="tel:0017867065249">Venezuela:&nbsp;&nbsp;(001) 786-706-5249</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3">
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="tel:0315141397">Colombia:&nbsp;&nbsp;(031) 514-1397</a>
+                            </li>
+                            <li>
+                                <a href="tel:21361298">El Salvador:&nbsp;&nbsp;213-61298</a>
+                            </li>
+                            <li>
+                                <a href="tel:5546319967">México:&nbsp;&nbsp;(55) 463-19967</a>
+                            </li>
+                            <li>
+                                <a href="tel:0017867065249">Puerto Rico:&nbsp;&nbsp;(001) 786-706-5249</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12 copy">
-                    <p class="text-center">&copy; Resortgetway.com 2020 All Rights Reserved Privacy Policy</p>
+
+                <hr style="border-top: 1px solid #FFFFFF;">
+
+                <div class="row">
+                    <div class="col-sm-4">
+                        <!-- <h5>Contact us</h5> -->
+                        <ul class="list-unstyled">
+                            <li><a><i class="fa fa-location-arrow" aria-hidden="true"></i>&nbsp;Millenia Boulevard
+                                Office Center, <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4700 Millenia Boulevard Suite 175,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Orlando,
+                                FL 32839</a></li>
+                            <li><a><i class="fa fa-location-arrow" aria-hidden="true"></i>&nbsp;Av. Sayil esquina con
+                                Av. Savigna <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Malecón Tajamar Piso 11,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                Cancun, 77503</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4">
+                        <!-- <h5>Contact us</h5> -->
+                        <ul class="list-unstyled">
+                            <li><a href="tel:+17867065249"><i class="fa fa-phone-square" aria-hidden="true"></i>&nbsp; 1
+                                786-706-5249</a></li>
+                            <li><a href="mailto:info@resortgetaway.com?cc=other@domain.com"><i class="fa fa-envelope"
+                                                                                               aria-hidden="true"></i>&nbsp;
+                                info@resortgetaway.com</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="center">
+                            <!-- <h5>Follow Us</h5> -->
+                            <ul class="social-network social-circle">
+                                <li><a href="https://www.facebook.com/Resort-Getaway-101142228322560" target="_blank"
+                                       class="icoFacebook" title="Facebook"><i class="fab fa-facebook-f"
+                                                                               style="color: #237db2;"></i></a></li>
+                                <li><a href="https://www.instagram.com/resortgetaway/" target="_blank"
+                                       class="icoInstagram" title="Instagram"><i class="fab fa-instagram"
+                                                                                 style="color: #237db2;"></i></a></li>
+                                <!-- <li><a class="icoLinkedin" title="youtube"><i class="fab fa-youtube" style="color: #237db2;"></i></a></li> -->
+                            </ul>
+                            <a href="https://resortgetaway.com/en/terminos-condiciones.php"><p class="text-center">TERMS
+                                AND CONDITIONS</p></a>
+                            <a style="font-size: 14px;">Bueno incorporated DBA Resort Gateway</a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            </center>
-        </div><!--//container-->
-    </section><!--//author-section-->
-</div>
+                <div class="row">
+                    <div class="col-md-12 copy">
+                        <p class="text-center">&copy; Resortgetway.com 2020 All Rights Reserved Privacy Policy</p>
+                    </div>
+                </div>
+                </center>
+            </div><!--//container-->
+        </section><!--//author-section-->
+    </div>
 </div>
 
 <div class="subscribe-div" style="display: none;">
@@ -372,3 +748,44 @@
 
 </body>
 </html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script src="https://1cf5229636340d3e1dd5-0eccc4d82b7628eccb93a74a572fd3ee.ssl.cf1.rackcdn.com/testing/intlTelInput.min.js"></script>
+<script src="https://1cf5229636340d3e1dd5-0eccc4d82b7628eccb93a74a572fd3ee.ssl.cf1.rackcdn.com/testing/jquery.formatter.min.js"></script>
+
+<script type="text/javascript" src="assets/js/tel_number_get.js"></script>
+
+<script>
+    /* package hover*/
+    $(".hover").mouseleave(
+        function () {
+            $(this).removeClass("hover");
+        }
+    );
+
+    /*subscribe-btn*/
+    $(".subscribe-btn").click(function () {
+        $(".main-body").hide(0);
+        $(".subscribe-div").show(0);
+    });
+
+    /*subscribe-close-btn*/
+    $(".close-subscribe-btn").click(function () {
+        $(".main-body").show(0);
+        $(".subscribe-div").hide(0);
+    });
+
+    /*form-btn*/
+    $(".form-btn").click(function () {
+        $(".main-body").hide(0);
+        $(".form-div").show(0);
+    });
+
+    /*form-close-btn*/
+    $(".close-form-btn").click(function () {
+        $(".main-body").show(0);
+        $(".form-div").hide(0);
+    });
+
+</script>

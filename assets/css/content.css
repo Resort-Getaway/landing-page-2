@@ -1,0 +1,116 @@
+.image-justify {
+    width: 100%;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.center-t {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.padded {
+    padding: 5px;
+}
+
+.big-l {
+    font-size: 20px;
+}
+
+.small-l {
+    font-size: 10px;
+}
+
+.text-white {
+    color: white;
+}
+
+.narrow {
+    padding: 0 30px;
+}
+
+.content-btn {
+    border-radius: 10px;
+    padding: 10px 20px;
+    border: 0;
+}
+
+.mid {
+    align-items: center;
+    text-align: center;
+}
+
+.full-width {
+    width: 100% !important;
+}
+
+.bullet-point-container {
+    padding: 10px;
+}
+
+.bullet {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.point {
+    position: absolute;
+    left: 5%;
+    top: 0;
+}
+
+.image-gal {
+    height: 200px;
+}
+
+.dark-back {
+    background-color: #1b1e21;
+}
+
+.form-label {
+    font-size: 12px !important;
+    color: #333333 !important;
+    width: 100% !important;
+}
+
+.theme-input {
+    width: 100% !important;
+    border-radius: 3px;
+    border: 1px solid #c4c4c4;
+    padding: 5px 10px;
+    font-size: 15px !important;
+}
+
+.yt-vid {
+    width: 100%;
+    height: 700px;
+    border-radius: 16px;
+}
+
+@media (max-width: 767px) {
+    .yt-vid {
+        height: 160px;
+    }
+}
+
+.cancun {
+    left: 50%;
+    transform: translate(-50%, 20%);
+    position: relative;
+    top: 10px;
+}
+
+.round-corner {
+    border-radius: 16px !important;
+}
+
+.md-text p {
+    font-size: 14px !important;
+}
+
+.semi-dark-back {
+    background-color: #434b52;
+}

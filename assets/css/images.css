@@ -1,0 +1,134 @@
+.review-user-one {
+    background: url(https://images.assets-landingi.com/4gkOxqSF/imagen4.png);
+}
+
+.review-user-two {
+    background: url(https://images.assets-landingi.com/twaoFqt5/imagen1.png);
+}
+
+.review-user-three {
+    background: url(https://images.assets-landingi.com/GMzVpAbd/imagen_2.png);
+}
+
+.review-user-four {
+    background: url(https://images.assets-landingi.com/AIB0dc2T/imagen4.png);
+}
+
+.big-im-1 {
+    /* border-top-left-radius: 250px; */
+    border-top-right-radius: 300px;
+    border-bottom-left-radius: 300px;
+    border-bottom-right-radius: 300px;
+    background-color: #fff;
+    background-image: url(https://images.assets-landingi.com/3ansIO2W/29004eccd4bb9b0781956ebb0c1e8a25.jpg);
+    background-position: center;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    width: 100%;
+    display: block;
+    z-index: 100003;
+    height: 300px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.big-im-2 {
+    border-top-left-radius: 250px;
+    /*border-top-right-radius: 250px;*/
+    border-bottom-left-radius: 250px;
+    border-bottom-right-radius: 250px;
+    background-color: #fff;
+    background-image: url(https://images.assets-landingi.com/U9dTQOSI/miami7.jpg);
+    background-position: center;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    height: 265px;
+    position: relative;
+    right: 0;
+    display: block;
+    z-index: 100006;
+    width: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.big-im-3 {
+    border-top-left-radius: 250px;
+    border-top-right-radius: 250px;
+    border-bottom-left-radius: 250px;
+    border-bottom-right-radius: 250px;
+    background-color: #fff;
+    background-image: url(
+        https://images.assets-landingi.com/kD4g9GKO/_promo.orlandoeconomico.com_17_45541100_0_Custumer_Service.jpg
+    );
+    background-position: center right;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    height: 263px;
+    width: 263px;
+    max-width: 100%;
+    max-height: 100%;
+    position: relative;
+    display: block;
+    z-index: 100004;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.review-user {
+    background-size: 50px 50px;
+    border-radius: 25px;
+    width: 50px !important;
+    height: 50px !important;
+}
+
+.sky-background {
+    background-image: url("../images/vector/longsky2.svg"); /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    z-index: 10;
+    padding-top: 200px;
+    padding-bottom: 30px;
+}
+
+@media (max-width: 767px) {
+    .sky-background {
+        padding-top: 50px !important;
+        background-color: #0093d7;
+    }
+}
+
+.sky-only-background {
+    background-image: url("../images/vector/longsky3.svg"); /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+}
+
+.sky-tropical-background {
+    background-image: url("../images/vector/longsky.svg"); /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+}
+
+.image-sky {
+    position: absolute;
+    overflow: hidden;
+}
+
+@media (min-width: 767px) {
+    .image-sky{
+        width: auto !important;
+        max-height: 100%;
+        right: 0;
+    }
+}
