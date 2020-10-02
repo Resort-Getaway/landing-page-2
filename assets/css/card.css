@@ -4,7 +4,7 @@
     background-color: #555555;
 }
 
-.card {
+.card-g {
     grid-template-columns: 300px;
     grid-template-rows: 210px 210px 80px;
     grid-template-areas: "image" "text" "stats";
@@ -81,7 +81,7 @@
     font-weight: 300;
     text-transform: uppercase;
 }
-.card:hover {
+.card-g:hover {
     transform: scale(1.15);
     box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
 }
