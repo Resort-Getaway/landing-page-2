@@ -179,6 +179,12 @@ body{
 
 .icon-margin-set-top{
     margin-top: 2rem;    
+
+}
+
+.head-text-set-card{
+    font-size: 18px !important;
+    font-weight: 700 !important;
 }
 
 .card{
