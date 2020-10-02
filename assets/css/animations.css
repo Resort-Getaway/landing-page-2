@@ -1,17 +1,41 @@
-.gradient-animation {
-    background: linear-gradient(-45deg, #23a6d5, #23d5ab, #23a6d5, #23d5ab);
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
-}
-
-@keyframes gradient {
+@keyframes RightToLeftAnimate {
     0% {
-        background-position: 0% 50%;
+        left: 0%;
     }
     50% {
-        background-position: 100% 50%;
+        left: -50%;
     }
     100% {
-        background-position: 0% 50%;
+        left: -100%;
+    }
+}
+
+@keyframes LefTotRightAnimate {
+    0% {
+        left: -100%;
+    }
+    50% {
+        left: 0%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(-3deg) translate(3%, 3%);
+    }
+    100% {
+        transform: rotate(0deg) translate(0, 0);
+    }
+}
+
+@keyframes swing {
+    0% {
+        transform: rotate(3deg) translate(30px, 10px);
+    }
+    100% {
+        transform: rotate(-3deg) translate(30px, 10px);
     }
 }
