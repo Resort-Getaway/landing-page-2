@@ -688,3 +688,16 @@ video.fillWidth {
         color: #000000;
     }
 }
+
+.card-step{
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.style-tag{
+  background-image: -webkit-linear-gradient(left,#1976bc 0%,#8dc645 100%) !important;
+    /* background-color: aliceblue; */
+    padding: 8px;
+    color: white;
+    border-radius: 10px;
+}
