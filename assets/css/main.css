@@ -2,3 +2,12 @@
 @import 'layout.css';
 @import 'theme.css';
 @import 'typography.css';
+@import 'card.css';
+
+body {
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+h1 {
+    font-size: 30px;
+}

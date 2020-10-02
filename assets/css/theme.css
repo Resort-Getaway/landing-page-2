@@ -1,0 +1,19 @@
+.red {
+    color: #ff2d4e;
+}
+
+.crimson {
+    color: #ff5140;
+}
+
+.white {
+    color: #ffffff;
+}
+
+.blue {
+    color: #307fff;
+}
+
+.shadow {
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
