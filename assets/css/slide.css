@@ -133,10 +133,39 @@ body{
     font-weight: 700;    
 }
 
+.main-head-text-one{
+    font-size: 4.2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    line-height: 1.1;
+    color: white;
+    font-weight: 700;    
+}
+
+.main-head-text-two{
+    background-color: white;
+    font-size: 3.5rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    line-height: 1.1;
+    color: #519c83;
+    font-weight: 700;
+    padding: 5px;
+    border-radius: 20px;    
+}
+
 .gray-p-text{
     color: rgb(135, 135, 135);
     font-size: 1.4rem;
     line-height: 1.45;  
+    margin-bottom: 2rem; 
+}
+
+.main-p-text{
+    color: white;
+    font-size: 2rem;
+    line-height: 1.45; 
+    margin-top: 20px;
     margin-bottom: 2rem; 
 }
 
