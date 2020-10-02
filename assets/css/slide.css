@@ -514,7 +514,7 @@ ul.social-network li {
   text-align: center;
   width: 30px;
   height: 30px;
-  font-size: 18px;
+  font-size: 21px;
 }
 
 .social-circle li i {
@@ -700,4 +700,21 @@ video.fillWidth {
     padding: 8px;
     color: white;
     border-radius: 10px;
+}
+
+.package-cards img{
+  width: 100%;
+}
+
+.package-cards img:hover{
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+  cursor: pointer;
+}
+
+.head_name_model{
+  color: #717f86;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  margin-bottom: 20px !important;  
 }

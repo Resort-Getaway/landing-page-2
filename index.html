@@ -10,29 +10,31 @@
     <meta name="author" content="Xiaoying Riley at 3rd Wave Media">
 
     <link rel="shortcut icon" href="favicon.png">
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-    <!-- AngularJS library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
-    <!-- FontAwesome JS-->
-    <link rel="stylesheet" href="assets/fonts/fontawesome-free-5.14.0-web/css/fontawesome.min.css">
-    <script defer src="assets/fonts/fontawesome-free-5.14.0-web/js/all.min.js"></script>
 
     <!-- Theme CSS -->
     <link rel="stylesheet" href="assets/css/main.css">
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 </head>
 
 <body ng-app="landingTwo" ng-controller="landingCtrl">
+
+<!-- Modal -->
+<div class="modal fade" id="package-click" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close close_course_model" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+            <p class="modal-title head_name_model"></p>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item video_iframe_course_model" src="" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
 
 <div class="main-body">
 
@@ -52,39 +54,6 @@
             </div>
         </section>
 
-        <section class="top-bottom-padding">
-            <div class="container pattern-8">
-                <div class="row">
-                    <div class="col-sm-3" ng-repeat="x in records">
-                        <div class="card-g">
-                            <div class="card-image"></div>
-                            <div class="card-text">
-                                <span class="date">4 days ago</span>
-                                <h2>Post One</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur, Ducimus, repudiandae temporibus omnis
-                                    illum
-                                    maxime quod deserunt eligendi dolor</p>
-                            </div>
-                            <div class="card-stats">
-                                <div class="stat">
-                                    <div class="value">4<sup>m</sup></div>
-                                    <div class="type">read</div>
-                                </div>
-                                <div class="stat border">
-                                    <div class="value">5123</div>
-                                    <div class="type">views</div>
-                                </div>
-                                <div class="stat">
-                                    <div class="value">32</div>
-                                    <div class="type">comments</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <section class="about-section py-5">
             <div class="container">
                 <div class="row">
@@ -92,44 +61,34 @@
                     <div class="col-sm-8">
                         <div class="center">
                             <p class="main-head-text">Let's Start finding an amazing package in Cancun.</p>
-                            <p class="gray-p-text text-justify">Cancún, a Mexican city on the Yucatán Peninsula
+                            <!-- <p class="gray-p-text text-justify">Cancún, a Mexican city on the Yucatán Peninsula
                                 bordering the Caribbean Sea, is known for its beaches, numerous resorts and nightlife.
-                                Below has some main resorts in Cancun which you can visit.</p>
+                                Below has some main resorts in Cancun which you can visit.</p> -->
                         </div>
                     </div>
                     <div class="col-sm-2"></div>
                 </div>
-                <div class="row">
-                    <div class="col-sm-4 package-card">
-                        <figure class="snip1543">
-                            <img src="assets/images/packages/package-1.jpg" alt="sample108"/>
-                            <figcaption>
-                                <h3>Krystal Resort Cancun</h3>
-                                <p>5 Night Hotel Accommodation Includes All Meals & Drinks | PER COUPLE</p>
-                            </figcaption>
-                            <a href="https://resortgetaway.com/en/hotels/krystal_resort_cancun.php"></a>
-                        </figure>
+                <div class="row package-cards">
+                    <div class="col-sm-3">
+                        <a id="1" class="card-click" data-toggle="modal" data-target="#package-click">
+                            <img src="assets/images/cards/card1.jpg">
+                        </a>       
+                    </div>        
+                    <div class="col-sm-3">
+                        <a id="2" class="card-click" data-toggle="modal" data-target="#package-click">
+                            <img src="assets/images/cards/card2.jpg">
+                        </a>
                     </div>
-                    <div class="col-sm-4 package-card">
-                        <figure class="snip1543">
-                            <img src="assets/images/packages/package-2.jpg" alt="sample108"/>
-                            <figcaption>
-                                <h3>Cancun Villa Resort</h3>
-                                <p>5 Night Hotel Accommodation One Bedroom Suite - All Inclusive | PER COUPLE</p>
-                            </figcaption>
-                            <a href="https://resortgetaway.com/en/hotels/cancun_villa_resort.php"></a>
-                        </figure>
-                    </div>
-                    <div class="col-sm-4 package-card">
-                        <figure class="snip1543">
-                            <img src="assets/images/packages/package-3.jpg" alt="sample108"/>
-                            <figcaption>
-                                <h3>Omni Cancun Resort</h3>
-                                <p>5 Night Hotel Accommodation Includes All Meals & Drinks | PER COUPLE</p>
-                            </figcaption>
-                            <a href="https://resortgetaway.com/en/hotels/omni_cancun_resort.php"></a>
-                        </figure>
-                    </div>
+                    <div class="col-sm-3">
+                        <a id="3" class="card-click" data-toggle="modal" data-target="#package-click">
+                            <img src="assets/images/cards/card3.jpg">
+                        </a>
+                    </div> 
+                    <div class="col-sm-3">
+                        <a id="4" class="card-click" data-toggle="modal" data-target="#package-click">
+                            <img src="assets/images/cards/card4.jpg">
+                        </a>
+                    </div> 
                 </div>
             </div>
         </section>
@@ -176,8 +135,7 @@
                             <div class="card-body text-center">
                                 <img src="assets/images/about/worldwide.svg" class="icon">
                                 <p class="icon-margin-set-top">Worldwide Coverage</p>
-                                <p class="gray-p-text">Over 1,400,000 hotels in more than 200 countries and regions &
-                                    flights to over 5,000 cities</p>
+                                <p class="gray-p-text">Over 1,400k hotels in more than 200 countries and regions & flights to over 5,000 cities</p>
                             </div>
                         </div>
                     </div>
@@ -795,42 +753,43 @@
 </html>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script defer src="assets/fonts/fontawesome-free-5.14.0-web/js/all.min.js"></script>
 
-<script src="https://1cf5229636340d3e1dd5-0eccc4d82b7628eccb93a74a572fd3ee.ssl.cf1.rackcdn.com/testing/intlTelInput.min.js"></script>
-<script src="https://1cf5229636340d3e1dd5-0eccc4d82b7628eccb93a74a572fd3ee.ssl.cf1.rackcdn.com/testing/jquery.formatter.min.js"></script>
+<script type="text/javascript">
 
-<script type="text/javascript" src="assets/js/tel_number_get.js"></script>
+package_list = [
+  {
+    video_link: 'https://www.youtube.com/embed/kvLZhGtE0lY',
+    video_head_name: 'Krystal Resort Cancun | Cancun, Mexico'
+  },
+  {
+    video_link: 'https://www.youtube.com/embed/jEnd8JIMii4',
+    video_head_name: '5 Star Cancun Villa Resort | Cancun, Mexico'
+  },
+  {
+    video_link: 'https://www.youtube.com/embed/pFOfJoDpYw0',
+    video_head_name: 'Omni Cancun Resort | Cancun, Mexico'
+  },
+  {
+    video_link: 'https://www.youtube.com/embed/CXyJbrSM3r8',
+    video_head_name: '5 Star Cabo Beach Resort | Cancun, Mexico'
+  }
+];
 
-<script>
-    /* package hover*/
-    $(".hover").mouseleave(
-        function () {
-            $(this).removeClass("hover");
-        }
-    );
+$('.card-click').click(function(){
+  url_set = package_list[this.id-1].video_link;
+  $('.video_iframe_course_model').attr('src', url_set);
+  $('.head_name_model').text(package_list[this.id-1].video_head_name);
+});
 
-    /*subscribe-btn*/
-    $(".subscribe-btn").click(function () {
-        $(".main-body").hide(0);
-        $(".subscribe-div").show(0);
-    });
+function video_play_close(name_course){
+  $('.close_' + name_course).click(function(){
+      var leg=$('.video_iframe_' + name_course).attr("src");
+      $('.video_iframe_' + name_course).attr("src",leg);
+  });
+}
 
-    /*subscribe-close-btn*/
-    $(".close-subscribe-btn").click(function () {
-        $(".main-body").show(0);
-        $(".subscribe-div").hide(0);
-    });
-
-    /*form-btn*/
-    $(".form-btn").click(function () {
-        $(".main-body").hide(0);
-        $(".form-div").show(0);
-    });
-
-    /*form-close-btn*/
-    $(".close-form-btn").click(function () {
-        $(".main-body").show(0);
-        $(".form-div").hide(0);
-    });
+video_play_close('course_model');
 
 </script>
