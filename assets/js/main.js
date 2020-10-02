@@ -1,3 +1,5 @@
+import './cards.js';
+
 $("body").css({"overflow":"hidden",'position':'fixed'});
 
 

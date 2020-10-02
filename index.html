@@ -32,7 +32,7 @@
 
 </head>
 
-<body>
+<body ng-app="landingTwo" ng-controller="landingCtrl">
 
 <div class="main-body">
 
@@ -92,7 +92,7 @@
         <section class="top-bottom-padding">
             <div class="container pattern-8">
                 <div class="row">
-                    <div class="col-sm-3">
+                    <div class="col-sm-3" ng-repeat="x in records">
                         <div class="card-g">
                             <div class="card-image"></div>
                             <div class="card-text">
