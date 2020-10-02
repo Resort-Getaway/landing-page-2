@@ -6,6 +6,7 @@
 @import 'layout.css';
 @import 'responsive.css';
 @import 'body.css';
+@import 'card.css';
 
 nav {
     align-items: center;
