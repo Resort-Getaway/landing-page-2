@@ -734,3 +734,14 @@ video.fillWidth {
   background-image: -webkit-linear-gradient(left,#1976bc 0%,#8dc645 100%);
   color: white !important;
 }
+
+.btn-form-navigation-home{
+  background-image: -webkit-linear-gradient(left,#1976bc 0%,#8dc645 100%);
+  color: white !important;
+  width: 100%;
+}
+
+.btn-form-navigation-home:hover{
+  background-color: white !important;
+  color: #20c997 !important;
+}
