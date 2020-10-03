@@ -734,3 +734,22 @@ video.fillWidth {
   background-image: -webkit-linear-gradient(left,#1976bc 0%,#8dc645 100%);
   color: white !important;
 }
+
+.btn-form-navigation-home{
+  background-image: -webkit-linear-gradient(left,#1976bc 0%,#8dc645 100%) !important;
+  color: white !important;
+  width: 100%;
+}
+
+.btn-form-navigation-home:hover{
+  background-image: -webkit-linear-gradient(left,white 0%,white 100%) !important;
+  color: #20c997 !important;
+}
+
+@media (min-width: 576px){
+  .modal-dialog {
+      max-width: 100% !important;
+      width: 60% !important;
+      margin: 30px auto;
+  }
+}

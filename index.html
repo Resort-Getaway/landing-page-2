@@ -1,614 +1,593 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Resort Getaway</title>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="I want to go to Cancun or Punta Cana !! All Inclusive sale now 2020-2021">
-    <meta name="author" content="Resort Getaway">
-
-    <link rel="shortcut icon" href="favicon.png">
-
-    <!-- Theme CSS -->
-    <link rel="stylesheet" href="assets/css/main.css">
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-</head>
-
-<body ng-app="landingTwo" ng-controller="landingCtrl">
-
-<!-- Modal -->
-<div class="modal fade" id="package-click" role="dialog">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close close_course_model" data-dismiss="modal">&times;</button>
+   <head>
+      <title>Resort Getaway</title>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="I want to go to Cancun or Punta Cana !! All Inclusive sale now 2020-2021">
+      <meta name="author" content="Resort Getaway">
+      <link rel="shortcut icon" href="favicon.png">
+      <!-- Theme CSS -->
+      <link rel="stylesheet" href="assets/css/main.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+   </head>
+   
+   <body ng-app="landingTwo" ng-controller="landingCtrl">
+      <!-- Modal -->
+      <div class="modal fade" id="package-click" role="dialog">
+         <div class="modal-dialog">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <button type="button" class="close close_course_model" data-dismiss="modal">&times;</button>
+               </div>
+               <div class="modal-body">
+                  <p class="modal-title head_name_model"></p>
+                  <div class="embed-responsive embed-responsive-16by9">
+                     <iframe class="embed-responsive-item video_iframe_course_model" src="" allowfullscreen></iframe>
+                  </div>
+               </div>
             </div>
-            <div class="modal-body">
-                <p class="modal-title head_name_model"></p>
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item video_iframe_course_model" src="" allowfullscreen></iframe>
-                </div>
+         </div>
+      </div>
+      <div class="main-body">
+         <section class="about-section py-5"
+            style="background-image: url('./assets/images/backgrounds/header.svg'); background-size: cover">
+            <div class="container">
+               <div class="row">
+                  <div class="col-sm-5">
+                     <center>
+                        <div class="">
+                           <p class="main-head-text-one">I want to go to Cancun or Punta Cana !!</p>
+                           <p class="main-head-text-two">All Inclusive sale now 2020-2021</p>
+                           <p class="main-p-text">All Prices are not per person but for a family of 2 Adults 2
+                              Children under 12 years old FREE,<br/> Only 2 packages per family allowed 
+                           </p>
+                           <button class="btn btn-success btn-lg btn-form-navigation-home">
+                           Fill this Form
+                           </button>
+                        </div>
+                     </center>
+                  </div>
+               </div>
             </div>
-        </div>
-    </div>
-</div>
-
-<div class="main-body">
-
-    <section class="about-section py-5"
-             style="background-image: url('./assets/images/backgrounds/header.svg'); background-size: cover">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-4">
-                    <div class="">
-                        <p class="main-head-text-one">I want to go to Cancun or Punta Cana !!</p>
-                        <p class="main-head-text-two">All Inclusive sale now 2020-2021</p>
-                        <p class="main-p-text">All Prices are not per person but for a family of 2 Adults 2
-                            Children under 12 years old FREE,<br/> Only 2 packages per family allowed </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="about-section py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-2"></div>
-                <div class="col-sm-8">
-                    <div class="center">
+         </section>
+         <section class="about-section py-5">
+            <div class="container">
+               <div class="row">
+                  <div class="col-sm-2"></div>
+                  <div class="col-sm-8">
+                     <div class="center">
                         <p class="main-head-text">Let's Start finding an amazing package in Cancun and Punta Cana.</p>
-                        <!-- <p class="gray-p-text text-justify">Cancún, a Mexican city on the Yucatán Peninsula
-                            bordering the Caribbean Sea, is known for its beaches, numerous resorts and nightlife.
-                            Below has some main resorts in Cancun which you can visit.</p> -->
-                    </div>
-                </div>
-                <div class="col-sm-2"></div>
+                     </div>
+                  </div>
+                  <div class="col-sm-2"></div>
+               </div>
             </div>
-            <div class="row package-cards" hidden>
-                <div class="col-sm-3">
-                    <a id="1" class="card-click" data-toggle="modal" data-target="#package-click">
-                        <img src="assets/images/cards/card1.jpg">
-                    </a>
-                </div>
-                <div class="col-sm-3">
-                    <a id="2" class="card-click" data-toggle="modal" data-target="#package-click">
-                        <img src="assets/images/cards/card2.jpg">
-                    </a>
-                </div>
-                <div class="col-sm-3">
-                    <a id="3" class="card-click" data-toggle="modal" data-target="#package-click">
-                        <img src="assets/images/cards/card3.jpg">
-                    </a>
-                </div>
-                <div class="col-sm-3">
-                    <a id="4" class="card-click" data-toggle="modal" data-target="#package-click">
-                        <img src="assets/images/cards/card4.jpg">
-                    </a>
-                </div>
+            <div class="container">
+               <div class="btTourList btListDesignRegular btTourListGapNormal btList4PerRow">
+                  <div class="hotel_1_div btSingleTourBlock" data-tour-id="100" style="cursor: pointer;">
+                     <div class="btSingleTourBlockInner">
+                        <div class="btSingleTourImage">
+                           <div class="btImageWrapper">
+                              <a  id="1" class="card-click" data-toggle="modal" data-target="#package-click">
+                              <img
+                                 data-src="../img/hotels/krystal_resort_cancun/p.jpg"
+                                 data-src-full="../img/hotels/krystal_resort_cancun/p.jpg"
+                                 src="assets/images/packages/package-1.jpg" alt="package" data-loaded="0"
+                                 class="bt_src_loading bt_src_loaded">
+                              </a>
+                           </div>
+                        </div>
+                        <div class="btSingleTourPrice">
+                           <div class="btTourOffer">SAVE UP TO $1608</div>
+                           <div class="btTourPrice"><span class="from">From</span>
+                              <del>$2107</del>
+                              <ins> $499</ins>
+                              <br>
+                              <ins style="font-size: 10px;">PER COUPLE</ins>
+                              <br>
+                           </div>
+                           <div class="btTourOffer reopenDiv">PER REOPENING ONLY</div>
+                        </div>
+                        <div class="btSingleTourContent">
+                           <div class="btSingleTourHeadline" style="font-size:17px;">
+                              <a id="1" class="card-click" data-toggle="modal" data-target="#package-click">Krystal Resort Cancun</a>
+                           </div>
+                           <div class="btSingleTourHeadline" style="font-size:15px;">
+                              <p>Cancun, Mexico</p>
+                           </div>
+                           <div class="btSingleTourCategories"><a>5 Night Hotel Accommodation Includes All Meals &amp;
+                              Drinks | PER COUPLE</a>
+                           </div>
+                           <div class="btSingleTourMeta">
+                              <div class="btTourRating">
+                                 <div style="color: #1976bc;">
+                                    <i class="fas fa-certificate"></i>
+                                    <i class="fas fa-certificate"></i>
+                                    <i class="fas fa-certificate"></i>
+                                    <i class="fas fa-certificate"></i>
+                                    <i class="fas fa-certificate"></i>
+                                 </div>
+                                 <span class="btNumberOfReviews">300 Reviews</span>
+                              </div>
+                              <div><i class="far fa-clock" style="color: #1976bc;"></i> 6 Days</div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="hotel_2_div btSingleTourBlock" data-tour-id="101" style="cursor: pointer;">
+                     <div class="btSingleTourBlockInner">
+                        <div class="btSingleTourImage">
+                           <div class="btImageWrapper">
+                              <a id="2" class="card-click" data-toggle="modal" data-target="#package-click">
+                              <img
+                                 data-src="../img/hotels/cancun_villa_resort/p.jpg"
+                                 data-src-full="../img/hotels/cancun_villa_resort/p.jpg"
+                                 src="assets/images/packages/package-2.jpg" alt="package" data-loaded="0"
+                                 class="bt_src_loading bt_src_loaded">
+                              </a>
+                           </div>
+                        </div>
+                        <div class="btSingleTourPrice">
+                           <div class="btTourOffer">SAVE UP TO $2763</div>
+                           <div class="btTourPrice"><span class="from">From</span>
+                              <del>$3462</del>
+                              <ins> $699</ins>
+                              <br>
+                              <ins style="font-size: 10px;">PER COUPLE</ins>
+                           </div>
+                        </div>
+                        <div class="btSingleTourContent">
+                           <div class="btSingleTourHeadline" style="font-size:17px;">
+                              <a id="2" class="card-click" data-toggle="modal" data-target="#package-click">5 Star Cancun Villa Resort</a>
+                           </div>
+                           <div class="btSingleTourHeadline" style="font-size:15px;">
+                              <p>Cancun, Mexico</p>
+                           </div>
+                           <div class="btSingleTourCategories"><a>5 Night Hotel Accommodation One Bedroom Suite - All
+                              Inclusive | PER COUPLE</a>
+                           </div>
+                           <div class="btSingleTourMeta">
+                              <div class="btTourRating">
+                                 <div style="color: #1976bc;">
+                                    <i class="fas fa-certificate"></i>
+                                    <i class="fas fa-certificate"></i>
+                                    <i class="fas fa-certificate"></i>
+                                    <i class="fas fa-certificate"></i>
+                                    <i class="fas fa-certificate"></i>
+                                 </div>
+                                 <span class="btNumberOfReviews">150 Reviews</span>
+                              </div>
+                              <div><i class="far fa-clock" style="color: #1976bc;"></i> 6 Days</div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="hotel_3_div btSingleTourBlock" data-tour-id="102" style="cursor: pointer;">
+                     <div class="btSingleTourBlockInner">
+                        <div class="btSingleTourImage">
+                           <div class="btImageWrapper">
+                              <a id="3" class="card-click" data-toggle="modal" data-target="#package-click">
+                              <img
+                                 data-src="../img/hotels/omni_cancun_resort/p.jpg"
+                                 data-src-full="../img/hotels/omni_cancun_resort/p.jpg"
+                                 src="assets/images/packages/package-3.jpg" alt="package" data-loaded="0"
+                                 class="bt_src_loading bt_src_loaded">
+                              </a>
+                           </div>
+                        </div>
+                        <div class="btSingleTourPrice">
+                           <div class="btTourOffer">SAVE UP TO $2098</div>
+                           <div class="btTourPrice"><span class="from">From</span>
+                              <del>$2697</del>
+                              <ins> $599</ins>
+                              <br>
+                              <ins style="font-size: 10px;">PER COUPLE</ins>
+                           </div>
+                        </div>
+                        <div class="btSingleTourContent">
+                           <div class="btSingleTourHeadline" style="font-size:17px;">
+                              <a id="3" class="card-click" data-toggle="modal" data-target="#package-click">Omni Cancun Resort</a>
+                           </div>
+                           <div class="btSingleTourHeadline" style="font-size:15px;">
+                              <p>Cancun, Mexico</p>
+                           </div>
+                           <div class="btSingleTourCategories"><a>5 Night Hotel Accommodation Includes All Meals &amp;
+                              Drinks | PER COUPLE</a>
+                           </div>
+                           <div class="btSingleTourMeta">
+                              <div class="btTourRating">
+                                 <div style="color: #1976bc;">
+                                    <i class="fas fa-certificate"></i>
+                                    <i class="fas fa-certificate"></i>
+                                    <i class="fas fa-certificate"></i>
+                                    <i class="fas fa-certificate"></i>
+                                    <i class="fas fa-certificate"></i>
+                                 </div>
+                                 <span class="btNumberOfReviews">190 Reviews</span>
+                              </div>
+                              <div><i class="far fa-clock" style="color: #1976bc;"></i> 6 Days</div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="hotel_4_div btSingleTourBlock" data-tour-id="103" style="cursor: pointer;">
+                     <div class="btSingleTourBlockInner">
+                        <div class="btSingleTourImage">
+                           <div class="btImageWrapper">
+                              <a  id="4" class="card-click" data-toggle="modal" data-target="#package-click">
+                              <img
+                                 data-src="../img/hotels/cabo_beach_resort/p.jpg"
+                                 data-src-full="../img/hotels/cabo_beach_resort/p.jpg"
+                                 src="assets/images/packages/package-1.jpg" alt="package" data-loaded="0"
+                                 class="bt_src_loading bt_src_loaded">
+                              </a>
+                           </div>
+                        </div>
+                        <div class="btSingleTourPrice">
+                           <div class="btTourOffer">SAVE UP TO $1817</div>
+                           <div class="btTourPrice"><span class="from">From</span>
+                              <del>$2416</del>
+                              <ins> $599</ins>
+                              <br>
+                              <ins style="font-size: 10px;">PER COUPLE</ins>
+                           </div>
+                        </div>
+                        <div class="btSingleTourContent">
+                           <div class="btSingleTourHeadline" style="font-size:17px;">
+                              <a id="4" class="card-click" data-toggle="modal" data-target="#package-click">5 Star Cabo Beach Resort</a>
+                           </div>
+                           <div class="btSingleTourHeadline" style="font-size:15px;">
+                              <p>Cabo San Lucas, Mexico</p>
+                           </div>
+                           <div class="btSingleTourCategories"><a>5 Night Hotel Accommodation Includes All Meals &amp;
+                              Drinks | PER COUPLE</a>
+                           </div>
+                           <div class="btSingleTourMeta">
+                              <div class="btTourRating">
+                                 <div style="color: #1976bc;">
+                                    <i class="fas fa-certificate"></i>
+                                    <i class="fas fa-certificate"></i>
+                                    <i class="fas fa-certificate"></i>
+                                    <i class="fas fa-certificate"></i>
+                                    <i class="fas fa-certificate"></i>
+                                 </div>
+                                 <span class="btNumberOfReviews">230 Reviews</span>
+                              </div>
+                              <div><i class="far fa-clock" style="color: #1976bc;"></i> 6 Days</div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
             </div>
-        </div>
-        <div class="container">
-            <div class="btTourList btListDesignRegular btTourListGapNormal  btList4PerRow">
-
-                <div class="hotel_1_div btSingleTourBlock" data-tour-id="100">
-                    <div class="btSingleTourBlockInner">
-                        <div class="btSingleTourImage">
-                            <div class="btImageWrapper"><a href="../en/hotels/krystal_resort_cancun.php"><img
-                                    data-src="../img/hotels/krystal_resort_cancun/p.jpg"
-                                    data-src-full="../img/hotels/krystal_resort_cancun/p.jpg"
-                                    src="assets/images/packages/package-1.jpg" alt="package" data-loaded="0"
-                                    class="bt_src_loading bt_src_loaded"></a></div>
-                        </div>
-                        <div class="btSingleTourPrice">
-                            <div class="btTourOffer">SAVE UP TO $1608</div>
-                            <div class="btTourPrice"><span class="from">From</span>
-                                <del>$2107</del>
-                                <ins> $499</ins>
-                                <br>
-                                <ins style="font-size: 10px;">PER COUPLE</ins>
-                                <br></div>
-                            <div class="btTourOffer reopenDiv">PER REOPENING ONLY</div>
-                        </div>
-                        <div class="btSingleTourContent">
-                            <div class="btSingleTourHeadline" style="font-size:17px;"><a
-                                    href="../en/hotels/krystal_resort_cancun.php">Krystal Resort Cancun</a></div>
-                            <div class="btSingleTourHeadline" style="font-size:15px;"><p>Cancun, Mexico</p></div>
-                            <div class="btSingleTourCategories"><a>5 Night Hotel Accommodation Includes All Meals &amp;
-                                Drinks | PER COUPLE</a></div>
-                            <div class="btSingleTourMeta">
-                                <div class="btTourRating">
-                                    <div itemscope="" itemtype="http://schema.org/Rating" class="star-rating"><span
-                                            style="width:100%"><strong itemprop="ratingValue">5</strong> out of 5</span>
-                                    </div>
-                                    <span class="btNumberOfReviews">300 Reviews</span></div>
-                                <div class="btTourDuration">6 Days</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="hotel_2_div btSingleTourBlock" data-tour-id="101">
-                    <div class="btSingleTourBlockInner">
-                        <div class="btSingleTourImage">
-                            <div class="btImageWrapper"><a href="../en/hotels/cancun_villa_resort.php"><img
-                                    data-src="../img/hotels/cancun_villa_resort/p.jpg"
-                                    data-src-full="../img/hotels/cancun_villa_resort/p.jpg"
-                                    src="assets/images/packages/package-2.jpg" alt="package" data-loaded="0"
-                                    class="bt_src_loading bt_src_loaded"></a></div>
-                        </div>
-                        <div class="btSingleTourPrice">
-                            <div class="btTourOffer">SAVE UP TO $2763</div>
-                            <div class="btTourPrice"><span class="from">From</span>
-                                <del>$3462</del>
-                                <ins> $699</ins>
-                                <br>
-                                <ins style="font-size: 10px;">PER COUPLE</ins>
-                            </div>
-                        </div>
-                        <div class="btSingleTourContent">
-                            <div class="btSingleTourHeadline" style="font-size:17px;"><a
-                                    href="../en/hotels/cancun_villa_resort.php">5 Star Cancun Villa Resort</a></div>
-                            <div class="btSingleTourHeadline" style="font-size:15px;"><p>Cancun, Mexico</p></div>
-                            <div class="btSingleTourCategories"><a>5 Night Hotel Accommodation One Bedroom Suite - All
-                                Inclusive | PER COUPLE</a></div>
-                            <div class="btSingleTourMeta">
-                                <div class="btTourRating">
-                                    <div itemscope="" itemtype="http://schema.org/Rating" class="star-rating"><span
-                                            style="width:100%"><strong itemprop="ratingValue">5</strong> out of 5</span>
-                                    </div>
-                                    <span class="btNumberOfReviews">150 Reviews</span></div>
-                                <div class="btTourDuration">6 Days</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="hotel_3_div btSingleTourBlock" data-tour-id="102">
-                    <div class="btSingleTourBlockInner">
-                        <div class="btSingleTourImage">
-                            <div class="btImageWrapper"><a href="../en/hotels/omni_cancun_resort.php"><img
-                                    data-src="../img/hotels/omni_cancun_resort/p.jpg"
-                                    data-src-full="../img/hotels/omni_cancun_resort/p.jpg"
-                                    src="assets/images/packages/package-3.jpg" alt="package" data-loaded="0"
-                                    class="bt_src_loading bt_src_loaded"></a></div>
-                        </div>
-                        <div class="btSingleTourPrice">
-                            <div class="btTourOffer">SAVE UP TO $2098</div>
-                            <div class="btTourPrice"><span class="from">From</span>
-                                <del>$2697</del>
-                                <ins> $599</ins>
-                                <br>
-                                <ins style="font-size: 10px;">PER COUPLE</ins>
-                            </div>
-                        </div>
-                        <div class="btSingleTourContent">
-                            <div class="btSingleTourHeadline" style="font-size:17px;"><a
-                                    href="../en/hotels/omni_cancun_resort.php">Omni Cancun Resort</a></div>
-                            <div class="btSingleTourHeadline" style="font-size:15px;"><p>Cancun, Mexico</p></div>
-                            <div class="btSingleTourCategories"><a>5 Night Hotel Accommodation Includes All Meals &amp;
-                                Drinks | PER COUPLE</a></div>
-                            <div class="btSingleTourMeta">
-                                <div class="btTourRating">
-                                    <div itemscope="" itemtype="http://schema.org/Rating" class="star-rating"><span
-                                            style="width:100%"><strong itemprop="ratingValue">5</strong> out of 5</span>
-                                    </div>
-                                    <span class="btNumberOfReviews">190 Reviews</span></div>
-                                <div class="btTourDuration">6 Days</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="hotel_4_div btSingleTourBlock" data-tour-id="103">
-                    <div class="btSingleTourBlockInner">
-                        <div class="btSingleTourImage">
-                            <div class="btImageWrapper"><a href="../en/hotels/cabo_beach_resort.php"><img
-                                    data-src="../img/hotels/cabo_beach_resort/p.jpg"
-                                    data-src-full="../img/hotels/cabo_beach_resort/p.jpg"
-                                    src="assets/images/packages/package-1.jpg" alt="package" data-loaded="0"
-                                    class="bt_src_loading bt_src_loaded"></a></div>
-                        </div>
-                        <div class="btSingleTourPrice">
-                            <div class="btTourOffer">SAVE UP TO $1817</div>
-                            <div class="btTourPrice"><span class="from">From</span>
-                                <del>$2416</del>
-                                <ins> $599</ins>
-                                <br>
-                                <ins style="font-size: 10px;">PER COUPLE</ins>
-                            </div>
-                        </div>
-                        <div class="btSingleTourContent">
-                            <div class="btSingleTourHeadline" style="font-size:17px;"><a
-                                    href="../en/hotels/cabo_beach_resort.php">5 Star Cabo Beach Resort</a></div>
-                            <div class="btSingleTourHeadline" style="font-size:15px;"><p>Cabo San Lucas, Mexico</p>
-                            </div>
-                            <div class="btSingleTourCategories"><a>5 Night Hotel Accommodation Includes All Meals &amp;
-                                Drinks | PER COUPLE</a></div>
-                            <div class="btSingleTourMeta">
-                                <div class="btTourRating">
-                                    <div itemscope="" itemtype="http://schema.org/Rating" class="star-rating"><span
-                                            style="width:100%"><strong itemprop="ratingValue">5</strong> out of 5</span>
-                                    </div>
-                                    <span class="btNumberOfReviews">230 Reviews</span></div>
-                                <div class="btTourDuration">6 Days</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="hotel_5_div btSingleTourBlock card_more" data-tour-id="104" style="display: none;"></div>
-                <div class="hotel_6_div btSingleTourBlock card_more" data-tour-id="105" style="display: none;"></div>
-                <div class="hotel_7_div btSingleTourBlock card_more" data-tour-id="106" style="display: none;"></div>
-                <div class="hotel_8_div btSingleTourBlock card_more" data-tour-id="107" style="display: none;"></div>
-
-                <div class="hotel_9_div btSingleTourBlock card_more" data-tour-id="108" style="display: none;"></div>
-                <div class="hotel_10_div btSingleTourBlock card_more" data-tour-id="109" style="display: none;"></div>
-                <div class="hotel_11_div btSingleTourBlock card_more" data-tour-id="110" style="display: none;"></div>
-                <div class="hotel_12_div btSingleTourBlock card_more" data-tour-id="111" style="display: none;"></div>
-
-                <div class="hotel_13_div btSingleTourBlock card_more" data-tour-id="112" style="display: none;"></div>
-                <div class="hotel_14_div btSingleTourBlock card_more" data-tour-id="113" style="display: none;"></div>
-                <div class="hotel_15_div btSingleTourBlock card_more" data-tour-id="114" style="display: none;"></div>
-                <div class="hotel_16_div btSingleTourBlock card_more" data-tour-id="115" style="display: none;"></div>
-
-                <div class="hotel_17_div btSingleTourBlock card_more" data-tour-id="116" style="display: none;"></div>
-                <div class="hotel_18_div btSingleTourBlock card_more" data-tour-id="117" style="display: none;"></div>
-                <div class="hotel_19_div btSingleTourBlock card_more" data-tour-id="118" style="display: none;"></div>
-                <div class="hotel_20_div btSingleTourBlock card_more" data-tour-id="119" style="display: none;"></div>
-
-                <div class="hotel_21_div btSingleTourBlock card_more" data-tour-id="120" style="display: none;"></div>
-                <div class="hotel_22_div btSingleTourBlock card_more" data-tour-id="121" style="display: none;"></div>
-                <div class="hotel_23_div btSingleTourBlock card_more" data-tour-id="122" style="display: none;"></div>
-                <div class="hotel_24_div btSingleTourBlock card_more" data-tour-id="123" style="display: none;"></div>
-
-                <div class="hotel_25_div btSingleTourBlock card_more" data-tour-id="124" style="display: none;"></div>
-                <div class="hotel_26_div btSingleTourBlock card_more" data-tour-id="125" style="display: none;"></div>
-                <div class="hotel_27_div btSingleTourBlock card_more" data-tour-id="126" style="display: none;"></div>
-                <div class="hotel_28_div btSingleTourBlock card_more" data-tour-id="127" style="display: none;"></div>
-
-                <div class="hotel_29_div btSingleTourBlock card_more" data-tour-id="128" style="display: none;"></div>
-                <div class="hotel_30_div btSingleTourBlock card_more" data-tour-id="129" style="display: none;"></div>
-                <div class="hotel_31_div btSingleTourBlock card_more" data-tour-id="129" style="display: none;"></div>
-                <div class="hotel_32_div btSingleTourBlock card_more" data-tour-id="130" style="display: none;"></div>
-
-                <div class="hotel_33_div btSingleTourBlock card_more" data-tour-id="131" style="display: none;"></div>
-                <div class="hotel_34_div btSingleTourBlock card_more" data-tour-id="132" style="display: none;"></div>
-                <div class="hotel_52_div btSingleTourBlock card_more" style="display: none;"></div>
-                <div class="hotel_53_div btSingleTourBlock card_more" style="display: none;"></div>
-
-                <div class="hotel_54_div btSingleTourBlock card_more" style="display: none;"></div>
-                <div class="hotel_55_div btSingleTourBlock card_more" style="display: none;"></div>
-                <div class="hotel_56_div btSingleTourBlock card_more" style="display: none;"></div>
-                <div class="hotel_57_div btSingleTourBlock card_more" style="display: none;"></div>
-                <div class="hotel_58_div btSingleTourBlock card_more" style="display: none;"></div>
-                <div class="hotel_59_div btSingleTourBlock card_more" style="display: none;"></div>
-                <div class="hotel_60_div btSingleTourBlock card_more" style="display: none;"></div>
-                <div class="hotel_61_div btSingleTourBlock card_more" style="display: none;"></div>
-            </div>
-        </div>
-    </section>
-
-    <section class="about-section" style="background-image: -webkit-linear-gradient(left,#1976bc 0%,#8dc645 100%);">
-        <!--            <img src="assets/images/vector/longsky.svg" class="image-sky">-->
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-2"></div>
-                <div class="col-sm-8">
-                    <div class="center">
+         </section>
+         <section class="about-section" style="background-image: -webkit-linear-gradient(left,#1976bc 0%,#8dc645 100%);">
+            <!--            <img src="assets/images/vector/longsky.svg" class="image-sky">-->
+            <div class="container">
+               <div class="row">
+                  <div class="col-sm-2"></div>
+                  <div class="col-sm-8">
+                     <div class="center">
                         <p class="main-head-text font-color-white">About Resort Getaway</p>
                         <p class="gray-p-text text-c font-color-white">If you are seriously thinking about traveling
-                            and taking your family on a Disney Vacation in Orlando, the beach in Miami Beach and
-                            living the experience of sailing the waters of the Atlantic to the Bahamas on an All
-                            Inclusive Cruise we are the ones.</p>
-                    </div>
-                </div>
-                <div class="col-sm-2"></div>
+                           and taking your family on a Disney Vacation in Orlando, the beach in Miami Beach and
+                           living the experience of sailing the waters of the Atlantic to the Bahamas on an All
+                           Inclusive Cruise we are the ones.
+                        </p>
+                     </div>
+                  </div>
+                  <div class="col-sm-2"></div>
+               </div>
+               <div class="row" style=" margin-bottom: 2rem;">
+                  <div class="col-sm-4">
+                     <div class="card">
+                        <div class="card-body text-center">
+                           <img src="assets/images/about/pricing.svg" class="icon">
+                           <p class="icon-margin-set-top head-text-set-card">Competitive Pricing</p>
+                           <p class="gray-p-text">With 500+ suppliers and the purchasing power of 9 million clients
+                              around the World.
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-sm-4">
+                     <div class="card">
+                        <div class="card-body text-center">
+                           <img src="assets/images/about/award.svg" class="icon">
+                           <p class="icon-margin-set-top head-text-set-card">Award-Winning Service</p>
+                           <p class="gray-p-text">Travel worry-free knowing that we're here if you need us, 24
+                              hours a day
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-sm-4">
+                     <div class="card">
+                        <div class="card-body text-center">
+                           <img src="assets/images/about/worldwide.svg" class="icon">
+                           <p class="icon-margin-set-top head-text-set-card">Worldwide Coverage</p>
+                           <p class="gray-p-text">Over 1,400k hotels in more than 200 countries and regions & flights
+                              to over 5,000 cities
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
             </div>
-            <div class="row" style=" margin-bottom: 2rem;">
-                <div class="col-sm-4">
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <img src="assets/images/about/pricing.svg" class="icon">
-                            <p class="icon-margin-set-top head-text-set-card">Competitive Pricing</p>
-                            <p class="gray-p-text">With 500+ suppliers and the purchasing power of 9 million clients
-                                around the World.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <img src="assets/images/about/award.svg" class="icon">
-                            <p class="icon-margin-set-top head-text-set-card">Award-Winning Service</p>
-                            <p class="gray-p-text">Travel worry-free knowing that we're here if you need us, 24
-                                hours a day</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <img src="assets/images/about/worldwide.svg" class="icon">
-                            <p class="icon-margin-set-top head-text-set-card">Worldwide Coverage</p>
-                            <p class="gray-p-text">Over 1,400k hotels in more than 200 countries and regions & flights
-                                to over 5,000 cities</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="what-include-section">
-        <!--            <img src="assets/images/vector/longsky.svg" class="image-sky">-->
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-2"></div>
-                <div class="col-sm-8">
-                    <div class="center">
+         </section>
+         <section class="what-include-section">
+            <!--            <img src="assets/images/vector/longsky.svg" class="image-sky">-->
+            <div class="container">
+               <div class="row">
+                  <div class="col-sm-2"></div>
+                  <div class="col-sm-8">
+                     <div class="center">
                         <p class="main-head-text">What's included?</p>
                         <p class="gray-p-text text-c">All packages you are going to book include below things. You can
-                            enjoy your vacation very well.</p>
-                    </div>
-                </div>
-                <div class="col-sm-2"></div>
-            </div>
-            <div class="row" style=" margin-bottom: 2rem;">
-                <div class="col-sm-2"></div>
-                <div class="col-sm-4">
-                    <div class="card card-step">
+                           enjoy your vacation very well.
+                        </p>
+                     </div>
+                  </div>
+                  <div class="col-sm-2"></div>
+               </div>
+               <div class="row" style=" margin-bottom: 2rem;">
+                  <div class="col-sm-2"></div>
+                  <div class="col-sm-4">
+                     <div class="card card-step">
                         <div class="card-body text-center">
-                            <img src="assets/images/icons/transport.svg" class="icon">
-                            <p class="icon-margin-set-top head-text-set-card">Transportation</p>
-                            <p class="gray-p-text">Transportation Airport to Hotel and Hotel to Airport </p>
+                           <img src="assets/images/icons/transport.svg" class="icon">
+                           <p class="icon-margin-set-top head-text-set-card">Transportation</p>
+                           <p class="gray-p-text">Transportation Airport to Hotel and Hotel to Airport </p>
                         </div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="card card-step">
+                     </div>
+                  </div>
+                  <div class="col-sm-4">
+                     <div class="card card-step">
                         <div class="card-body text-center">
-                            <img src="assets/images/icons/meal.svg" class="icon">
-                            <p class="icon-margin-set-top head-text-set-card">All your Meals and Drinks</p>
-                            <p class="gray-p-text">All your Meals and Drinks for Breakfast, Lunch and Dinner.</p>
+                           <img src="assets/images/icons/meal.svg" class="icon">
+                           <p class="icon-margin-set-top head-text-set-card">All your Meals and Drinks</p>
+                           <p class="gray-p-text">All your Meals and Drinks for Breakfast, Lunch and Dinner.</p>
                         </div>
-                    </div>
-                </div>
-                <div class="col-sm-2"></div>
+                     </div>
+                  </div>
+                  <div class="col-sm-2"></div>
+               </div>
             </div>
-        </div>
-    </section>
-
-    <section class="what-include-section"
-             style="background-image: -webkit-linear-gradient(left,#1976bc 0%,#8dc645 100%);">
-        <!--            <img src="assets/images/vector/longsky.svg" class="image-sky">-->
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-2"></div>
-                <div class="col-sm-8">
-                    <div class="center">
+         </section>
+         <section class="what-include-section"
+            style="background-image: -webkit-linear-gradient(left,#1976bc 0%,#8dc645 100%);">
+            <!--            <img src="assets/images/vector/longsky.svg" class="image-sky">-->
+            <div class="container">
+               <div class="row">
+                  <div class="col-sm-2"></div>
+                  <div class="col-sm-8">
+                     <div class="center">
                         <p class="main-head-text font-color-white">How does it Work?</p>
                         <p class="gray-p-text text-c font-color-white">You can book a vacation as in the follows. Follow
-                            those step to book a great tour.</p>
-                    </div>
-                </div>
-                <div class="col-sm-2"></div>
+                           those step to book a great tour.
+                        </p>
+                     </div>
+                  </div>
+                  <div class="col-sm-2"></div>
+               </div>
+               <div class="row" style=" margin-bottom: 2rem;">
+                  <div class="col-sm-3">
+                     <div class="card card-step">
+                        <div class="card-body text-center">
+                           <img src="assets/images/steps/call.svg" class="icon">
+                           <p class="icon-margin-set-top head-text-set-card">Schedule a Call</p>
+                           <p class="gray-p-text">You can talk with our specialist</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-sm-3">
+                     <div class="card  card-step">
+                        <div class="card-body text-center">
+                           <img src="assets/images/steps/vacation.svg" class="icon">
+                           <p class="icon-margin-set-top head-text-set-card">Choose a Vacation</p>
+                           <p class="gray-p-text">Choose amazing vacation destination</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-sm-3">
+                     <div class="card card-step">
+                        <div class="card-body text-center">
+                           <img src="assets/images/steps/quotation.svg" class="icon">
+                           <p class="icon-margin-set-top head-text-set-card">Take a Quotation</p>
+                           <p class="gray-p-text">Get a quotation for your vacation destination</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-sm-3">
+                     <div class="card  card-step">
+                        <div class="card-body text-center">
+                           <img src="assets/images/steps/book.svg" class="icon">
+                           <p class="icon-margin-set-top head-text-set-card">Tour Booking</p>
+                           <p class="gray-p-text">Using site or call book your tour</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
             </div>
-            <div class="row" style=" margin-bottom: 2rem;">
-                <div class="col-sm-3">
-                    <div class="card card-step">
-                        <div class="card-body text-center">
-                            <img src="assets/images/steps/call.svg" class="icon">
-                            <p class="icon-margin-set-top head-text-set-card">Schedule a Call</p>
-                            <p class="gray-p-text">You can talk with our specialist</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="card  card-step">
-                        <div class="card-body text-center">
-                            <img src="assets/images/steps/vacation.svg" class="icon">
-                            <p class="icon-margin-set-top head-text-set-card">Choose a Vacation</p>
-                            <p class="gray-p-text">Choose amazing vacation destination</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="card card-step">
-                        <div class="card-body text-center">
-                            <img src="assets/images/steps/quotation.svg" class="icon">
-                            <p class="icon-margin-set-top head-text-set-card">Take a Quotation</p>
-                            <p class="gray-p-text">Get a quotation for your vacation destination</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="card  card-step">
-                        <div class="card-body text-center">
-                            <img src="assets/images/steps/book.svg" class="icon">
-                            <p class="icon-margin-set-top head-text-set-card">Tour Booking</p>
-                            <p class="gray-p-text">Using site or call book your tour</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="what-include-section">
-        <!--            <img src="assets/images/vector/longsky.svg" class="image-sky">-->
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-2"></div>
-                <div class="col-sm-8">
-                    <div class="center">
+         </section>
+         <section class="what-include-section">
+            <!--            <img src="assets/images/vector/longsky.svg" class="image-sky">-->
+            <div class="container">
+               <div class="row">
+                  <div class="col-sm-2"></div>
+                  <div class="col-sm-8">
+                     <div class="center">
                         <p class="main-head-text">How about the Airfare?</p>
                         <p class="gray-p-text text-c">If you need Airfare we can arrange those also.</p>
-                    </div>
-                </div>
-                <div class="col-sm-2"></div>
-            </div>
-            <div class="row" style=" margin-bottom: 2rem;">
-                <div class="col-sm-2"></div>
-                <div class="col-sm-4">
-                    <div class="card card-step">
+                     </div>
+                  </div>
+                  <div class="col-sm-2"></div>
+               </div>
+               <div class="row" style=" margin-bottom: 2rem;">
+                  <div class="col-sm-2"></div>
+                  <div class="col-sm-4">
+                     <div class="card card-step">
                         <div class="card-body text-center">
-                            <img src="assets/images/icons/price.svg" class="icon">
-                            <p class="icon-margin-set-top head-text-set-card">About pricing</p>
-                            <p class="gray-p-text">Air prices can only be given once you have a date. </p>
+                           <img src="assets/images/icons/price.svg" class="icon">
+                           <p class="icon-margin-set-top head-text-set-card">About pricing</p>
+                           <p class="gray-p-text">Air prices can only be given once you have a date. </p>
                         </div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="card card-step">
+                     </div>
+                  </div>
+                  <div class="col-sm-4">
+                     <div class="card card-step">
                         <div class="card-body text-center">
-                            <img src="assets/images/icons/benefits.svg" class="icon">
-                            <p class="icon-margin-set-top head-text-set-card">What are the benefits?</p>
-                            <p class="gray-p-text">We have business and first-class seating available at 25% off.</p>
+                           <img src="assets/images/icons/benefits.svg" class="icon">
+                           <p class="icon-margin-set-top head-text-set-card">What are the benefits?</p>
+                           <p class="gray-p-text">We have business and first-class seating available at 25% off.</p>
                         </div>
-                    </div>
-                </div>
-                <div class="col-sm-2"></div>
+                     </div>
+                  </div>
+                  <div class="col-sm-2"></div>
+               </div>
             </div>
-        </div>
-    </section>
-
-    <section class="what-include-section"
-             style="background-image: -webkit-linear-gradient(left,#1976bc 0%,#8dc645 100%); padding-top: 20px; padding-bottom: 20px;">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-2"></div>
-                <div class="col-sm-8">
-                    <div class="center">
+         </section>
+         <section class="what-include-section"
+            style="background-image: -webkit-linear-gradient(left,#1976bc 0%,#8dc645 100%); padding-top: 20px; padding-bottom: 20px;">
+            <div class="container">
+               <div class="row">
+                  <div class="col-sm-2"></div>
+                  <div class="col-sm-8">
+                     <div class="center">
                         <p class="main-head-text font-color-white">Do not wait more! Book your vacation today</p>
                         <p class="gray-p-text text-c font-color-white">How can you say no to this vacation with this
-                            special, luxurious and affordable offer? Click on the button below, you deserve this
-                            vacation!</p>
+                           special, luxurious and affordable offer? Click on the button below, you deserve this
+                           vacation!
+                        </p>
                         <button class="btn btn-success btn-lg btn-form-navigation">
-                            Fill this form
+                        Fill this Form
                         </button>
-                    </div>
-                </div>
-                <div class="col-sm-2"></div>
+                     </div>
+                  </div>
+                  <div class="col-sm-2"></div>
+               </div>
             </div>
-        </div>
-    </section>
-
-    <section class="what-include-section">
-        <!--            <img src="assets/images/vector/longsky.svg" class="image-sky">-->
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-2"></div>
-                <div class="col-sm-8">
-                    <div class="center">
+         </section>
+         <section class="what-include-section">
+            <!--            <img src="assets/images/vector/longsky.svg" class="image-sky">-->
+            <div class="container">
+               <div class="row">
+                  <div class="col-sm-2"></div>
+                  <div class="col-sm-8">
+                     <div class="center">
                         <p class="main-head-text">How to pay?</p>
                         <p class="gray-p-text text-c">There are many ways you can pay for your vacation.</p>
-                    </div>
-                </div>
-                <div class="col-sm-2"></div>
-            </div>
-            <div class="row" style=" margin-bottom: 2rem;">
-                <div class="col-sm-4">
-                    <div class="card card-step">
+                     </div>
+                  </div>
+                  <div class="col-sm-2"></div>
+               </div>
+               <div class="row" style=" margin-bottom: 2rem;">
+                  <div class="col-sm-4">
+                     <div class="card card-step">
                         <div class="card-body text-center">
-                            <img src="assets/images/icons/cards.svg" class="icon">
-                            <p class="icon-margin-set-top head-text-set-card">Pay with a Credit Card or 2 Credit
-                                Cards</p>
+                           <img src="assets/images/icons/cards.svg" class="icon">
+                           <p class="icon-margin-set-top head-text-set-card">Pay with a Credit Card or 2 Credit
+                              Cards
+                           </p>
                         </div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="card card-step">
+                     </div>
+                  </div>
+                  <div class="col-sm-4">
+                     <div class="card card-step">
                         <div class="card-body text-center">
-                            <img src="assets/images/icons/low-int.svg" class="icon">
-                            <p class="icon-margin-set-top head-text-set-card">Pay Monthly, no interest, 12 to 36
-                                months </p>
+                           <img src="assets/images/icons/low-int.svg" class="icon">
+                           <p class="icon-margin-set-top head-text-set-card">Pay Monthly, no interest, 12 to 36
+                              months 
+                           </p>
                         </div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="card card-step">
+                     </div>
+                  </div>
+                  <div class="col-sm-4">
+                     <div class="card card-step">
                         <div class="card-body text-center">
-                            <img src="assets/images/icons/cash.svg" class="icon">
-                            <p class="icon-margin-set-top head-text-set-card">Pay Cash at one of our locations
-                                Worldwide</p>
+                           <img src="assets/images/icons/cash.svg" class="icon">
+                           <p class="icon-margin-set-top head-text-set-card">Pay Cash at one of our locations
+                              Worldwide
+                           </p>
                         </div>
-                    </div>
-                </div>
+                     </div>
+                  </div>
+               </div>
             </div>
-        </div>
-    </section>
-
-
-    <section class="py-5 theme-colored-back text-white mob-card">
-        <div class="floater-bar sm-only"></div>
-        <div class="container py-5">
-            <p class="main-head-text text-center font-color-white">Up to 12 Months without interest</p>
-            <div class="text-center">
-                <p class="gray-p-text text-center  font-color-white">Paying with</p>
-                <i class="fab fa-cc-mastercard fa-6x"></i>
-                <i class="fab fa-cc-visa fa-6x"></i>
-                <i class="fab fa-cc-amex fa-6x"></i>
+         </section>
+         <section class="py-5 theme-colored-back text-white mob-card">
+            <div class="floater-bar sm-only"></div>
+            <div class="container py-5">
+               <p class="main-head-text text-center font-color-white">Up to 12 Months without interest</p>
+               <div class="text-center">
+                  <p class="gray-p-text text-center  font-color-white">Paying with</p>
+                  <i class="fab fa-cc-mastercard fa-6x"></i>
+                  <i class="fab fa-cc-visa fa-6x"></i>
+                  <i class="fab fa-cc-amex fa-6x"></i>
+               </div>
+               <div class="small-l text-center mt-5">
+                  <p class="gray-p-text text-center font-color-white" style="margin-top: 2rem;">* Promotion of 12 levels
+                     without interest only applies to Argentina, Mexico and Peru. Other countries may vary depending on
+                     your lender.
+                  </p>
+               </div>
             </div>
-            <div class="small-l text-center mt-5">
-                <p class="gray-p-text text-center font-color-white" style="margin-top: 2rem;">* Promotion of 12 levels
-                    without interest only applies to Argentina, Mexico and Peru. Other countries may vary depending on
-                    your lender.</p>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="what-include-section" style="margin-bottom: 30px; margin-top: 30px;">
-        <!--            <img src="assets/images/vector/longsky.svg" class="image-sky">-->
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-2"></div>
-                <div class="col-sm-8">
-                    <div class="center">
+         </section>
+         <section class="what-include-section" style="margin-bottom: 30px; margin-top: 30px;">
+            <!--            <img src="assets/images/vector/longsky.svg" class="image-sky">-->
+            <div class="container">
+               <div class="row">
+                  <div class="col-sm-2"></div>
+                  <div class="col-sm-8">
+                     <div class="center">
                         <p class="steps-head-text-one style-tag">Once you buy you will receive an email with your
-                            receipt of payment directly from the Resort.</p>
+                           receipt of payment directly from the Resort.
+                        </p>
                         <p class="steps-head-text-two style-tag">You will also receive your complete itinerary with
-                            information on how to make your reservations 30 days prior to your travel date.</p>
+                           information on how to make your reservations 30 days prior to your travel date.
+                        </p>
                         <p class="steps-p-text style-tag">You will also receive a booking number this is the number that
-                            identifies you once you are in the system.</p>
-                    </div>
-                </div>
-                <div class="col-sm-2"></div>
+                           identifies you once you are in the system.
+                        </p>
+                     </div>
+                  </div>
+                  <div class="col-sm-2"></div>
+               </div>
             </div>
-        </div>
-    </section>
-
-
-    <section class="what-include-section"
-             style="background-image: -webkit-linear-gradient(left,#1976bc 0%,#8dc645 100%);">
-        <div class="container">
-            <div class="row" style="margin-top: 20px;margin-bottom: 20px;">
-                <div class="col-sm-6">
-                    <div class="left_div_login" style="margin-top: 80px;">
+         </section>
+         <section class="what-include-section"
+            style="background-image: -webkit-linear-gradient(left,#1976bc 0%,#8dc645 100%);">
+            <div class="container">
+               <div class="row" style="margin-top: 20px;margin-bottom: 20px;">
+                  <div class="col-sm-6">
+                     <div class="left_div_login" style="margin-top: 80px;">
                         <div>
-                            <div class="center">
-                                <p class="main-head-text font-color-white">Let's start the journey</p>
-                                <p class="gray-p-text text-c font-color-white">If you are interested in purchasing one
-                                    of the vacation packages please fill out this form and one of our licensed and
-                                    certified vacation planners will guide you as the next steps to receive this special
-                                    offer.</p>
-                            </div>
-                            <div>
-                                <iframe width="100%" height="315" src="https://www.youtube.com/embed/_xgFYqH2vx4"
-                                        frameborder="0"
-                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                        allowfullscreen></iframe>
-                            </div>
+                           <div class="center">
+                              <p class="main-head-text font-color-white">Let's start the journey</p>
+                              <p class="gray-p-text text-c font-color-white">If you are interested in purchasing one
+                                 of the vacation packages please fill out this form and one of our licensed and
+                                 certified vacation planners will guide you as the next steps to receive this special
+                                 offer.
+                              </p>
+                           </div>
+                           <div>
+                              <iframe width="100%" height="315" src="https://www.youtube.com/embed/_xgFYqH2vx4"
+                                 frameborder="0"
+                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                 allowfullscreen></iframe>
+                           </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 form-section-start" style="background-color: white;">
-                    <script
-                            src="https://code.jquery.com/jquery-2.2.4.min.js"
-                            integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-                            crossorigin="anonymous"></script>
-                    <script id="bx24_form_inline" data-skip-moving="true">
+                     </div>
+                  </div>
+                  <div class="col-sm-6 form-section-start" style="background-color: white;">
+                     <script
+                        src="https://code.jquery.com/jquery-2.2.4.min.js"
+                        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+                        crossorigin="anonymous"></script>
+                     <script id="bx24_form_inline" data-skip-moving="true">
                         (function (w, d, u, b) {
                             w['Bitrix24FormObject'] = b;
                             w[b] = w[b] || function () {
@@ -622,328 +601,345 @@
                             var h = d.getElementsByTagName('script')[0];
                             h.parentNode.insertBefore(s, h);
                         })(window, document, 'https://buenocrm.com/lo.js', 'b24form');
-
+                        
                         b24form({"id": "40", "lang": "la", "sec": "vvoksf", "type": "inline"});
-                    </script>
-                </div>
+                     </script>
+                  </div>
+               </div>
             </div>
-        </div>
-    </section>
-
-    <section class="client-review-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-2"></div>
-                <div class="col-sm-8">
-                    <div class="center">
+         </section>
+         <section class="client-review-section">
+            <div class="container">
+               <div class="row">
+                  <div class="col-sm-2"></div>
+                  <div class="col-sm-8">
+                     <div class="center">
                         <p class="main-head-text">Our Clients Recommend Us!</p>
                         <p class="gray-p-text text-justify">Clients are the most important part of our journey. So
-                            we get our client review seriously. Here we have some of our client reviews about
-                            "Resort Getaway".</p>
-                    </div>
-                </div>
-                <div class="col-sm-2"></div>
+                           we get our client review seriously. Here we have some of our client reviews about
+                           "Resort Getaway".
+                        </p>
+                     </div>
+                  </div>
+                  <div class="col-sm-2"></div>
+               </div>
+               <div class="reviews-section">
+                  <div class="section-intro text-center single-col-max mx-auto mb-5"></div>
+                  <div class="row justify-content-center">
+                     <div class="item col-12 col-lg-6 p-3 mb-4">
+                        <div class="item-inner theme-bg-light rounded p-4">
+                           <blockquote class="quote text-justify comment-font-size">
+                              "The staff at this resort were amazing from the moment you arrive to your departure.
+                              They are attentive to your every need and go above and beyond to make sure your stay
+                              is memorable. I highly recommend that you stay here."
+                           </blockquote>
+                           <!--//item-->
+                           <div class="source media flex-column flex-md-row align-items-center">
+                              <div class="mr-md-3 review-user-one review-user"></div>
+                              <div class="source-info media-body text-center text-md-left">
+                                 <div class="source-name">Maria B.</div>
+                                 <div class="soure-title">Verified Client</div>
+                                 <div class="soure-title">
+                                    <div class="center-t">
+                                       <i class="fab fa-tripadvisor"></i>
+                                       <i class="fas fa-star theme-colored"></i>
+                                       <i class="fas fa-star theme-colored"></i>
+                                       <i class="fas fa-star theme-colored"></i>
+                                       <i class="fas fa-star theme-colored"></i>
+                                       <i class="fas fa-star theme-colored"></i>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <!--//source-->
+                           <div class="icon-holder theme-colored-back"><i class="fas fa-quote-right"></i></div>
+                        </div>
+                        <!--//inner-->
+                     </div>
+                     <!--//item-->
+                     <div class="item col-12 col-lg-6 p-3 mb-4">
+                        <div class="item-inner theme-bg-light rounded p-4">
+                           <blockquote class="quote text-justify comment-font-size">
+                              "I love this place. The pools / restaurants are excellent! The amazing location and
+                              the surrounding jungle walks are great ... great suite ... Gorgeous landscaped
+                              gardens and grounds."
+                           </blockquote>
+                           <!--//item-->
+                           <div class="source media flex-column flex-md-row align-items-center">
+                              <div class="mr-md-3 review-user-two review-user"></div>
+                              <div class="source-info media-body text-center text-md-left">
+                                 <div class="source-name">Carlos L.</div>
+                                 <div class="soure-title">Verified Client</div>
+                                 <div class="soure-title">
+                                    <div class="center-t">
+                                       <i class="fab fa-tripadvisor"></i>
+                                       <i class="fas fa-star theme-colored"></i>
+                                       <i class="fas fa-star theme-colored"></i>
+                                       <i class="fas fa-star theme-colored"></i>
+                                       <i class="fas fa-star theme-colored"></i>
+                                       <i class="fas fa-star theme-colored"></i>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <!--//source-->
+                           <div class="icon-holder theme-colored-back"><i class="fas fa-quote-right"></i></div>
+                        </div>
+                        <!--//inner-->
+                     </div>
+                     <!--//item-->
+                     <div class="item col-12 col-lg-6 p-3 mb-4">
+                        <div class="item-inner theme-bg-light rounded p-4">
+                           <blockquote class="quote text-justify comment-font-size">
+                              "The resort was very clean, the staff were extremely friendly, pleasant, efficient
+                              and helpful. We enjoyed the fun activities by the pool."
+                           </blockquote>
+                           <!--//item-->
+                           <div class="source media flex-column flex-md-row align-items-center">
+                              <div class="mr-md-3 review-user-three review-user"></div>
+                              <div class="source-info media-body text-center text-md-left">
+                                 <div class="source-name">Luis F.</div>
+                                 <div class="soure-title">Verified Client</div>
+                                 <div class="soure-title">
+                                    <div class="center-t">
+                                       <i class="fab fa-tripadvisor"></i>
+                                       <i class="fas fa-star theme-colored"></i>
+                                       <i class="fas fa-star theme-colored"></i>
+                                       <i class="fas fa-star theme-colored"></i>
+                                       <i class="fas fa-star theme-colored"></i>
+                                       <i class="fas fa-star theme-colored"></i>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <!--//source-->
+                           <div class="icon-holder theme-colored-back"><i class="fas fa-quote-right"></i></div>
+                        </div>
+                        <!--//inner-->
+                     </div>
+                     <!--//item-->
+                     <div class="item col-12 col-lg-6 p-3 mb-4">
+                        <div class="item-inner theme-bg-light rounded p-4">
+                           <blockquote class="quote text-justify comment-font-size">
+                              "Excellent service, all the pools are very clean and the rooms are also very clean,
+                              walking day or night in the hotel is wonderful, as it has several places that you
+                              can enjoy seeing. You will feel very comfortable anywhere."
+                           </blockquote>
+                           <!--//item-->
+                           <div class="source media flex-column flex-md-row align-items-center">
+                              <div class="mr-md-3 review-user-four user-t"></div>
+                              <div class="source-info media-body text-center text-md-left">
+                                 <div class="source-name">Luz Helena R.</div>
+                                 <div class="soure-title">Verified Client</div>
+                                 <div class="soure-title">
+                                    <div class="center-t">
+                                       <i class="fab fa-tripadvisor"></i>
+                                       <i class="fas fa-star theme-colored"></i>
+                                       <i class="fas fa-star theme-colored"></i>
+                                       <i class="fas fa-star theme-colored"></i>
+                                       <i class="fas fa-star theme-colored"></i>
+                                       <i class="fas fa-star theme-colored"></i>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <!--//source-->
+                           <div class="icon-holder theme-colored-back"><i class="fas fa-quote-right"></i></div>
+                        </div>
+                        <!--//inner-->
+                     </div>
+                     <!--//item-->
+                  </div>
+                  <!--//row-->
+               </div>
+               <!--//container-->
             </div>
-
-            <div class="reviews-section">
-                <div class="section-intro text-center single-col-max mx-auto mb-5"></div>
-                <div class="row justify-content-center">
-                    <div class="item col-12 col-lg-6 p-3 mb-4">
-                        <div class="item-inner theme-bg-light rounded p-4">
-
-                            <blockquote class="quote text-justify comment-font-size">
-                                "The staff at this resort were amazing from the moment you arrive to your departure.
-                                They are attentive to your every need and go above and beyond to make sure your stay
-                                is memorable. I highly recommend that you stay here."
-                            </blockquote><!--//item-->
-                            <div class="source media flex-column flex-md-row align-items-center">
-                                <div class="mr-md-3 review-user-one review-user"></div>
-                                <div class="source-info media-body text-center text-md-left">
-                                    <div class="source-name">Maria B.</div>
-                                    <div class="soure-title">Verified Client</div>
-                                    <div class="soure-title">
-                                        <div class="center-t">
-                                            <i class="fab fa-tripadvisor"></i>
-                                            <i class="fas fa-star theme-colored"></i>
-                                            <i class="fas fa-star theme-colored"></i>
-                                            <i class="fas fa-star theme-colored"></i>
-                                            <i class="fas fa-star theme-colored"></i>
-                                            <i class="fas fa-star theme-colored"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div><!--//source-->
-                            <div class="icon-holder theme-colored-back"><i class="fas fa-quote-right"></i></div>
-                        </div><!--//inner-->
-                    </div><!--//item-->
-                    <div class="item col-12 col-lg-6 p-3 mb-4">
-                        <div class="item-inner theme-bg-light rounded p-4">
-                            <blockquote class="quote text-justify comment-font-size">
-                                "I love this place. The pools / restaurants are excellent! The amazing location and
-                                the surrounding jungle walks are great ... great suite ... Gorgeous landscaped
-                                gardens and grounds."
-                            </blockquote><!--//item-->
-                            <div class="source media flex-column flex-md-row align-items-center">
-                                <div class="mr-md-3 review-user-two review-user"></div>
-                                <div class="source-info media-body text-center text-md-left">
-                                    <div class="source-name">Carlos L.</div>
-                                    <div class="soure-title">Verified Client</div>
-                                    <div class="soure-title">
-                                        <div class="center-t">
-                                            <i class="fab fa-tripadvisor"></i>
-                                            <i class="fas fa-star theme-colored"></i>
-                                            <i class="fas fa-star theme-colored"></i>
-                                            <i class="fas fa-star theme-colored"></i>
-                                            <i class="fas fa-star theme-colored"></i>
-                                            <i class="fas fa-star theme-colored"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div><!--//source-->
-                            <div class="icon-holder theme-colored-back"><i class="fas fa-quote-right"></i></div>
-                        </div><!--//inner-->
-                    </div><!--//item-->
-                    <div class="item col-12 col-lg-6 p-3 mb-4">
-                        <div class="item-inner theme-bg-light rounded p-4">
-                            <blockquote class="quote text-justify comment-font-size">
-                                "The resort was very clean, the staff were extremely friendly, pleasant, efficient
-                                and helpful. We enjoyed the fun activities by the pool."
-                            </blockquote><!--//item-->
-                            <div class="source media flex-column flex-md-row align-items-center">
-                                <div class="mr-md-3 review-user-three review-user"></div>
-                                <div class="source-info media-body text-center text-md-left">
-                                    <div class="source-name">Luis F.</div>
-                                    <div class="soure-title">Verified Client</div>
-                                    <div class="soure-title">
-                                        <div class="center-t">
-                                            <i class="fab fa-tripadvisor"></i>
-                                            <i class="fas fa-star theme-colored"></i>
-                                            <i class="fas fa-star theme-colored"></i>
-                                            <i class="fas fa-star theme-colored"></i>
-                                            <i class="fas fa-star theme-colored"></i>
-                                            <i class="fas fa-star theme-colored"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div><!--//source-->
-                            <div class="icon-holder theme-colored-back"><i class="fas fa-quote-right"></i></div>
-                        </div><!--//inner-->
-                    </div><!--//item-->
-                    <div class="item col-12 col-lg-6 p-3 mb-4">
-                        <div class="item-inner theme-bg-light rounded p-4">
-                            <blockquote class="quote text-justify comment-font-size">
-                                "Excellent service, all the pools are very clean and the rooms are also very clean,
-                                walking day or night in the hotel is wonderful, as it has several places that you
-                                can enjoy seeing. You will feel very comfortable anywhere."
-                            </blockquote><!--//item-->
-                            <div class="source media flex-column flex-md-row align-items-center">
-                                <div class="mr-md-3 review-user-four user-t"></div>
-                                <div class="source-info media-body text-center text-md-left">
-                                    <div class="source-name">Luz Helena R.</div>
-                                    <div class="soure-title">Verified Client</div>
-                                    <div class="soure-title">
-                                        <div class="center-t">
-                                            <i class="fab fa-tripadvisor"></i>
-                                            <i class="fas fa-star theme-colored"></i>
-                                            <i class="fas fa-star theme-colored"></i>
-                                            <i class="fas fa-star theme-colored"></i>
-                                            <i class="fas fa-star theme-colored"></i>
-                                            <i class="fas fa-star theme-colored"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div><!--//source-->
-                            <div class="icon-holder theme-colored-back"><i class="fas fa-quote-right"></i></div>
-                        </div><!--//inner-->
-                    </div><!--//item-->
-                </div><!--//row-->
-            </div><!--//container-->
-
-        </div>
-    </section>
-
-    <section class="footer-index" style="padding-top: 20px;">
-        <div class="container py-3">
-            <div class="mid mb-5">
-                <h2 class="text-white">Contact Numbers by Country</h2>
-            </div>
-            <div class="row">
-                <div class="col-sm-3">
-                    <ul class="list-unstyled">
+         </section>
+         <section class="footer-index" style="padding-top: 20px;">
+            <div class="container py-3">
+               <div class="mid mb-5">
+                  <h2 class="text-white">Contact Numbers by Country</h2>
+               </div>
+               <div class="row">
+                  <div class="col-sm-3">
+                     <ul class="list-unstyled">
                         <li>
-                            <a href="tel:1159844025">Argentina:&nbsp;&nbsp;(11) 598-44025</a>
+                           <a href="tel:1159844025">Argentina:&nbsp;&nbsp;(11) 598-44025</a>
                         </li>
                         <li>
-                            <a href="tel:40018796">Costa Rica:&nbsp;&nbsp;400-18796</a>
+                           <a href="tel:40018796">Costa Rica:&nbsp;&nbsp;400-18796</a>
                         </li>
                         <li>
-                            <a href="tel:0017867065249">Honduras:&nbsp;&nbsp;(001) 786-706-5249</a>
+                           <a href="tel:0017867065249">Honduras:&nbsp;&nbsp;(001) 786-706-5249</a>
                         </li>
                         <li>
-                            <a href="tel:0017867065249">Paraguay:&nbsp;&nbsp;(001) 786-706-5249</a>
+                           <a href="tel:0017867065249">Paraguay:&nbsp;&nbsp;(001) 786-706-5249</a>
                         </li>
                         <li>
-                            <a href="tel:+17867065249">United States:&nbsp;&nbsp;1 786-706-5249</a>
+                           <a href="tel:+17867065249">United States:&nbsp;&nbsp;1 786-706-5249</a>
                         </li>
-                    </ul>
-                </div>
-                <div class="col-sm-3">
-                    <ul class="list-unstyled">
+                     </ul>
+                  </div>
+                  <div class="col-sm-3">
+                     <ul class="list-unstyled">
                         <li>
-                            <a href="tel:0017867065249">Bolivia:&nbsp;&nbsp;(001) 786-706-5249</a>
-                        </li>
-                        <li>
-                            <a href="tel:8299463769">Dominican Rep:&nbsp;&nbsp;(829) 946-3769</a>
+                           <a href="tel:0017867065249">Bolivia:&nbsp;&nbsp;(001) 786-706-5249</a>
                         </li>
                         <li>
-                            <a href="tel:0017867065249">Guatemala:&nbsp;&nbsp;(001) 786-706-5249</a>
+                           <a href="tel:8299463769">Dominican Rep:&nbsp;&nbsp;(829) 946-3769</a>
                         </li>
                         <li>
-                            <a href="tel:1507832760">Panamá:&nbsp;&nbsp;+1 507-832-760</a>
+                           <a href="tel:0017867065249">Guatemala:&nbsp;&nbsp;(001) 786-706-5249</a>
                         </li>
                         <li>
-                            <a href="tel:0017867065249">Uruguay:&nbsp;&nbsp;(001) 786-706-5249</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-sm-3">
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="tel:232104775">Chile:&nbsp;&nbsp;(23) 210-4775</a>
+                           <a href="tel:1507832760">Panamá:&nbsp;&nbsp;+1 507-832-760</a>
                         </li>
                         <li>
-                            <a href="tel:0017867065249">Ecuador:&nbsp;&nbsp;(001) 786-706-5249</a>
+                           <a href="tel:0017867065249">Uruguay:&nbsp;&nbsp;(001) 786-706-5249</a>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="col-sm-3">
+                     <ul class="list-unstyled">
+                        <li>
+                           <a href="tel:232104775">Chile:&nbsp;&nbsp;(23) 210-4775</a>
                         </li>
                         <li>
-                            <a href="tel:0017867065249">Nicaragua:&nbsp;&nbsp;(001) 786-706-5249</a>
+                           <a href="tel:0017867065249">Ecuador:&nbsp;&nbsp;(001) 786-706-5249</a>
                         </li>
                         <li>
-                            <a href="tel:17058267">Perú:&nbsp;&nbsp;(1) 705-8267</a>
+                           <a href="tel:0017867065249">Nicaragua:&nbsp;&nbsp;(001) 786-706-5249</a>
                         </li>
                         <li>
-                            <a href="tel:0017867065249">Venezuela:&nbsp;&nbsp;(001) 786-706-5249</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-sm-3">
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="tel:0315141397">Colombia:&nbsp;&nbsp;(031) 514-1397</a>
+                           <a href="tel:17058267">Perú:&nbsp;&nbsp;(1) 705-8267</a>
                         </li>
                         <li>
-                            <a href="tel:21361298">El Salvador:&nbsp;&nbsp;213-61298</a>
+                           <a href="tel:0017867065249">Venezuela:&nbsp;&nbsp;(001) 786-706-5249</a>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="col-sm-3">
+                     <ul class="list-unstyled">
+                        <li>
+                           <a href="tel:0315141397">Colombia:&nbsp;&nbsp;(031) 514-1397</a>
                         </li>
                         <li>
-                            <a href="tel:5546319967">México:&nbsp;&nbsp;(55) 463-19967</a>
+                           <a href="tel:21361298">El Salvador:&nbsp;&nbsp;213-61298</a>
                         </li>
                         <li>
-                            <a href="tel:0017867065249">Puerto Rico:&nbsp;&nbsp;(001) 786-706-5249</a>
+                           <a href="tel:5546319967">México:&nbsp;&nbsp;(55) 463-19967</a>
                         </li>
-                    </ul>
-                </div>
-            </div>
-
-            <hr style="border-top: 1px solid #FFFFFF;">
-
-            <div class="row">
-                <div class="col-sm-4">
-                    <!-- <h5>Contact us</h5> -->
-                    <ul class="list-unstyled">
+                        <li>
+                           <a href="tel:0017867065249">Puerto Rico:&nbsp;&nbsp;(001) 786-706-5249</a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <hr style="border-top: 1px solid #FFFFFF;">
+               <div class="row">
+                  <div class="col-sm-4">
+                     <!-- <h5>Contact us</h5> -->
+                     <ul class="list-unstyled">
                         <li><a><i class="fa fa-location-arrow" aria-hidden="true"></i>&nbsp;Millenia Boulevard
-                            Office Center, <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4700 Millenia Boulevard Suite 175,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Orlando,
-                            FL 32839</a></li>
+                           Office Center, <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4700 Millenia Boulevard Suite 175,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Orlando,
+                           FL 32839</a>
+                        </li>
                         <li><a><i class="fa fa-location-arrow" aria-hidden="true"></i>&nbsp;Av. Sayil esquina con
-                            Av. Savigna <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Malecón Tajamar Piso 11,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            Cancun, 77503</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-4">
-                    <!-- <h5>Contact us</h5> -->
-                    <ul class="list-unstyled">
+                           Av. Savigna <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Malecón Tajamar Piso 11,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                           Cancun, 77503</a>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="col-sm-4">
+                     <!-- <h5>Contact us</h5> -->
+                     <ul class="list-unstyled">
                         <li><a href="tel:+17867065249"><i class="fa fa-phone-square" aria-hidden="true"></i>&nbsp; 1
-                            786-706-5249</a></li>
+                           786-706-5249</a>
+                        </li>
                         <li><a href="mailto:info@resortgetaway.com?cc=other@domain.com"><i class="fa fa-envelope"
-                                                                                           aria-hidden="true"></i>&nbsp;
-                            info@resortgetaway.com</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-4">
-                    <div class="center">
+                           aria-hidden="true"></i>&nbsp;
+                           info@resortgetaway.com</a>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="col-sm-4">
+                     <div class="center">
                         <!-- <h5>Follow Us</h5> -->
                         <ul class="social-network social-circle">
-                            <li><a href="https://www.facebook.com/Resort-Getaway-101142228322560" target="_blank"
-                                   class="icoFacebook" title="Facebook"><i class="fab fa-facebook-f"
-                                                                           style="color: #237db2;"></i></a></li>
-                            <li><a href="https://www.instagram.com/resortgetaway/" target="_blank"
-                                   class="icoInstagram" title="Instagram"><i class="fab fa-instagram"
-                                                                             style="color: #237db2;"></i></a></li>
-                            <!-- <li><a class="icoLinkedin" title="youtube"><i class="fab fa-youtube" style="color: #237db2;"></i></a></li> -->
+                           <li><a href="https://www.facebook.com/Resort-Getaway-101142228322560" target="_blank"
+                              class="icoFacebook" title="Facebook"><i class="fab fa-facebook-f"
+                              style="color: #237db2;"></i></a></li>
+                           <li><a href="https://www.instagram.com/resortgetaway/" target="_blank"
+                              class="icoInstagram" title="Instagram"><i class="fab fa-instagram"
+                              style="color: #237db2;"></i></a></li>
+                           <!-- <li><a class="icoLinkedin" title="youtube"><i class="fab fa-youtube" style="color: #237db2;"></i></a></li> -->
                         </ul>
-                        <a href="https://resortgetaway.com/en/terminos-condiciones.php"><p class="text-center">TERMS
-                            AND CONDITIONS</p></a>
+                        <a href="https://resortgetaway.com/en/terminos-condiciones.php">
+                           <p class="text-center">TERMS
+                              AND CONDITIONS
+                           </p>
+                        </a>
                         <a style="font-size: 14px;">Bueno incorporated DBA Resort Gateway</a>
-                    </div>
-                </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-12 copy">
+                     <p class="text-center">&copy; Resortgetway.com 2020 All Rights Reserved Privacy Policy</p>
+                  </div>
+               </div>
+               </center>
             </div>
-            <div class="row">
-                <div class="col-md-12 copy">
-                    <p class="text-center">&copy; Resortgetway.com 2020 All Rights Reserved Privacy Policy</p>
-                </div>
-            </div>
-            </center>
-        </div><!--//container-->
-    </section><!--//author-section-->
-</div>
-</div>
-
-</body>
+            <!--//container-->
+         </section>
+         <!--//author-section-->
+      </div>
+      </div>
+   </body>
 </html>
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <script defer src="assets/fonts/fontawesome-free-5.14.0-web/js/all.min.js"></script>
-
 <script type="text/javascript">
-
-    package_list = [
-        {
-            video_link: 'https://www.youtube.com/embed/kvLZhGtE0lY',
-            video_head_name: 'Krystal Resort Cancun | Cancun, Mexico'
-        },
-        {
-            video_link: 'https://www.youtube.com/embed/jEnd8JIMii4',
-            video_head_name: '5 Star Cancun Villa Resort | Cancun, Mexico'
-        },
-        {
-            video_link: 'https://www.youtube.com/embed/pFOfJoDpYw0',
-            video_head_name: 'Omni Cancun Resort | Cancun, Mexico'
-        },
-        {
-            video_link: 'https://www.youtube.com/embed/CXyJbrSM3r8',
-            video_head_name: '5 Star Cabo Beach Resort | Cancun, Mexico'
-        }
-    ];
-
-    $('.card-click').click(function () {
-        url_set = package_list[this.id - 1].video_link;
-        $('.video_iframe_course_model').attr('src', url_set);
-        $('.head_name_model').text(package_list[this.id - 1].video_head_name);
-    });
-
-    function video_play_close(name_course) {
-        $('.close_' + name_course).click(function () {
-            var leg = $('.video_iframe_' + name_course).attr("src");
-            $('.video_iframe_' + name_course).attr("src", leg);
-        });
-    }
-
-    video_play_close('course_model');
-
-    $(".btn-form-navigation").click(function () {
-        $('html,body').animate({
-                scrollTop: $(".form-section-start").offset().top
-            },
-            'slow');
-    });
-
+   package_list = [
+       {
+           video_link: 'https://www.youtube.com/embed/kvLZhGtE0lY',
+           video_head_name: 'Krystal Resort Cancun | Cancun, Mexico'
+       },
+       {
+           video_link: 'https://www.youtube.com/embed/jEnd8JIMii4',
+           video_head_name: '5 Star Cancun Villa Resort | Cancun, Mexico'
+       },
+       {
+           video_link: 'https://www.youtube.com/embed/pFOfJoDpYw0',
+           video_head_name: 'Omni Cancun Resort | Cancun, Mexico'
+       },
+       {
+           video_link: 'https://www.youtube.com/embed/CXyJbrSM3r8',
+           video_head_name: '5 Star Cabo Beach Resort | Cancun, Mexico'
+       }
+   ];
+   
+   $('.card-click').click(function () {
+       url_set = package_list[this.id - 1].video_link;
+       $('.video_iframe_course_model').attr('src', url_set);
+       $('.head_name_model').text(package_list[this.id - 1].video_head_name);
+   });
+   
+   function video_play_close(name_course) {
+       $('.close_' + name_course).click(function () {
+           var leg = $('.video_iframe_' + name_course).attr("src");
+           $('.video_iframe_' + name_course).attr("src", leg);
+       });
+   }
+   
+   video_play_close('course_model');
+   
+   $(".btn-form-navigation, .btn-form-navigation-home").click(function () {
+       $('html,body').animate({
+               scrollTop: $(".form-section-start").offset().top
+           },
+           'slow');
+   });
+   
 </script>
