@@ -736,13 +736,16 @@ video.fillWidth {
 }
 
 .btn-form-navigation-home{
-  background-image: -webkit-linear-gradient(left,#1976bc 0%,#8dc645 100%) !important;
+    border-radius: 16px !important;
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.4) 100%) !important;
+    /*background-color: rgba(0, 0, 0, 0.88);*/
   color: white !important;
   width: 100%;
+    transition-duration: 200ms !important;
 }
 
 .btn-form-navigation-home:hover{
-  background-image: -webkit-linear-gradient(left,white 0%,white 100%) !important;
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.6) 100%) !important;
   color: #20c997 !important;
 }
 
