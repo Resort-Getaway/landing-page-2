@@ -736,12 +736,12 @@ video.fillWidth {
 }
 
 .btn-form-navigation-home{
-  background-image: -webkit-linear-gradient(left,#1976bc 0%,#8dc645 100%);
+  background-image: -webkit-linear-gradient(left,#1976bc 0%,#8dc645 100%) !important;
   color: white !important;
   width: 100%;
 }
 
 .btn-form-navigation-home:hover{
-  background-color: white !important;
+  background-image: -webkit-linear-gradient(left,white 0%,white 100%) !important;
   color: #20c997 !important;
 }
