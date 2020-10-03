@@ -755,4 +755,14 @@ video.fillWidth {
       width: 60% !important;
       margin: 30px auto;
   }
+  .home-hero-back-img{
+    background-image: url('../images/backgrounds/header.svg'); 
+    background-size: "cover";
+  }
+}
+
+@media (min-width: 576px){
+  .home-hero-back-img{
+    background-image: url('../images/backgrounds/header-phone.svg'); 
+  }
 }
