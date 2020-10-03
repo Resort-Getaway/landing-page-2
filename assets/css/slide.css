@@ -763,6 +763,6 @@ video.fillWidth {
 
 @media (max-width: 576px){
   .home-hero-back-img{
-    background-image: url('../images/backgrounds/header-phone.svg'); 
+    background-image: url('../images/backgrounds/header-phone.jpg'); 
   }
 }
