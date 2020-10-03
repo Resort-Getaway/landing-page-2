@@ -736,12 +736,12 @@ video.fillWidth {
 }
 
 .btn-form-navigation-home{
-    border-radius: 16px !important;
+  border-radius: 16px !important;
   background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.4) 100%) !important;
     /*background-color: rgba(0, 0, 0, 0.88);*/
   color: white !important;
   width: 100%;
-    transition-duration: 200ms !important;
+  transition-duration: 200ms !important;
 }
 
 .btn-form-navigation-home:hover{
@@ -754,5 +754,23 @@ video.fillWidth {
       max-width: 100% !important;
       width: 60% !important;
       margin: 30px auto;
+  }
+  .home-hero-back-img{
+    background-image: url('../images/backgrounds/header.svg'); 
+    background-size: cover ;
+  }
+}
+
+@media (max-width: 576px){
+  .home-hero-back-img{
+    background-image: url('../images/backgrounds/header-phone.jpg');
+    background-size: cover; 
+  }
+  .main-p-tag-phone{
+    background-color: #f0ba4c;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+}    
   }
 }
