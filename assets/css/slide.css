@@ -28,6 +28,10 @@ body{
   .subscribe-lap{
     display: block !important;
   }
+  .footer-section{
+        max-width: 1236px !important;
+        width: 1215px !important;
+  }
 }
 
 .slide-image {
