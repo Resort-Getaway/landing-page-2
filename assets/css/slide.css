@@ -773,3 +773,10 @@ video.fillWidth {
     font-size: 20px;
   }
 }
+
+  .reopenDiv{
+    right: 0px !important;
+      top: auto !important;
+      bottom: 17.1em !important;
+      background: #b21206 !important;   
+  }
