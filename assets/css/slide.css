@@ -784,3 +784,46 @@ video.fillWidth {
       bottom: 17.1em !important;
       background: #b21206 !important;   
   }
+
+.sign-up-hero-back-img{
+    background-image: -webkit-linear-gradient(left,#1976bc 0%,#8dc645 100%);
+}
+
+.sign-up-welcome{
+  font-size: 20px;
+  font-weight: 700; 
+  color: white;
+}
+
+.modal-header-div{
+  padding: 15px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.sign-up-p-black{
+  font-size: 20px;
+  font-weight: 700;   
+}
+
+.fb {
+  background-color: #3B5998 !important;
+  color: white !important;
+  opacity: 0.85;
+}
+
+.google {
+  background-color: #dd4b39 !important;
+  color: white !important;
+  opacity: 0.85;
+}
+
+.btn-social{
+  font-weight: 600;
+  padding: 0.875rem 2.5rem;
+  transition: all 0.4s ease-in-out;
+  border-radius: 2rem;
+  border: none;
+  display: block;
+  margin: 10px;
+  text-decoration: none !important;
+}
