@@ -775,6 +775,9 @@ video.fillWidth {
   margin: 10px 12px;
 }
 
+.phone-layout-sign-in hr{
+  display: none;
+}
 }
 
 @media (max-width: 576px){
