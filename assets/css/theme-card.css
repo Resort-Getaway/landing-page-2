@@ -24946,24 +24946,6 @@ button.pswp__button.pswp__button--arrow--right:before {
     }
 }
 
-/* Gutenberg */
-.wp-block-separator,
-hr {
-    margin: 1em auto;
-    max-width: 100px;
-}
-.wp-block-separator.is-style-wide,
-hr.is-style-wide {
-    max-width: 100%;
-}
-.wp-block-separator:not(.is-style-wide):not(.is-style-dots),
-hr:not(.is-style-wide):not(.is-style-dots) {
-    border-bottom: 1px solid #8f98a1;
-}
-.wp-block-gallery {
-    margin: 0;
-}
-
 /* Paragraph */
 p.has-drop-cap:not(:focus):first-letter {
     float: left;
