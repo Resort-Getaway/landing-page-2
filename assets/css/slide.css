@@ -763,6 +763,9 @@ video.fillWidth {
     background-image: url('../images/backgrounds/header.svg'); 
     background-size: cover ;
   }
+  .modal-content-sign-in{
+    max-width: 400px !important;
+  }
 }
 
 @media (max-width: 576px){
@@ -860,8 +863,12 @@ video.fillWidth {
     border-style: solid;
 }
 
-.g-recaptcha{
+.g-recaptcha-sign-up{
   margin: 10px 20px;
+}
+
+.g-recaptcha-sign-in{
+  margin: 10px 12px;
 }
 
 .submit-btn-login{
@@ -909,4 +916,16 @@ video.fillWidth {
 }
 .flt {
     float: left;
+}
+
+.margin-bottom-sign-in{
+  margin: 15px;
+}
+
+.btn-social, .send-to-join-now, .forgot-password{
+  cursor: pointer;
+}
+
+.send-to-join-now, .forgot-password{
+  color: #23527c !important;
 }
