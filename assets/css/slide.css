@@ -766,6 +766,15 @@ video.fillWidth {
   .modal-content-sign-in{
     max-width: 400px !important;
   }
+
+.g-recaptcha-sign-up{
+  margin: 10px 20px;
+}
+
+.g-recaptcha-sign-in{
+  margin: 10px 12px;
+}
+
 }
 
 @media (max-width: 576px){
@@ -863,14 +872,6 @@ video.fillWidth {
     border-style: solid;
 }
 
-.g-recaptcha-sign-up{
-  margin: 10px 20px;
-}
-
-.g-recaptcha-sign-in{
-  margin: 10px 12px;
-}
-
 .submit-btn-login{
    background-color: #86c14c !important;
   color: white !important;
@@ -928,4 +929,8 @@ video.fillWidth {
 
 .send-to-join-now, .forgot-password{
   color: #23527c !important;
+}
+
+.modal {
+  overflow-y:auto !important;
 }
