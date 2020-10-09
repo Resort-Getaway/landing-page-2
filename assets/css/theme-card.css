@@ -297,7 +297,7 @@ input[type="file"]::-webkit-file-upload-button {
     border-radius: 3px;
 }
 input[type="file"]::-webkit-file-upload-button:hover {
-    background: #8dc645 !important;
+    background: #0983ad !important;
     -webkit-box-shadow: 0 3px 10px rgba(24,24,24,.15);
     box-shadow: 0 3px 10px rgba(24,24,24,.15);
 }
@@ -327,7 +327,7 @@ input[type="file"]::-ms-browse {
     border-radius: 3px;
 }
 input[type="file"]::-ms-browse:hover {
-    background: #8dc645 !important;
+    background: #0983ad !important;
     -webkit-box-shadow: 0 3px 10px rgba(24,24,24,.15);
     box-shadow: 0 3px 10px rgba(24,24,24,.15);
 }
@@ -436,9 +436,9 @@ select {
     display: block;
     height: 2px;
     width: 2em;
-    background: -webkit-linear-gradient(left,#fff 0%,#8dc645 100%);
-    background: -moz-linear-gradient(left,#fff 0%,#8dc645 100%);
-    background: linear-gradient(to right,#fff 0%,#8dc645 100%);
+    background: -webkit-linear-gradient(left,#fff 0%,#0983ad 100%);
+    background: -moz-linear-gradient(left,#fff 0%,#0983ad 100%);
+    background: linear-gradient(to right,#fff 0%,#0983ad 100%);
     position: absolute;
     left: 0;
     bottom: .5em;
@@ -782,9 +782,9 @@ blockquote b {
 blockquote:after {
     display: block;
     height: .75rem;
-    background: -webkit-linear-gradient(left,#1976bc 0%,#8dc645 100%);
-    background: -moz-linear-gradient(left,#1976bc 0%,#8dc645 100%);
-    background: linear-gradient(to right,#1976bc 0%,#8dc645 100%);
+    background: -webkit-linear-gradient(left,#113e6d 0%,#0983ad 100%);
+    background: -moz-linear-gradient(left,#113e6d 0%,#0983ad 100%);
+    background: linear-gradient(to right,#113e6d 0%,#0983ad 100%);
     content: "";
     position: absolute;
     top: 0;
@@ -792,9 +792,9 @@ blockquote:after {
     right: 15%;
 }
 .btReverseGradient blockquote:after {
-    background: -webkit-linear-gradient(left,#8dc645 0%,#1976bc 100%);
-    background: -moz-linear-gradient(left,#8dc645 0%,#1976bc 100%);
-    background: linear-gradient(to right,#8dc645 0%,#1976bc 100%);
+    background: -webkit-linear-gradient(left,#0983ad 0%,#113e6d 100%);
+    background: -moz-linear-gradient(left,#0983ad 0%,#113e6d 100%);
+    background: linear-gradient(to right,#0983ad 0%,#113e6d 100%);
 }
 .bt_bb_color_scheme_11 blockquote:after,
 .bt_bb_color_scheme_12 blockquote:after,
@@ -1257,8 +1257,8 @@ body.rtl {
     font-size: 6px;
     position: relative;
     border: 2px solid transparent;
-    border-top: 2px solid #1976bc !important;
-    border-bottom: 2px solid #1976bc !important;
+    border-top: 2px solid #113e6d !important;
+    border-bottom: 2px solid #113e6d !important;
     border-radius: 50%;
     -webkit-animation: btLoader 2s infinite linear;
     -moz-animation: btLoader 2s infinite linear;
@@ -1277,8 +1277,8 @@ body.rtl {
     animation: btLoader 5s infinite linear;
     border-radius: 50%;
     border: 2px solid transparent;
-    border-left: 2px solid #8dc645 !important;
-    border-right: 2px solid #8dc645 !important;
+    border-left: 2px solid #0983ad !important;
+    border-right: 2px solid #0983ad !important;
 }
 .btLoader p:empty {
     display: none;
@@ -1432,9 +1432,9 @@ body.rtl {
     position: absolute;
     display: block;
     content: "";
-    background: -webkit-linear-gradient(bottom,#8dc645 0%,#1976bc 90%);
-    background: -moz-linear-gradient(bottom,#8dc645 0%,#1976bc 90%);
-    background: linear-gradient(to top,#8dc645 0%,#1976bc 90%);
+    background: -webkit-linear-gradient(bottom,#0983ad 0%,#113e6d 90%);
+    background: -moz-linear-gradient(bottom,#0983ad 0%,#113e6d 90%);
+    background: linear-gradient(to top,#0983ad 0%,#113e6d 90%);
     left: 0;
     top: 0;
     right: 0;
@@ -2470,9 +2470,9 @@ body.btBelowMenu .btPageHeadline .bt_bb_port {
     width: 3em;
     height: 2px;
     position: absolute;
-    background: -webkit-linear-gradient(left,#1976bc 0%,#8dc645 100%);
-    background: -moz-linear-gradient(left,#1976bc 0%,#8dc645 100%);
-    background: linear-gradient(to right,#1976bc 0%,#8dc645 100%);
+    background: -webkit-linear-gradient(left,#113e6d 0%,#0983ad 100%);
+    background: -moz-linear-gradient(left,#113e6d 0%,#0983ad 100%);
+    background: linear-gradient(to right,#113e6d 0%,#0983ad 100%);
     -webkit-transform: scaleX(0);
     -moz-transform: scaleX(0);
     -ms-transform: scaleX(0);
@@ -2494,9 +2494,9 @@ body.btBelowMenu .btPageHeadline .bt_bb_port {
     transform-origin: 100% 0;
 }
 .btReverseGradient.btMenuHorizontal .menuPort ul ul li > a:before {
-    background: -webkit-linear-gradient(left,#8dc645 0%,#1976bc 100%);
-    background: -moz-linear-gradient(left,#8dc645 0%,#1976bc 100%);
-    background: linear-gradient(to right,#8dc645 0%,#1976bc 100%);
+    background: -webkit-linear-gradient(left,#0983ad 0%,#113e6d 100%);
+    background: -moz-linear-gradient(left,#0983ad 0%,#113e6d 100%);
+    background: linear-gradient(to right,#0983ad 0%,#113e6d 100%);
 }
 .btMenuHorizontal .menuPort ul ul li.on > a:before {
     -webkit-transform: scaleX(1);
@@ -2615,9 +2615,9 @@ html.touch .rtl.btMenuHorizontal .menuPort > nav > ul > li.menu-item-has-childre
     -moz-transform: scaleX(0);
     -ms-transform: scaleX(0);
     transform: scaleX(0);
-    background: -webkit-linear-gradient(left,#1976bc 0%,#8dc645 100%);
-    background: -moz-linear-gradient(left,#1976bc 0%,#8dc645 100%);
-    background: linear-gradient(to right,#1976bc 0%,#8dc645 100%);
+    background: -webkit-linear-gradient(left,#113e6d 0%,#0983ad 100%);
+    background: -moz-linear-gradient(left,#113e6d 0%,#0983ad 100%);
+    background: linear-gradient(to right,#113e6d 0%,#0983ad 100%);
     top: auto;
     height: 2px;
 }
@@ -2626,9 +2626,9 @@ html.touch .rtl.btMenuHorizontal .menuPort > nav > ul > li.menu-item-has-childre
     bottom: 5px;
 }
 .btReverseGradient.btMenuHorizontal .menuPort > nav > ul > li > a:after {
-    background: -webkit-linear-gradient(left,#8dc645 0%,#1976bc 100%);
-    background: -moz-linear-gradient(left,#8dc645 0%,#1976bc 100%);
-    background: linear-gradient(to right,#8dc645 0%,#1976bc 100%);
+    background: -webkit-linear-gradient(left,#0983ad 0%,#113e6d 100%);
+    background: -moz-linear-gradient(left,#0983ad 0%,#113e6d 100%);
+    background: linear-gradient(to right,#0983ad 0%,#113e6d 100%);
 }
 .btMenuHorizontal .menuPort > nav > ul > li.on > a,
 .btMenuHorizontal .menuPort > nav > ul > li.current-menu-item > a,
@@ -3252,27 +3252,27 @@ body.btBelowMenu.btMenuHorizontal.btLightDarkHeader .mainHeader.gutter {
 }
 .btAccentLightHeader .btBelowLogoArea a:hover,
 .btAccentLightHeader .topBar a:hover {
-    color: #8dc645;
+    color: #0983ad;
 }
 .btAccentLightHeader .btBelowLogoArea a:hover,
 .btAccentLightHeader .topBar a:hover {
-    color: #8dc645;
+    color: #0983ad;
 }
 .btAccentLightHeader .btBelowLogoArea .btAccentIconWidget.btIconWidget .btIconWidgetIcon,
 .btAccentLightHeader .topBar .btAccentIconWidget.btIconWidget .btIconWidgetIcon {
-    color: #8dc645;
+    color: #0983ad;
 }
 .btAccentLightHeader .btBelowLogoArea a.btIconWidget:hover,
 .btAccentLightHeader .topBar a.btIconWidget:hover {
-    color: #8dc645;
+    color: #0983ad;
 }
 .btAccentLightHeader .btBelowLogoArea .widget_shopping_cart_content .btCartWidgetIcon span.cart-contents,
 .btAccentLightHeader .topBar .widget_shopping_cart_content .btCartWidgetIcon span.cart-contents {
-    background: #8dc645 !important;
+    background: #0983ad !important;
 }
 .btAccentLightHeader .btBelowLogoArea .widget_shopping_cart_content .btCartWidgetIcon:hover,
 .btAccentLightHeader .topBar .widget_shopping_cart_content .btCartWidgetIcon:hover {
-    color: #8dc645 !important;
+    color: #0983ad !important;
 }
 .btAccentLightHeader .btBelowLogoArea .widget_shopping_cart_content .btCartWidgetIcon:hover span.cart-contents,
 .btAccentLightHeader .topBar .widget_shopping_cart_content .btCartWidgetIcon:hover span.cart-contents {
@@ -3292,23 +3292,23 @@ body.btBelowMenu.btMenuHorizontal.btLightDarkHeader .mainHeader.gutter {
 }
 .btAccentDarkHeader .btBelowLogoArea a:hover,
 .btAccentDarkHeader .topBar a:hover {
-    color: #8dc645;
+    color: #0983ad;
 }
 .btAccentDarkHeader .btBelowLogoArea .btAccentIconWidget.btIconWidget .btIconWidgetIcon,
 .btAccentDarkHeader .topBar .btAccentIconWidget.btIconWidget .btIconWidgetIcon {
-    color: #8dc645;
+    color: #0983ad;
 }
 .btAccentDarkHeader .btBelowLogoArea a.btIconWidget:hover,
 .btAccentDarkHeader .topBar a.btIconWidget:hover {
-    color: #8dc645;
+    color: #0983ad;
 }
 .btAccentDarkHeader .btBelowLogoArea .widget_shopping_cart_content .btCartWidgetIcon span.cart-contents,
 .btAccentDarkHeader .topBar .widget_shopping_cart_content .btCartWidgetIcon span.cart-contents {
-    background: #8dc645 !important;
+    background: #0983ad !important;
 }
 .btAccentDarkHeader .btBelowLogoArea .widget_shopping_cart_content .btCartWidgetIcon:hover,
 .btAccentDarkHeader .topBar .widget_shopping_cart_content .btCartWidgetIcon:hover {
-    color: #8dc645 !important;
+    color: #0983ad !important;
 }
 .btAccentDarkHeader .btBelowLogoArea .widget_shopping_cart_content .btCartWidgetIcon:hover span.cart-contents,
 .btAccentDarkHeader .topBar .widget_shopping_cart_content .btCartWidgetIcon:hover span.cart-contents {
@@ -3344,23 +3344,23 @@ body.btBelowMenu.btMenuHorizontal.btLightDarkHeader .mainHeader.gutter {
 }
 .btLightAccentHeader .btLogoArea .topBarInMenu a:hover,
 .btLightAccentHeader .btLogoArea .topBarInLogoArea a:hover {
-    color: #8dc645;
+    color: #0983ad;
 }
 .btLightAccentHeader .btLogoArea .topBarInMenu .btAccentIconWidget.btIconWidget .btIconWidgetIcon,
 .btLightAccentHeader .btLogoArea .topBarInLogoArea .btAccentIconWidget.btIconWidget .btIconWidgetIcon {
-    color: #8dc645;
+    color: #0983ad;
 }
 .btLightAccentHeader .btLogoArea .topBarInMenu a.btIconWidget:hover,
 .btLightAccentHeader .btLogoArea .topBarInLogoArea a.btIconWidget:hover {
-    color: #8dc645;
+    color: #0983ad;
 }
 .btLightAccentHeader .btLogoArea .topBarInMenu .widget_shopping_cart_content .btCartWidgetIcon span.cart-contents,
 .btLightAccentHeader .btLogoArea .topBarInLogoArea .widget_shopping_cart_content .btCartWidgetIcon span.cart-contents {
-    background: #8dc645 !important;
+    background: #0983ad !important;
 }
 .btLightAccentHeader .btLogoArea .topBarInMenu .widget_shopping_cart_content .btCartWidgetIcon:hover,
 .btLightAccentHeader .btLogoArea .topBarInLogoArea .widget_shopping_cart_content .btCartWidgetIcon:hover {
-    color: #8dc645 !important;
+    color: #0983ad !important;
 }
 .btLightAccentHeader .btLogoArea .topBarInMenu .widget_shopping_cart_content .btCartWidgetIcon:hover span.cart-contents,
 .btLightAccentHeader .btLogoArea .topBarInLogoArea .widget_shopping_cart_content .btCartWidgetIcon:hover span.cart-contents {
@@ -3379,13 +3379,13 @@ body.btBelowMenu.btMenuHorizontal.btLightDarkHeader .mainHeader.gutter {
 }
 .btAccentGradientHeader .btLogoArea,
 .btAccentGradientHeader .btVerticalHeaderTop {
-    background-color: #1976bc !important;
+    background-color: #113e6d !important;
     color: #fff;
 }
 .btAccentGradientHeader .btLogoArea {
     position: relative;
-    -webkit-box-shadow: 0 -5px 0 0 #8dc645 inset;
-    box-shadow: 0 -5px 0 0 #8dc645 inset;
+    -webkit-box-shadow: 0 -5px 0 0 #0983ad inset;
+    box-shadow: 0 -5px 0 0 #0983ad inset;
 }
 .btAccentGradientHeader .btLogoArea:before {
     content: "";
@@ -3394,30 +3394,30 @@ body.btBelowMenu.btMenuHorizontal.btLightDarkHeader .mainHeader.gutter {
     right: 0;
     bottom: 0;
     height: 5px;
-    background: -webkit-linear-gradient(left,#1976bc 0%,transparent 100%);
-    background: -moz-linear-gradient(left,#1976bc 0%,transparent 100%);
-    background: linear-gradient(to right,#1976bc 0%,transparent 100%);
+    background: -webkit-linear-gradient(left,#113e6d 0%,transparent 100%);
+    background: -moz-linear-gradient(left,#113e6d 0%,transparent 100%);
+    background: linear-gradient(to right,#113e6d 0%,transparent 100%);
     opacity: .85;
 }
 .btAccentGradientHeader .btLogoArea .topBarInMenu a:hover,
 .btAccentGradientHeader .btLogoArea .topBarInLogoArea a:hover {
-    color: #8dc645;
+    color: #0983ad;
 }
 .btAccentGradientHeader .btLogoArea .topBarInMenu .btAccentIconWidget.btIconWidget .btIconWidgetIcon,
 .btAccentGradientHeader .btLogoArea .topBarInLogoArea .btAccentIconWidget.btIconWidget .btIconWidgetIcon {
-    color: #8dc645;
+    color: #0983ad;
 }
 .btAccentGradientHeader .btLogoArea .topBarInMenu a.btIconWidget:hover,
 .btAccentGradientHeader .btLogoArea .topBarInLogoArea a.btIconWidget:hover {
-    color: #8dc645;
+    color: #0983ad;
 }
 .btAccentGradientHeader .btLogoArea .topBarInMenu .widget_shopping_cart_content .btCartWidgetIcon span.cart-contents,
 .btAccentGradientHeader .btLogoArea .topBarInLogoArea .widget_shopping_cart_content .btCartWidgetIcon span.cart-contents {
-    background: #8dc645 !important;
+    background: #0983ad !important;
 }
 .btAccentGradientHeader .btLogoArea .topBarInMenu .widget_shopping_cart_content .btCartWidgetIcon:hover,
 .btAccentGradientHeader .btLogoArea .topBarInLogoArea .widget_shopping_cart_content .btCartWidgetIcon:hover {
-    color: #8dc645 !important;
+    color: #0983ad !important;
 }
 .btAccentGradientHeader .btLogoArea .topBarInMenu .widget_shopping_cart_content .btCartWidgetIcon:hover span.cart-contents,
 .btAccentGradientHeader .btLogoArea .topBarInLogoArea .widget_shopping_cart_content .btCartWidgetIcon:hover span.cart-contents {
@@ -3439,15 +3439,15 @@ body.btBelowMenu.btMenuHorizontal.btLightDarkHeader .mainHeader.gutter {
 }
 .btAlternateGradientHeader .btLogoArea,
 .btAlternateGradientHeader .btVerticalHeaderTop {
-    background: -webkit-linear-gradient(left,#1976bc 0%,#8dc645 100%) !important;
-    background: -moz-linear-gradient(left,#1976bc 0%,#8dc645 100%) !important;
-    background: linear-gradient(to right,#1976bc 0%,#8dc645 100%) !important;
+    background: -webkit-linear-gradient(left,#113e6d 0%,#0983ad 100%) !important;
+    background: -moz-linear-gradient(left,#113e6d 0%,#0983ad 100%) !important;
+    background: linear-gradient(to right,#113e6d 0%,#0983ad 100%) !important;
     color: #fff;
 }
 .btAlternateGradientHeader .btLogoArea {
     position: relative;
-    -webkit-box-shadow: 0 -5px 0 0 #1976bc inset;
-    box-shadow: 0 -5px 0 0 #1976bc inset;
+    -webkit-box-shadow: 0 -5px 0 0 #113e6d inset;
+    box-shadow: 0 -5px 0 0 #113e6d inset;
 }
 .btAlternateGradientHeader .btLogoArea:before {
     content: "";
@@ -3456,9 +3456,9 @@ body.btBelowMenu.btMenuHorizontal.btLightDarkHeader .mainHeader.gutter {
     right: 0;
     bottom: 0;
     height: 5px;
-    background: -webkit-linear-gradient(left,#8dc645 0%,transparent 100%);
-    background: -moz-linear-gradient(left,#8dc645 0%,transparent 100%);
-    background: linear-gradient(to right,#8dc645 0%,transparent 100%);
+    background: -webkit-linear-gradient(left,#0983ad 0%,transparent 100%);
+    background: -moz-linear-gradient(left,#0983ad 0%,transparent 100%);
+    background: linear-gradient(to right,#0983ad 0%,transparent 100%);
     opacity: .85;
 }
 .btAlternateGradientHeader .btLogoArea a:hover,
@@ -3721,7 +3721,7 @@ body.btBelowMenu.btMenuHorizontal.btLightDarkHeader .mainHeader.gutter {
 .btLightAccentHeader .btVerticalMenuTrigger:hover .bt_bb_icon:after,
 .btAccentGradientHeader .btVerticalMenuTrigger:hover .bt_bb_icon:after,
 .btAlternateGradientHeader.btMenuVerticalLeft .btVerticalMenuTrigger:hover .bt_bb_icon:after {
-    border-top-color: #8dc645;
+    border-top-color: #0983ad;
 }
 .btAlternateGradientHeader.btMenuVerticalright .btVerticalMenuTrigger:hover .bt_bb_icon:before,
 .btAlternateGradientHeader.btMenuVerticalright .btVerticalMenuTrigger:hover .bt_bb_icon:after {
@@ -3763,7 +3763,7 @@ body.btBelowMenu.btMenuHorizontal.btLightDarkHeader .mainHeader.gutter {
 .btLightAccentHeader .btVerticalMenuTrigger:hover .bt_bb_icon .bt_bb_icon_holder:before,
 .btAccentGradientHeader .btVerticalMenuTrigger:hover .bt_bb_icon .bt_bb_icon_holder:before,
 .btAlternateGradientHeader.btMenuVerticalLeft .btVerticalMenuTrigger:hover .bt_bb_icon .bt_bb_icon_holder:before {
-    border-top-color: #8dc645;
+    border-top-color: #0983ad;
 }
 .btAlternateGradientHeader.btMenuVerticalright .btVerticalMenuTrigger:hover .bt_bb_icon .bt_bb_icon_holder:before {
     border-top-color: #1976bc;
@@ -4765,9 +4765,9 @@ body.btNoSidebar .btPostSingleItemStandard {
     position: absolute;
     display: block;
     content: "";
-    background: -webkit-linear-gradient(bottom,#8dc645 0%,#1976bc 90%);
-    background: -moz-linear-gradient(bottom,#8dc645 0%,#1976bc 90%);
-    background: linear-gradient(to top,#8dc645 0%,#1976bc 90%);
+    background: -webkit-linear-gradient(bottom,#0983ad 0%,#113e6d 90%);
+    background: -moz-linear-gradient(bottom,#0983ad 0%,#113e6d 90%);
+    background: linear-gradient(to top,#0983ad 0%,#113e6d 90%);
     left: 0;
     top: 0;
     right: 0;
@@ -5049,15 +5049,15 @@ body.single.rtl .btPostSingleItemStandard .btShareColumn {
 }
 .btMediaBox.btQuote blockquote:after,
 .btMediaBox.btLink blockquote:after {
-    background: -webkit-linear-gradient(left,#fff 0%,#8dc645 100%);
-    background: -moz-linear-gradient(left,#fff 0%,#8dc645 100%);
-    background: linear-gradient(to right,#fff 0%,#8dc645 100%);
+    background: -webkit-linear-gradient(left,#fff 0%,#0983ad 100%);
+    background: -moz-linear-gradient(left,#fff 0%,#0983ad 100%);
+    background: linear-gradient(to right,#fff 0%,#0983ad 100%);
 }
 .btReverseGradient .btMediaBox.btQuote blockquote:after,
 .btReverseGradient .btMediaBox.btLink blockquote:after {
-    background: -webkit-linear-gradient(left,#8dc645 0%,#fff 100%);
-    background: -moz-linear-gradient(left,#8dc645 0%,#fff 100%);
-    background: linear-gradient(to right,#8dc645 0%,#fff 100%);
+    background: -webkit-linear-gradient(left,#0983ad 0%,#fff 100%);
+    background: -moz-linear-gradient(left,#0983ad 0%,#fff 100%);
+    background: linear-gradient(to right,#0983ad 0%,#fff 100%);
 }
 .btMediaBox.btQuote p:before,
 .btMediaBox.btLink p:before {
@@ -5589,9 +5589,9 @@ body.btNoSidebar .btPostSingleItemColumns {
     -moz-transition: 300ms ease all;
     transition: 300ms ease all;
     text-shadow: 0 1px 3px rgba(24,24,24,.15);
-    background-image: -webkit-linear-gradient(top,#1976bc 50%,#8dc645 100%);
-    background-image: -moz-linear-gradient(top,#1976bc 50%,#8dc645 100%);
-    background-image: linear-gradient(to bottom,#1976bc 50%,#8dc645 100%);
+    background-image: -webkit-linear-gradient(top,#113e6d 50%,#0983ad 100%);
+    background-image: -moz-linear-gradient(top,#113e6d 50%,#0983ad 100%);
+    background-image: linear-gradient(to bottom,#113e6d 50%,#0983ad 100%);
     background-size: 1px 200%;
 }
 .post-password-form p:nth-child(2) input[type="submit"]:hover {
@@ -5895,7 +5895,7 @@ div.btPrevNextNav {
     transition: 300ms ease all;
 }
 .btLinkPages ul a:hover {
-    background: #8dc645;
+    background: #0983ad;
     text-shadow: 0 1px 3px rgba(24,24,24,.15);
     color: #fff;
 }
@@ -6646,10 +6646,10 @@ body:not(.woocommerce) .btCommentsBox .form-submit {
     color: rgba(255,255,255,.1);
 }
 .btCommentsBox .comment-form .review-by .commentratingbox .commentrating input[type="radio"]:checked + label:after {
-    color: #1976bc !important;
+    color: #113e6d !important;
 }
 .btCommentsBox .comment-form .review-by .commentratingbox .commentrating:hover input[type="radio"] + label:after {
-    color: #1976bc !important;
+    color: #113e6d !important;
 }
 .btCommentsBox .comment-form .review-by .commentratingbox .commentrating:nth-child(1) {
     width: 1em;
@@ -6959,9 +6959,9 @@ a#cancel-comment-reply-link:hover {
     position: absolute;
     display: block;
     content: "";
-    background: -webkit-linear-gradient(bottom,#8dc645 0%,#1976bc 90%);
-    background: -moz-linear-gradient(bottom,#8dc645 0%,#1976bc 90%);
-    background: linear-gradient(to top,#8dc645 0%,#1976bc 90%);
+    background: -webkit-linear-gradient(bottom,#0983ad 0%,#113e6d 90%);
+    background: -moz-linear-gradient(bottom,#0983ad 0%,#113e6d 90%);
+    background: linear-gradient(to top,#0983ad 0%,#113e6d 90%);
     left: -1px;
     top: -1px;
     right: -1px;
@@ -7483,9 +7483,9 @@ body:not(.btNoDashInSidebar) .btTopBox > h4:after {
     display: block;
     height: 2px;
     width: 2em;
-    background: -webkit-linear-gradient(left,#1976bc 0%,#8dc645 100%);
-    background: -moz-linear-gradient(left,#1976bc 0%,#8dc645 100%);
-    background: linear-gradient(to right,#1976bc 0%,#8dc645 100%);
+    background: -webkit-linear-gradient(left,#113e6d 0%,#0983ad 100%);
+    background: -moz-linear-gradient(left,#113e6d 0%,#0983ad 100%);
+    background: linear-gradient(to right,#113e6d 0%,#0983ad 100%);
     position: absolute;
     left: -1em;
     bottom: -15%;
@@ -7520,9 +7520,9 @@ body:not(.btNoDashInSidebar) .btTopBox > h4:after {
 .btReverseGradient .btBox.widget_recent_entries ul li a:before,
 .btReverseGradient .btBox.widget_product_categories ul li a:before,
 .btReverseGradient .btBox.widget_top_rated_products ul li a:before {
-    background: -webkit-linear-gradient(left,#8dc645 0%,#1976bc 100%);
-    background: -moz-linear-gradient(left,#8dc645 0%,#1976bc 100%);
-    background: linear-gradient(to right,#8dc645 0%,#1976bc 100%);
+    background: -webkit-linear-gradient(left,#0983ad 0%,#113e6d 100%);
+    background: -moz-linear-gradient(left,#0983ad 0%,#113e6d 100%);
+    background: linear-gradient(to right,#0983ad 0%,#113e6d 100%);
 }
 .btBox.widget_archive ul li a:hover:before,
 .btBox.widget_categories ul li a:hover:before,
@@ -7703,7 +7703,7 @@ body:not(.btNoDashInSidebar) .btTopBox > h4:after {
     font-size: .875em;
     font-weight: 700;
     font-family: Montserrat,Arial,Helvetica,sans-serif;
-    color: #8dc645;
+    color: #0983ad;
     margin-top: .5em;
     padding-top: .5em;
     text-align: center;
@@ -7880,9 +7880,9 @@ body:not(.btNoDashInSidebar) .btTopBox > h4:after {
     margin: 0 5px;
     display: block;
     text-align: center;
-    background-image: -webkit-linear-gradient(top,#1976bc 50%,#8dc645 100%) !important;
-    background-image: -moz-linear-gradient(top,#1976bc 50%,#8dc645 100%) !important;
-    background-image: linear-gradient(to bottom,#1976bc 50%,#8dc645 100%) !important;
+    background-image: -webkit-linear-gradient(top,#113e6d 50%,#0983ad 100%) !important;
+    background-image: -moz-linear-gradient(top,#113e6d 50%,#0983ad 100%) !important;
+    background-image: linear-gradient(to bottom,#113e6d 50%,#0983ad 100%) !important;
     background-size: 1px 200% !important;
     color: #fff;
     -webkit-transition: 300ms ease all;
@@ -7960,7 +7960,7 @@ body:not(.btNoDashInSidebar) .btTopBox > h4:after {
     border-radius: 50%;
 }
 .widget_shopping_cart .widget_shopping_cart_content .mini_cart_item .ppRemove a.remove:hover {
-    background-color: #8dc645;
+    background-color: #0983ad;
 }
 .widget_shopping_cart .widget_shopping_cart_content .mini_cart_item .ppRemove a.remove:before {
     content: '\e680';
@@ -8064,7 +8064,7 @@ body:not(.btNoDashInSidebar) .btTopBox > h4:after {
 .menuPort .widget_shopping_cart .widget_shopping_cart_content .btCartWidgetIcon:hover span.cart-contents,
 .topTools .widget_shopping_cart .widget_shopping_cart_content .btCartWidgetIcon:hover span.cart-contents,
 .topBarInLogoArea .widget_shopping_cart .widget_shopping_cart_content .btCartWidgetIcon:hover span.cart-contents {
-    background: #8dc645;
+    background: #0983ad;
 }
 .menuPort .widget_shopping_cart .widget_shopping_cart_content .btCartWidgetInnerContent,
 .topTools .widget_shopping_cart .widget_shopping_cart_content .btCartWidgetInnerContent,
@@ -8325,7 +8325,7 @@ body:not(.btNoDashInSidebar) .btTopBox > h4:after {
 }
 .btBox .tagcloud a:hover,
 .btTags ul a:hover {
-    background: #8dc645;
+    background: #0983ad;
     color: #fff;
     text-shadow: 0 1px 3px rgba(24,24,24,.15);
 }
@@ -8664,7 +8664,7 @@ footer .btIconWidget.btCartWidget,
     margin: -4em -4em 0 0;
     cursor: pointer;
     padding: 0 !important;
-    background: #1976bc !important;
+    background: #113e6d !important;
     font-size: .875em !important;
     border: 0 !important;
     font-weight: 500;
@@ -8832,9 +8832,9 @@ footer .btIconWidget.btCartWidget,
     position: absolute;
     display: block;
     content: "";
-    background: -webkit-linear-gradient(bottom,#8dc645 0%,#1976bc 90%);
-    background: -moz-linear-gradient(bottom,#8dc645 0%,#1976bc 90%);
-    background: linear-gradient(to top,#8dc645 0%,#1976bc 90%);
+    background: -webkit-linear-gradient(bottom,#0983ad 0%,#113e6d 90%);
+    background: -moz-linear-gradient(bottom,#0983ad 0%,#113e6d 90%);
+    background: linear-gradient(to top,#0983ad 0%,#113e6d 90%);
     left: 0;
     top: 0;
     right: 0;
@@ -8888,8 +8888,8 @@ footer .btIconWidget.btCartWidget,
 .btDarkSkin .woocommerce-page .btSidebar .widget_product_search button:hover,
 .btLightSkin .btDarkSkin .woocommerce-page .btSidebar .widget_product_search button:hover,
 .btDarkSkin.btLightSkin .btDarkSkin .woocommerce-page .btSidebar .widget_product_search button:hover {
-    background: #1976bc !important;
-    border-color: #1976bc !important;
+    background: #113e6d !important;
+    border-color: #113e6d !important;
     color: #fff;
     -webkit-box-shadow: 0 3px 10px rgba(24,24,24,.15);
     box-shadow: 0 3px 10px rgba(24,24,24,.15);
@@ -9161,7 +9161,7 @@ footer .btIconWidget.btCartWidget,
         color: currentColor !important;
     }
     .btSearchInner.btFromTopBox button:hover:before {
-        color: #1976bc !important;
+        color: #113e6d !important;
     }
 }
 
@@ -9226,38 +9226,38 @@ footer .btIconWidget.btCartWidget,
 }
 .bt_bb_section.bt_bb_color_scheme_11 {
     color: #181818;
-    background-image: -webkit-linear-gradient(left,#1976bc 0%,#8dc645 100%);
-    background-image: -moz-linear-gradient(left,#1976bc 0%,#8dc645 100%);
-    background-image: linear-gradient(to right,#1976bc 0%,#8dc645 100%);
+    background-image: -webkit-linear-gradient(left,#113e6d 0%,#0983ad 100%);
+    background-image: -moz-linear-gradient(left,#113e6d 0%,#0983ad 100%);
+    background-image: linear-gradient(to right,#113e6d 0%,#0983ad 100%);
 }
 .bt_bb_section.bt_bb_color_scheme_12 {
     color: #fff;
-    background-image: -webkit-linear-gradient(left,#1976bc 0%,#8dc645 100%);
-    background-image: -moz-linear-gradient(left,#1976bc 0%,#8dc645 100%);
-    background-image: linear-gradient(to right,#1976bc 0%,#8dc645 100%);
+    background-image: -webkit-linear-gradient(left,#113e6d 0%,#0983ad 100%);
+    background-image: -moz-linear-gradient(left,#113e6d 0%,#0983ad 100%);
+    background-image: linear-gradient(to right,#113e6d 0%,#0983ad 100%);
 }
 .bt_bb_section.bt_bb_color_scheme_13 {
     color: #181818;
-    background-image: -webkit-linear-gradient(right,#1976bc 0%,#8dc645 100%);
-    background-image: -moz-linear-gradient(right,#1976bc 0%,#8dc645 100%);
-    background-image: linear-gradient(to left,#1976bc 0%,#8dc645 100%);
+    background-image: -webkit-linear-gradient(right,#113e6d 0%,#0983ad 100%);
+    background-image: -moz-linear-gradient(right,#113e6d 0%,#0983ad 100%);
+    background-image: linear-gradient(to left,#113e6d 0%,#0983ad 100%);
 }
 .bt_bb_section.bt_bb_color_scheme_14 {
     color: #fff;
-    background-image: -webkit-linear-gradient(right,#1976bc 0%,#8dc645 100%);
-    background-image: -moz-linear-gradient(right,#1976bc 0%,#8dc645 100%);
-    background-image: linear-gradient(to left,#1976bc 0%,#8dc645 100%);
+    background-image: -webkit-linear-gradient(right,#113e6d 0%,#0983ad 100%);
+    background-image: -moz-linear-gradient(right,#113e6d 0%,#0983ad 100%);
+    background-image: linear-gradient(to left,#113e6d 0%,#0983ad 100%);
 }
 .bt_bb_section[class*="gradient"]:before {
-    background-image: -webkit-linear-gradient(left,#1976bc 0%,#8dc645 100%);
-    background-image: -moz-linear-gradient(left,#1976bc 0%,#8dc645 100%);
-    background-image: linear-gradient(to right,#1976bc 0%,#8dc645 100%);
+    background-image: -webkit-linear-gradient(left,#113e6d 0%,#0983ad 100%);
+    background-image: -moz-linear-gradient(left,#113e6d 0%,#0983ad 100%);
+    background-image: linear-gradient(to right,#113e6d 0%,#0983ad 100%);
     opacity: .7;
 }
 .btReverseGradient .bt_bb_section[class*="gradient"]:before {
-    background-image: -webkit-linear-gradient(left,#8dc645 0%,#1976bc 100%);
-    background-image: -moz-linear-gradient(left,#8dc645 0%,#1976bc 100%);
-    background-image: linear-gradient(to right,#8dc645 0%,#1976bc 100%);
+    background-image: -webkit-linear-gradient(left,#0983ad 0%,#113e6d 100%);
+    background-image: -moz-linear-gradient(left,#0983ad 0%,#113e6d 100%);
+    background-image: linear-gradient(to right,#0983ad 0%,#113e6d 100%);
 }
 .btHeadlineOpacity_100 .bt_bb_section[class*="gradient"]:before {
     opacity: 1;
@@ -9747,9 +9747,9 @@ footer .btIconWidget.btCartWidget,
 .bt_bb_headline h6 s:after {
     display: block;
     position: absolute;
-    background-image: -webkit-linear-gradient(left,#1976bc 0%,#8dc645 100%);
-    background-image: -moz-linear-gradient(left,#1976bc 0%,#8dc645 100%);
-    background-image: linear-gradient(to right,#1976bc 0%,#8dc645 100%);
+    background-image: -webkit-linear-gradient(left,#113e6d 0%,#0983ad 100%);
+    background-image: -moz-linear-gradient(left,#113e6d 0%,#0983ad 100%);
+    background-image: linear-gradient(to right,#113e6d 0%,#0983ad 100%);
     left: -.16em;
     right: -.16em;
     height: .4em;
@@ -9762,9 +9762,9 @@ footer .btIconWidget.btCartWidget,
 .btReverseGradient .bt_bb_headline h4 s:after,
 .btReverseGradient .bt_bb_headline h5 s:after,
 .btReverseGradient .bt_bb_headline h6 s:after {
-    background-image: -webkit-linear-gradient(left,#8dc645 0%,#1976bc 100%);
-    background-image: -moz-linear-gradient(left,#8dc645 0%,#1976bc 100%);
-    background-image: linear-gradient(to right,#8dc645 0%,#1976bc 100%);
+    background-image: -webkit-linear-gradient(left,#0983ad 0%,#113e6d 100%);
+    background-image: -moz-linear-gradient(left,#0983ad 0%,#113e6d 100%);
+    background-image: linear-gradient(to right,#0983ad 0%,#113e6d 100%);
 }
 .btGradientOpacity_100 .bt_bb_headline h1 s:after,
 .btGradientOpacity_100 .bt_bb_headline h2 s:after,
@@ -9935,7 +9935,7 @@ footer .btIconWidget.btCartWidget,
     font-weight: 700;
     font-weight: 800;
     text-decoration: none;
-    color: #8dc645;
+    color: #0983ad;
 }
 .bt_bb_headline.bt_bb_color_scheme_12 .bt_bb_headline_content,
 .bt_bb_headline.bt_bb_color_scheme_14 .bt_bb_headline_content,
@@ -10000,14 +10000,14 @@ body.btHeadingStyle_compact .bt_bb_latest_posts_item .bt_bb_latest_posts_item_ti
     opacity: .1;
 }
 .bt_bb_style_filled.bt_bb_progress_bar .bt_bb_progress_bar_inner {
-    background: -webkit-linear-gradient(left,#1976bc 0%,#8dc645 100%);
-    background: -moz-linear-gradient(left,#1976bc 0%,#8dc645 100%);
-    background: linear-gradient(to right,#1976bc 0%,#8dc645 100%);
+    background: -webkit-linear-gradient(left,#113e6d 0%,#0983ad 100%);
+    background: -moz-linear-gradient(left,#113e6d 0%,#0983ad 100%);
+    background: linear-gradient(to right,#113e6d 0%,#0983ad 100%);
 }
 .btReverseGradient .bt_bb_style_filled.bt_bb_progress_bar .bt_bb_progress_bar_inner {
-    background: -webkit-linear-gradient(left,#8dc645 0%,#1976bc 100%);
-    background: -moz-linear-gradient(left,#8dc645 0%,#1976bc 100%);
-    background: linear-gradient(to right,#8dc645 0%,#1976bc 100%);
+    background: -webkit-linear-gradient(left,#0983ad 0%,#113e6d 100%);
+    background: -moz-linear-gradient(left,#0983ad 0%,#113e6d 100%);
+    background: linear-gradient(to right,#0983ad 0%,#113e6d 100%);
 }
 .bt_bb_style_filled.bt_bb_progress_bar .bt_bb_progress_bar_bg,
 .bt_bb_style_outline.bt_bb_progress_bar .bt_bb_progress_bar_bg {
@@ -10033,27 +10033,27 @@ body.btHeadingStyle_compact .bt_bb_latest_posts_item .bt_bb_latest_posts_item_ti
 }
 .bt_bb_color_scheme_11.bt_bb_style_filled.bt_bb_progress_bar .bt_bb_progress_bar_inner {
     color: #181818;
-    background: -webkit-linear-gradient(left,#1976bc 0%,#8dc645 100%);
-    background: -moz-linear-gradient(left,#1976bc 0%,#8dc645 100%);
-    background: linear-gradient(to right,#1976bc 0%,#8dc645 100%);
+    background: -webkit-linear-gradient(left,#113e6d 0%,#0983ad 100%);
+    background: -moz-linear-gradient(left,#113e6d 0%,#0983ad 100%);
+    background: linear-gradient(to right,#113e6d 0%,#0983ad 100%);
 }
 .bt_bb_color_scheme_12.bt_bb_style_filled.bt_bb_progress_bar .bt_bb_progress_bar_inner {
     color: #fff;
-    background: -webkit-linear-gradient(left,#1976bc 0%,#8dc645 100%);
-    background: -moz-linear-gradient(left,#1976bc 0%,#8dc645 100%);
-    background: linear-gradient(to right,#1976bc 0%,#8dc645 100%);
+    background: -webkit-linear-gradient(left,#113e6d 0%,#0983ad 100%);
+    background: -moz-linear-gradient(left,#113e6d 0%,#0983ad 100%);
+    background: linear-gradient(to right,#113e6d 0%,#0983ad 100%);
 }
 .bt_bb_color_scheme_13.bt_bb_style_filled.bt_bb_progress_bar .bt_bb_progress_bar_inner {
     color: #181818;
-    background: -webkit-linear-gradient(right,#1976bc 0%,#8dc645 100%);
-    background: -moz-linear-gradient(right,#1976bc 0%,#8dc645 100%);
-    background: linear-gradient(to left,#1976bc 0%,#8dc645 100%);
+    background: -webkit-linear-gradient(right,#113e6d 0%,#0983ad 100%);
+    background: -moz-linear-gradient(right,#113e6d 0%,#0983ad 100%);
+    background: linear-gradient(to left,#113e6d 0%,#0983ad 100%);
 }
 .bt_bb_color_scheme_14.bt_bb_style_filled.bt_bb_progress_bar .bt_bb_progress_bar_inner {
     color: #fff;
-    background: -webkit-linear-gradient(right,#1976bc 0%,#8dc645 100%);
-    background: -moz-linear-gradient(right,#1976bc 0%,#8dc645 100%);
-    background: linear-gradient(to left,#1976bc 0%,#8dc645 100%);
+    background: -webkit-linear-gradient(right,#113e6d 0%,#0983ad 100%);
+    background: -moz-linear-gradient(right,#113e6d 0%,#0983ad 100%);
+    background: linear-gradient(to left,#113e6d 0%,#0983ad 100%);
 }
 .bt_bb_style_line.bt_bb_progress_bar .bt_bb_progress_bar_inner {
     border: 0;
@@ -10070,14 +10070,14 @@ body.btHeadingStyle_compact .bt_bb_latest_posts_item .bt_bb_latest_posts_item_ti
     right: 0;
     bottom: 0;
     height: 4px;
-    background: -webkit-linear-gradient(left,#1976bc 0%,#8dc645 100%);
-    background: -moz-linear-gradient(left,#1976bc 0%,#8dc645 100%);
-    background: linear-gradient(to right,#1976bc 0%,#8dc645 100%);
+    background: -webkit-linear-gradient(left,#113e6d 0%,#0983ad 100%);
+    background: -moz-linear-gradient(left,#113e6d 0%,#0983ad 100%);
+    background: linear-gradient(to right,#113e6d 0%,#0983ad 100%);
 }
 .btReverseGradient .bt_bb_style_line.bt_bb_progress_bar .bt_bb_progress_bar_inner:after {
-    background: -webkit-linear-gradient(left,#8dc645 0%,#1976bc 100%);
-    background: -moz-linear-gradient(left,#8dc645 0%,#1976bc 100%);
-    background: linear-gradient(to right,#8dc645 0%,#1976bc 100%);
+    background: -webkit-linear-gradient(left,#0983ad 0%,#113e6d 100%);
+    background: -moz-linear-gradient(left,#0983ad 0%,#113e6d 100%);
+    background: linear-gradient(to right,#0983ad 0%,#113e6d 100%);
 }
 .bt_bb_size_small.bt_bb_style_line.bt_bb_progress_bar .bt_bb_progress_bar_inner:after {
     height: 2px;
@@ -10093,33 +10093,33 @@ body.btHeadingStyle_compact .bt_bb_latest_posts_item .bt_bb_latest_posts_item_ti
     color: #181818;
 }
 .bt_bb_color_scheme_11.bt_bb_style_line.bt_bb_progress_bar .bt_bb_progress_bar_inner:after {
-    background: -webkit-linear-gradient(left,#1976bc 0%,#8dc645 100%);
-    background: -moz-linear-gradient(left,#1976bc 0%,#8dc645 100%);
-    background: linear-gradient(to right,#1976bc 0%,#8dc645 100%);
+    background: -webkit-linear-gradient(left,#113e6d 0%,#0983ad 100%);
+    background: -moz-linear-gradient(left,#113e6d 0%,#0983ad 100%);
+    background: linear-gradient(to right,#113e6d 0%,#0983ad 100%);
 }
 .bt_bb_color_scheme_12.bt_bb_style_line.bt_bb_progress_bar .bt_bb_progress_bar_inner {
     color: #fff;
 }
 .bt_bb_color_scheme_12.bt_bb_style_line.bt_bb_progress_bar .bt_bb_progress_bar_inner:after {
-    background: -webkit-linear-gradient(left,#1976bc 0%,#8dc645 100%);
-    background: -moz-linear-gradient(left,#1976bc 0%,#8dc645 100%);
-    background: linear-gradient(to right,#1976bc 0%,#8dc645 100%);
+    background: -webkit-linear-gradient(left,#113e6d 0%,#0983ad 100%);
+    background: -moz-linear-gradient(left,#113e6d 0%,#0983ad 100%);
+    background: linear-gradient(to right,#113e6d 0%,#0983ad 100%);
 }
 .bt_bb_color_scheme_13.bt_bb_style_line.bt_bb_progress_bar .bt_bb_progress_bar_inner {
     color: #181818;
 }
 .bt_bb_color_scheme_13.bt_bb_style_line.bt_bb_progress_bar .bt_bb_progress_bar_inner:after {
-    background: -webkit-linear-gradient(right,#1976bc 0%,#8dc645 100%);
-    background: -moz-linear-gradient(right,#1976bc 0%,#8dc645 100%);
-    background: linear-gradient(to left,#1976bc 0%,#8dc645 100%);
+    background: -webkit-linear-gradient(right,#113e6d 0%,#0983ad 100%);
+    background: -moz-linear-gradient(right,#113e6d 0%,#0983ad 100%);
+    background: linear-gradient(to left,#113e6d 0%,#0983ad 100%);
 }
 .bt_bb_color_scheme_14.bt_bb_style_line.bt_bb_progress_bar .bt_bb_progress_bar_inner {
     color: #fff;
 }
 .bt_bb_color_scheme_14.bt_bb_style_line.bt_bb_progress_bar .bt_bb_progress_bar_inner:after {
-    background: -webkit-linear-gradient(right,#1976bc 0%,#8dc645 100%);
-    background: -moz-linear-gradient(right,#1976bc 0%,#8dc645 100%);
-    background: linear-gradient(to left,#1976bc 0%,#8dc645 100%);
+    background: -webkit-linear-gradient(right,#113e6d 0%,#0983ad 100%);
+    background: -moz-linear-gradient(right,#113e6d 0%,#0983ad 100%);
+    background: linear-gradient(to left,#113e6d 0%,#0983ad 100%);
 }
 .bt_bb_style_outline.bt_bb_progress_bar .bt_bb_progress_bar_inner {
     border-width: 2px;
@@ -10204,9 +10204,9 @@ body.btHeadingStyle_compact .bt_bb_latest_posts_item .bt_bb_latest_posts_item_ti
     right: 0;
     bottom: 0;
     height: 4px;
-    background: -webkit-linear-gradient(left,#1976bc 0%,#8dc645 100%);
-    background: -moz-linear-gradient(left,#1976bc 0%,#8dc645 100%);
-    background: linear-gradient(to right,#1976bc 0%,#8dc645 100%);
+    background: -webkit-linear-gradient(left,#113e6d 0%,#0983ad 100%);
+    background: -moz-linear-gradient(left,#113e6d 0%,#0983ad 100%);
+    background: linear-gradient(to right,#113e6d 0%,#0983ad 100%);
     z-index: 2;
     -webkit-transition: 300ms ease all;
     -moz-transition: 300ms ease all;
@@ -10227,9 +10227,9 @@ body.btHeadingStyle_compact .bt_bb_latest_posts_item .bt_bb_latest_posts_item_ti
     transform-origin: 100% 0;
 }
 .btReverseGradient .bt_bb_latest_posts .bt_bb_latest_posts_item_image:after {
-    background: -webkit-linear-gradient(left,#8dc645 0%,#1976bc 100%);
-    background: -moz-linear-gradient(left,#8dc645 0%,#1976bc 100%);
-    background: linear-gradient(to right,#8dc645 0%,#1976bc 100%);
+    background: -webkit-linear-gradient(left,#0983ad 0%,#113e6d 100%);
+    background: -moz-linear-gradient(left,#0983ad 0%,#113e6d 100%);
+    background: linear-gradient(to right,#0983ad 0%,#113e6d 100%);
 }
 .bt_bb_latest_posts .bt_bb_latest_posts_item_content {
     padding: 2.5em 1.25em 1.25em;
@@ -10271,7 +10271,7 @@ body.btHeadingStyle_compact .bt_bb_latest_posts_item .bt_bb_latest_posts_item_ti
     border-color: #65922d transparent transparent transparent;
 }
 .bt_bb_latest_posts .bt_bb_latest_posts_item_content .bt_bb_latest_posts_item_category .post-categories {
-    background: #8dc645;
+    background: #0983ad;
     text-shadow: 0 1px 3px rgba(24,24,24,.2);
     font-size: .75em;
     text-transform: uppercase;
@@ -10573,18 +10573,18 @@ body.btHeadingStyle_compact .bt_bb_latest_posts_item .bt_bb_latest_posts_item_ti
     -ms-transform: scaleX(0);
     transform: scaleX(0);
     bottom: 0;
-    background: -webkit-linear-gradient(left,#1976bc 0%,#8dc645 100%);
-    background: -moz-linear-gradient(left,#1976bc 0%,#8dc645 100%);
-    background: linear-gradient(to right,#1976bc 0%,#8dc645 100%);
+    background: -webkit-linear-gradient(left,#113e6d 0%,#0983ad 100%);
+    background: -moz-linear-gradient(left,#113e6d 0%,#0983ad 100%);
+    background: linear-gradient(to right,#113e6d 0%,#0983ad 100%);
     height: 2px;
     -webkit-transition: 300ms ease all;
     -moz-transition: 300ms ease all;
     transition: 300ms ease all;
 }
 .btReverseGradient .bt_bb_post_grid_filter .bt_bb_post_grid_filter_item:after {
-    background: -webkit-linear-gradient(left,#8dc645 0%,#1976bc 100%);
-    background: -moz-linear-gradient(left,#8dc645 0%,#1976bc 100%);
-    background: linear-gradient(to right,#8dc645 0%,#1976bc 100%);
+    background: -webkit-linear-gradient(left,#0983ad 0%,#113e6d 100%);
+    background: -moz-linear-gradient(left,#0983ad 0%,#113e6d 100%);
+    background: linear-gradient(to right,#0983ad 0%,#113e6d 100%);
 }
 .bt_bb_post_grid_filter .bt_bb_post_grid_filter_item.active {
     -webkit-box-shadow: 0 0 0 rgba(24,24,24,.15);
@@ -10675,9 +10675,9 @@ body.btHeadingStyle_compact .bt_bb_latest_posts_item .bt_bb_latest_posts_item_ti
     right: 0;
     bottom: 0;
     height: 4px;
-    background: -webkit-linear-gradient(left,#1976bc 0%,#8dc645 100%);
-    background: -moz-linear-gradient(left,#1976bc 0%,#8dc645 100%);
-    background: linear-gradient(to right,#1976bc 0%,#8dc645 100%);
+    background: -webkit-linear-gradient(left,#113e6d 0%,#0983ad 100%);
+    background: -moz-linear-gradient(left,#113e6d 0%,#0983ad 100%);
+    background: linear-gradient(to right,#113e6d 0%,#0983ad 100%);
     z-index: 2;
     -webkit-transition: 300ms ease all;
     -moz-transition: 300ms ease all;
@@ -10700,9 +10700,9 @@ body.btHeadingStyle_compact .bt_bb_latest_posts_item .bt_bb_latest_posts_item_ti
 }
 .btReverseGradient .bt_bb_masonry_post_grid .bt_bb_grid_item_post_thumbnail a:after,
 .btReverseGradient .bt_bb_masonry_portfolio_grid .bt_bb_grid_item_post_thumbnail a:after {
-    background: -webkit-linear-gradient(left,#8dc645 0%,#1976bc 100%);
-    background: -moz-linear-gradient(left,#8dc645 0%,#1976bc 100%);
-    background: linear-gradient(to right,#8dc645 0%,#1976bc 100%);
+    background: -webkit-linear-gradient(left,#0983ad 0%,#113e6d 100%);
+    background: -moz-linear-gradient(left,#0983ad 0%,#113e6d 100%);
+    background: linear-gradient(to right,#0983ad 0%,#113e6d 100%);
 }
 .bt_bb_masonry_post_grid .bt_bb_grid_item_post_thumbnail a:empty:before,
 .bt_bb_masonry_post_grid .bt_bb_grid_item_post_thumbnail a:empty:after,
@@ -10733,7 +10733,7 @@ body.btHeadingStyle_compact .bt_bb_latest_posts_item .bt_bb_latest_posts_item_ti
     font-weight: 800;
     padding: 0;
     z-index: 10;
-    background: #8dc645;
+    background: #0983ad;
     text-shadow: 0 1px 3px rgba(24,24,24,.2);
     font-size: .75em;
     text-transform: uppercase;
@@ -11174,8 +11174,8 @@ body.btHeadingStyle_compact .bt_bb_latest_posts_item .bt_bb_latest_posts_item_ti
     font-size: 6px;
     position: relative;
     border: 2px solid transparent;
-    border-top: 2px solid #1976bc !important;
-    border-bottom: 2px solid #1976bc !important;
+    border-top: 2px solid #113e6d !important;
+    border-bottom: 2px solid #113e6d !important;
     border-radius: 50%;
     -webkit-animation: btLoader 2s infinite linear;
     -moz-animation: btLoader 2s infinite linear;
@@ -11196,8 +11196,8 @@ body.btHeadingStyle_compact .bt_bb_latest_posts_item .bt_bb_latest_posts_item_ti
     animation: btLoader 5s infinite linear;
     border-radius: 50%;
     border: 2px solid transparent;
-    border-left: 2px solid #8dc645 !important;
-    border-right: 2px solid #8dc645 !important;
+    border-left: 2px solid #0983ad !important;
+    border-right: 2px solid #0983ad !important;
 }
 
 /* Masonry social icons */
@@ -11550,9 +11550,9 @@ body.btHeadingStyle_compact .bt_bb_latest_posts_item .bt_bb_latest_posts_item_ti
     right: 0;
     bottom: 0;
     height: 4px;
-    background: -webkit-linear-gradient(left,#1976bc 0%,#8dc645 100%);
-    background: -moz-linear-gradient(left,#1976bc 0%,#8dc645 100%);
-    background: linear-gradient(to right,#1976bc 0%,#8dc645 100%);
+    background: -webkit-linear-gradient(left,#113e6d 0%,#0983ad 100%);
+    background: -moz-linear-gradient(left,#113e6d 0%,#0983ad 100%);
+    background: linear-gradient(to right,#113e6d 0%,#0983ad 100%);
     z-index: 2;
     -webkit-transition: 300ms ease all;
     -moz-transition: 300ms ease all;
@@ -11573,9 +11573,9 @@ body.btHeadingStyle_compact .bt_bb_latest_posts_item .bt_bb_latest_posts_item_ti
     transform-origin: 100% 0;
 }
 .btReverseGradient .bt_bb_masonry_image_grid .bt_bb_grid_item_inner > .bt_bb_grid_item_inner_content:after {
-    background: -webkit-linear-gradient(left,#8dc645 0%,#1976bc 100%);
-    background: -moz-linear-gradient(left,#8dc645 0%,#1976bc 100%);
-    background: linear-gradient(to right,#8dc645 0%,#1976bc 100%);
+    background: -webkit-linear-gradient(left,#0983ad 0%,#113e6d 100%);
+    background: -moz-linear-gradient(left,#0983ad 0%,#113e6d 100%);
+    background: linear-gradient(to right,#0983ad 0%,#113e6d 100%);
 }
 .bt_bb_no_lightbox.bt_bb_masonry_image_grid .bt_bb_grid_item_inner > .bt_bb_grid_item_inner_content:after {
     display: none;
@@ -11723,14 +11723,14 @@ body.btHeadingStyle_compact .bt_bb_latest_posts_item .bt_bb_latest_posts_item_ti
 }
 .bt_bb_separator.btGradientSeparator {
     height: 2px;
-    background-image: -webkit-linear-gradient(left,#1976bc 0%,#8dc645 100%);
-    background-image: -moz-linear-gradient(left,#1976bc 0%,#8dc645 100%);
-    background-image: linear-gradient(to right,#1976bc 0%,#8dc645 100%);
+    background-image: -webkit-linear-gradient(left,#113e6d 0%,#0983ad 100%);
+    background-image: -moz-linear-gradient(left,#113e6d 0%,#0983ad 100%);
+    background-image: linear-gradient(to right,#113e6d 0%,#0983ad 100%);
 }
 .btReverseGradient .bt_bb_separator.btGradientSeparator {
-    background-image: -webkit-linear-gradient(left,#8dc645 0%,#1976bc 100%);
-    background-image: -moz-linear-gradient(left,#8dc645 0%,#1976bc 100%);
-    background-image: linear-gradient(to right,#8dc645 0%,#1976bc 100%);
+    background-image: -webkit-linear-gradient(left,#0983ad 0%,#113e6d 100%);
+    background-image: -moz-linear-gradient(left,#0983ad 0%,#113e6d 100%);
+    background-image: linear-gradient(to right,#0983ad 0%,#113e6d 100%);
 }
 @media (max-width: 768px) {
     .bt_bb_separator.bt_bb_bottom_spacing_medium {
@@ -12172,9 +12172,9 @@ body.btHeadingStyle_compact .bt_bb_latest_posts_item .bt_bb_latest_posts_item_ti
 .bt_bb_masonry_tour_tiles .bt_bb_grid_item .bt_bb_grid_item_inner .bt_bb_grid_item_post_title_init:after {
     height: 4px;
     z-index: 2;
-    background: -webkit-linear-gradient(left,#1976bc 0%,#8dc645 100%);
-    background: -moz-linear-gradient(left,#1976bc 0%,#8dc645 100%);
-    background: linear-gradient(to right,#1976bc 0%,#8dc645 100%);
+    background: -webkit-linear-gradient(left,#113e6d 0%,#0983ad 100%);
+    background: -moz-linear-gradient(left,#113e6d 0%,#0983ad 100%);
+    background: linear-gradient(to right,#113e6d 0%,#0983ad 100%);
     -webkit-transform: scaleX(0);
     -moz-transform: scaleX(0);
     -ms-transform: scaleX(0);
@@ -12191,9 +12191,9 @@ body.btHeadingStyle_compact .bt_bb_latest_posts_item .bt_bb_latest_posts_item_ti
     transform-origin: 100% 0;
 }
 .btReverseGradient .bt_bb_masonry_tour_tiles .bt_bb_grid_item .bt_bb_grid_item_inner .bt_bb_grid_item_post_title_init:after {
-    background: -webkit-linear-gradient(left,#8dc645 0%,#1976bc 100%);
-    background: -moz-linear-gradient(left,#8dc645 0%,#1976bc 100%);
-    background: linear-gradient(to right,#8dc645 0%,#1976bc 100%);
+    background: -webkit-linear-gradient(left,#0983ad 0%,#113e6d 100%);
+    background: -moz-linear-gradient(left,#0983ad 0%,#113e6d 100%);
+    background: linear-gradient(to right,#0983ad 0%,#113e6d 100%);
 }
 .bt_bb_masonry_tour_tiles .bt_bb_grid_item .bt_bb_grid_item_inner .btSingleTourPrice {
     pointer-events: none;
@@ -12248,7 +12248,7 @@ body.btHeadingStyle_compact .bt_bb_latest_posts_item .bt_bb_latest_posts_item_ti
     font-weight: 800;
     padding: 0;
     z-index: 1;
-    background: #8dc645;
+    background: #0983ad;
     color: #fff;
     text-shadow: 0 1px 3px rgba(24,24,24,.2);
     font-size: .75em;
@@ -12844,9 +12844,9 @@ button.mfp-arrow:hover:before {
     background: #1976bc;
 }
 .bt_bb_color_scheme_11.bt_bb_style_filled.bt_bb_button a:after {
-    background: -webkit-linear-gradient(top,#1976bc 0%,#8dc645 100%);
-    background: -moz-linear-gradient(top,#1976bc 0%,#8dc645 100%);
-    background: linear-gradient(to bottom,#1976bc 0%,#8dc645 100%);
+    background: -webkit-linear-gradient(top,#113e6d 0%,#0983ad 100%);
+    background: -moz-linear-gradient(top,#113e6d 0%,#0983ad 100%);
+    background: linear-gradient(to bottom,#113e6d 0%,#0983ad 100%);
 }
 .bt_bb_color_scheme_12.bt_bb_style_filled.bt_bb_button a,
 .bt_bb_color_scheme_12.bt_bb_style_filled.bt_bb_button a:hover {
@@ -12855,30 +12855,30 @@ button.mfp-arrow:hover:before {
     background: #1976bc;
 }
 .bt_bb_color_scheme_12.bt_bb_style_filled.bt_bb_button a:after {
-    background: -webkit-linear-gradient(top,#1976bc 0%,#8dc645 100%);
-    background: -moz-linear-gradient(top,#1976bc 0%,#8dc645 100%);
-    background: linear-gradient(to bottom,#1976bc 0%,#8dc645 100%);
+    background: -webkit-linear-gradient(top,#113e6d 0%,#0983ad 100%);
+    background: -moz-linear-gradient(top,#113e6d 0%,#0983ad 100%);
+    background: linear-gradient(to bottom,#113e6d 0%,#0983ad 100%);
 }
 .bt_bb_color_scheme_13.bt_bb_style_filled.bt_bb_button a,
 .bt_bb_color_scheme_13.bt_bb_style_filled.bt_bb_button a:hover {
     color: #181818;
-    background: #8dc645;
+    background: #0983ad;
 }
 .bt_bb_color_scheme_13.bt_bb_style_filled.bt_bb_button a:after {
-    background: -webkit-linear-gradient(top,#8dc645 0%,#1976bc 100%);
-    background: -moz-linear-gradient(top,#8dc645 0%,#1976bc 100%);
-    background: linear-gradient(to bottom,#8dc645 0%,#1976bc 100%);
+    background: -webkit-linear-gradient(top,#0983ad 0%,#113e6d 100%);
+    background: -moz-linear-gradient(top,#0983ad 0%,#113e6d 100%);
+    background: linear-gradient(to bottom,#0983ad 0%,#113e6d 100%);
 }
 .bt_bb_color_scheme_14.bt_bb_style_filled.bt_bb_button a,
 .bt_bb_color_scheme_14.bt_bb_style_filled.bt_bb_button a:hover {
     text-shadow: 0 1px 3px rgba(24,24,24,.15);
     color: #fff;
-    background: #8dc645;
+    background: #0983ad;
 }
 .bt_bb_color_scheme_14.bt_bb_style_filled.bt_bb_button a:after {
-    background: -webkit-linear-gradient(top,#8dc645 0%,#1976bc 100%);
-    background: -moz-linear-gradient(top,#8dc645 0%,#1976bc 100%);
-    background: linear-gradient(to bottom,#8dc645 0%,#1976bc 100%);
+    background: -webkit-linear-gradient(top,#0983ad 0%,#113e6d 100%);
+    background: -moz-linear-gradient(top,#0983ad 0%,#113e6d 100%);
+    background: linear-gradient(to bottom,#0983ad 0%,#113e6d 100%);
 }
 
 /* Service */
@@ -12953,24 +12953,24 @@ button.mfp-arrow:hover:before {
     box-shadow: none;
 }
 .bt_bb_color_scheme_11.bt_bb_service.bt_bb_style_filled .bt_bb_icon_holder {
-    background: -webkit-linear-gradient(315deg,#1976bc 0%,#8dc645 100%);
-    background: -moz-linear-gradient(315deg,#1976bc 0%,#8dc645 100%);
-    background: linear-gradient(135deg,#1976bc 0%,#8dc645 100%);
+    background: -webkit-linear-gradient(315deg,#113e6d 0%,#0983ad 100%);
+    background: -moz-linear-gradient(315deg,#113e6d 0%,#0983ad 100%);
+    background: linear-gradient(135deg,#113e6d 0%,#0983ad 100%);
 }
 .bt_bb_color_scheme_12.bt_bb_service.bt_bb_style_filled .bt_bb_icon_holder {
-    background: -webkit-linear-gradient(315deg,#1976bc 0%,#8dc645 100%);
-    background: -moz-linear-gradient(315deg,#1976bc 0%,#8dc645 100%);
-    background: linear-gradient(135deg,#1976bc 0%,#8dc645 100%);
+    background: -webkit-linear-gradient(315deg,#113e6d 0%,#0983ad 100%);
+    background: -moz-linear-gradient(315deg,#113e6d 0%,#0983ad 100%);
+    background: linear-gradient(135deg,#113e6d 0%,#0983ad 100%);
 }
 .bt_bb_color_scheme_13.bt_bb_service.bt_bb_style_filled .bt_bb_icon_holder {
-    background: -webkit-linear-gradient(315deg,#8dc645 0%,#1976bc 100%);
-    background: -moz-linear-gradient(315deg,#8dc645 0%,#1976bc 100%);
-    background: linear-gradient(135deg,#8dc645 0%,#1976bc 100%);
+    background: -webkit-linear-gradient(315deg,#0983ad 0%,#113e6d 100%);
+    background: -moz-linear-gradient(315deg,#0983ad 0%,#113e6d 100%);
+    background: linear-gradient(135deg,#0983ad 0%,#113e6d 100%);
 }
 .bt_bb_color_scheme_14.bt_bb_service.bt_bb_style_filled .bt_bb_icon_holder {
-    background: -webkit-linear-gradient(315deg,#8dc645 0%,#1976bc 100%);
-    background: -moz-linear-gradient(315deg,#8dc645 0%,#1976bc 100%);
-    background: linear-gradient(135deg,#8dc645 0%,#1976bc 100%);
+    background: -webkit-linear-gradient(315deg,#0983ad 0%,#113e6d 100%);
+    background: -moz-linear-gradient(315deg,#0983ad 0%,#113e6d 100%);
+    background: linear-gradient(135deg,#0983ad 0%,#113e6d 100%);
 }
 .bt_bb_color_scheme_11.bt_bb_service.bt_bb_style_filled .bt_bb_icon_holder:before {
     color: #181818;
@@ -13013,8 +13013,8 @@ button.mfp-arrow:hover:before {
 .bt_bb_slider .slick-dots li:hover,
 .bt_bb_content_slider .slick-dots li.slick-active,
 .bt_bb_content_slider .slick-dots li:hover {
-    -webkit-box-shadow: 0 0 0 2em #1976bc inset;
-    box-shadow: 0 0 0 2em #1976bc inset;
+    -webkit-box-shadow: 0 0 0 2em #113e6d inset;
+    box-shadow: 0 0 0 2em #113e6d inset;
     opacity: 1;
     background: transparent;
 }
@@ -13609,9 +13609,9 @@ button.mfp-arrow:hover:before {
     display: block;
     height: 2px;
     width: 2em;
-    background: -webkit-linear-gradient(left,#1976bc 0%,#8dc645 100%);
-    background: -moz-linear-gradient(left,#1976bc 0%,#8dc645 100%);
-    background: linear-gradient(to right,#1976bc 0%,#8dc645 100%);
+    background: -webkit-linear-gradient(left,#113e6d 0%,#0983ad 100%);
+    background: -moz-linear-gradient(left,#113e6d 0%,#0983ad 100%);
+    background: linear-gradient(to right,#113e6d 0%,#0983ad 100%);
     position: absolute;
     left: -1em;
     bottom: 15%;
@@ -13636,9 +13636,9 @@ button.mfp-arrow:hover:before {
     transform-origin: 100% 0;
 }
 .btReverseGradient .bt_bb_custom_menu ul li:before {
-    background: -webkit-linear-gradient(left,#8dc645 0%,#1976bc 100%);
-    background: -moz-linear-gradient(left,#8dc645 0%,#1976bc 100%);
-    background: linear-gradient(to right,#8dc645 0%,#1976bc 100%);
+    background: -webkit-linear-gradient(left,#0983ad 0%,#113e6d 100%);
+    background: -moz-linear-gradient(left,#0983ad 0%,#113e6d 100%);
+    background: linear-gradient(to right,#0983ad 0%,#113e6d 100%);
 }
 .bt_bb_custom_menu ul li:hover:before {
     -webkit-transform: scaleX(1);
@@ -13742,9 +13742,9 @@ button.mfp-arrow:hover:before {
 .bt_bb_color_scheme_11 .bt_bb_google_maps .bt_bb_google_maps_content .bt_bb_map_content_wrapper .bt_bb_google_maps_location,
 .bt_bb_color_scheme_11 .bt_bb_google_maps .bt_bb_google_maps_content .bt_bb_google_maps_content_wrapper .bt_bb_map_location,
 .bt_bb_color_scheme_11 .bt_bb_google_maps .bt_bb_google_maps_content .bt_bb_google_maps_content_wrapper .bt_bb_google_maps_location {
-    background: -webkit-linear-gradient(315deg,#1976bc 0%,#8dc645 100%);
-    background: -moz-linear-gradient(315deg,#1976bc 0%,#8dc645 100%);
-    background: linear-gradient(135deg,#1976bc 0%,#8dc645 100%);
+    background: -webkit-linear-gradient(315deg,#113e6d 0%,#0983ad 100%);
+    background: -moz-linear-gradient(315deg,#113e6d 0%,#0983ad 100%);
+    background: linear-gradient(135deg,#113e6d 0%,#0983ad 100%);
 }
 .bt_bb_color_scheme_12 .bt_bb_map .bt_bb_map_content .bt_bb_map_content_wrapper .bt_bb_map_location,
 .bt_bb_color_scheme_12 .bt_bb_map .bt_bb_map_content .bt_bb_map_content_wrapper .bt_bb_google_maps_location,
@@ -13754,9 +13754,9 @@ button.mfp-arrow:hover:before {
 .bt_bb_color_scheme_12 .bt_bb_google_maps .bt_bb_google_maps_content .bt_bb_map_content_wrapper .bt_bb_google_maps_location,
 .bt_bb_color_scheme_12 .bt_bb_google_maps .bt_bb_google_maps_content .bt_bb_google_maps_content_wrapper .bt_bb_map_location,
 .bt_bb_color_scheme_12 .bt_bb_google_maps .bt_bb_google_maps_content .bt_bb_google_maps_content_wrapper .bt_bb_google_maps_location {
-    background: -webkit-linear-gradient(315deg,#1976bc 0%,#8dc645 100%);
-    background: -moz-linear-gradient(315deg,#1976bc 0%,#8dc645 100%);
-    background: linear-gradient(135deg,#1976bc 0%,#8dc645 100%);
+    background: -webkit-linear-gradient(315deg,#113e6d 0%,#0983ad 100%);
+    background: -moz-linear-gradient(315deg,#113e6d 0%,#0983ad 100%);
+    background: linear-gradient(135deg,#113e6d 0%,#0983ad 100%);
 }
 .bt_bb_color_scheme_13 .bt_bb_map .bt_bb_map_content .bt_bb_map_content_wrapper .bt_bb_map_location,
 .bt_bb_color_scheme_13 .bt_bb_map .bt_bb_map_content .bt_bb_map_content_wrapper .bt_bb_google_maps_location,
@@ -13766,9 +13766,9 @@ button.mfp-arrow:hover:before {
 .bt_bb_color_scheme_13 .bt_bb_google_maps .bt_bb_google_maps_content .bt_bb_map_content_wrapper .bt_bb_google_maps_location,
 .bt_bb_color_scheme_13 .bt_bb_google_maps .bt_bb_google_maps_content .bt_bb_google_maps_content_wrapper .bt_bb_map_location,
 .bt_bb_color_scheme_13 .bt_bb_google_maps .bt_bb_google_maps_content .bt_bb_google_maps_content_wrapper .bt_bb_google_maps_location {
-    background: -webkit-linear-gradient(315deg,#8dc645 0%,#1976bc 100%);
-    background: -moz-linear-gradient(315deg,#8dc645 0%,#1976bc 100%);
-    background: linear-gradient(135deg,#8dc645 0%,#1976bc 100%);
+    background: -webkit-linear-gradient(315deg,#0983ad 0%,#113e6d 100%);
+    background: -moz-linear-gradient(315deg,#0983ad 0%,#113e6d 100%);
+    background: linear-gradient(135deg,#0983ad 0%,#113e6d 100%);
 }
 .bt_bb_color_scheme_14 .bt_bb_map .bt_bb_map_content .bt_bb_map_content_wrapper .bt_bb_map_location,
 .bt_bb_color_scheme_14 .bt_bb_map .bt_bb_map_content .bt_bb_map_content_wrapper .bt_bb_google_maps_location,
@@ -13778,9 +13778,9 @@ button.mfp-arrow:hover:before {
 .bt_bb_color_scheme_14 .bt_bb_google_maps .bt_bb_google_maps_content .bt_bb_map_content_wrapper .bt_bb_google_maps_location,
 .bt_bb_color_scheme_14 .bt_bb_google_maps .bt_bb_google_maps_content .bt_bb_google_maps_content_wrapper .bt_bb_map_location,
 .bt_bb_color_scheme_14 .bt_bb_google_maps .bt_bb_google_maps_content .bt_bb_google_maps_content_wrapper .bt_bb_google_maps_location {
-    background: -webkit-linear-gradient(315deg,#8dc645 0%,#1976bc 100%);
-    background: -moz-linear-gradient(315deg,#8dc645 0%,#1976bc 100%);
-    background: linear-gradient(135deg,#8dc645 0%,#1976bc 100%);
+    background: -webkit-linear-gradient(315deg,#0983ad 0%,#113e6d 100%);
+    background: -moz-linear-gradient(315deg,#0983ad 0%,#113e6d 100%);
+    background: linear-gradient(135deg,#0983ad 0%,#113e6d 100%);
 }
 .bt_bb_map.bt_bb_map_with_content,
 .bt_bb_google_maps.bt_bb_google_maps_with_content {
@@ -13906,9 +13906,9 @@ button.mfp-arrow:hover:before {
     bottom: 0;
     right: 0;
     height: 2px;
-    background: -webkit-linear-gradient(left,#1976bc 0%,#8dc645 100%);
-    background: -moz-linear-gradient(left,#1976bc 0%,#8dc645 100%);
-    background: linear-gradient(to right,#1976bc 0%,#8dc645 100%);
+    background: -webkit-linear-gradient(left,#113e6d 0%,#0983ad 100%);
+    background: -moz-linear-gradient(left,#113e6d 0%,#0983ad 100%);
+    background: linear-gradient(to right,#113e6d 0%,#0983ad 100%);
     -webkit-transform: scaleX(0);
     -moz-transform: scaleX(0);
     -ms-transform: scaleX(0);
@@ -13918,9 +13918,9 @@ button.mfp-arrow:hover:before {
     transition: 300ms ease transform;
 }
 .btReverseGradient .bt_bb_style_simple.bt_bb_tabs .bt_bb_tabs_header li span:after {
-    background: -webkit-linear-gradient(left,#8dc645 0%,#1976bc 100%);
-    background: -moz-linear-gradient(left,#8dc645 0%,#1976bc 100%);
-    background: linear-gradient(to right,#8dc645 0%,#1976bc 100%);
+    background: -webkit-linear-gradient(left,#0983ad 0%,#113e6d 100%);
+    background: -moz-linear-gradient(left,#0983ad 0%,#113e6d 100%);
+    background: linear-gradient(to right,#0983ad 0%,#113e6d 100%);
 }
 .bt_bb_style_simple.bt_bb_tabs .bt_bb_tabs_header li:first-child span {
     padding-left: 1.333333em;
@@ -13998,9 +13998,9 @@ button.mfp-arrow:hover:before {
     bottom: 0;
     width: 5em;
     height: 2px;
-    background: -webkit-linear-gradient(left,#1976bc 0%,#8dc645 100%);
-    background: -moz-linear-gradient(left,#1976bc 0%,#8dc645 100%);
-    background: linear-gradient(to right,#1976bc 0%,#8dc645 100%);
+    background: -webkit-linear-gradient(left,#113e6d 0%,#0983ad 100%);
+    background: -moz-linear-gradient(left,#113e6d 0%,#0983ad 100%);
+    background: linear-gradient(to right,#113e6d 0%,#0983ad 100%);
     -webkit-transform: scaleX(0);
     -moz-transform: scaleX(0);
     -ms-transform: scaleX(0);
@@ -14014,9 +14014,9 @@ button.mfp-arrow:hover:before {
     transform-origin: 0 0;
 }
 .btReverseGradient .bt_bb_style_simple.bt_bb_accordion .bt_bb_accordion_item .bt_bb_accordion_item_title:after {
-    background: -webkit-linear-gradient(left,#8dc645 0%,#1976bc 100%);
-    background: -moz-linear-gradient(left,#8dc645 0%,#1976bc 100%);
-    background: linear-gradient(to right,#8dc645 0%,#1976bc 100%);
+    background: -webkit-linear-gradient(left,#0983ad 0%,#113e6d 100%);
+    background: -moz-linear-gradient(left,#0983ad 0%,#113e6d 100%);
+    background: linear-gradient(to right,#0983ad 0%,#113e6d 100%);
 }
 .rtl .bt_bb_style_simple.bt_bb_accordion .bt_bb_accordion_item .bt_bb_accordion_item_title:after {
     left: auto;
@@ -14337,9 +14337,9 @@ button.mfp-arrow:hover:before {
     padding: .35rem 0;
 }
 .bt_bb_price_list.bt_bb_color_scheme_11 {
-    background: -webkit-linear-gradient(315deg,#1976bc 0%,#8dc645 100%) !important;
-    background: -moz-linear-gradient(315deg,#1976bc 0%,#8dc645 100%) !important;
-    background: linear-gradient(135deg,#1976bc 0%,#8dc645 100%) !important;
+    background: -webkit-linear-gradient(315deg,#113e6d 0%,#0983ad 100%) !important;
+    background: -moz-linear-gradient(315deg,#113e6d 0%,#0983ad 100%) !important;
+    background: linear-gradient(135deg,#113e6d 0%,#0983ad 100%) !important;
     color: #181818;
 }
 .bt_bb_price_list.bt_bb_color_scheme_11 .bt_bb_price_list_title,
@@ -14347,9 +14347,9 @@ button.mfp-arrow:hover:before {
     color: #181818;
 }
 .bt_bb_price_list.bt_bb_color_scheme_12 {
-    background: -webkit-linear-gradient(315deg,#1976bc 0%,#8dc645 100%) !important;
-    background: -moz-linear-gradient(315deg,#1976bc 0%,#8dc645 100%) !important;
-    background: linear-gradient(135deg,#1976bc 0%,#8dc645 100%) !important;
+    background: -webkit-linear-gradient(315deg,#113e6d 0%,#0983ad 100%) !important;
+    background: -moz-linear-gradient(315deg,#113e6d 0%,#0983ad 100%) !important;
+    background: linear-gradient(135deg,#113e6d 0%,#0983ad 100%) !important;
     color: #fff;
 }
 .bt_bb_price_list.bt_bb_color_scheme_12 .bt_bb_price_list_title,
@@ -14357,9 +14357,9 @@ button.mfp-arrow:hover:before {
     color: #fff;
 }
 .bt_bb_price_list.bt_bb_color_scheme_13 {
-    background: -webkit-linear-gradient(315deg,#8dc645 0%,#1976bc 100%) !important;
-    background: -moz-linear-gradient(315deg,#8dc645 0%,#1976bc 100%) !important;
-    background: linear-gradient(135deg,#8dc645 0%,#1976bc 100%) !important;
+    background: -webkit-linear-gradient(315deg,#0983ad 0%,#113e6d 100%) !important;
+    background: -moz-linear-gradient(315deg,#0983ad 0%,#113e6d 100%) !important;
+    background: linear-gradient(135deg,#0983ad 0%,#113e6d 100%) !important;
     color: #181818;
 }
 .bt_bb_price_list.bt_bb_color_scheme_13 .bt_bb_price_list_title,
@@ -14367,9 +14367,9 @@ button.mfp-arrow:hover:before {
     color: #181818;
 }
 .bt_bb_price_list.bt_bb_color_scheme_14 {
-    background: -webkit-linear-gradient(315deg,#8dc645 0%,#1976bc 100%) !important;
-    background: -moz-linear-gradient(315deg,#8dc645 0%,#1976bc 100%) !important;
-    background: linear-gradient(135deg,#8dc645 0%,#1976bc 100%) !important;
+    background: -webkit-linear-gradient(315deg,#0983ad 0%,#113e6d 100%) !important;
+    background: -moz-linear-gradient(315deg,#0983ad 0%,#113e6d 100%) !important;
+    background: linear-gradient(135deg,#0983ad 0%,#113e6d 100%) !important;
     color: #fff;
 }
 .bt_bb_price_list.bt_bb_color_scheme_14 .bt_bb_price_list_title,
@@ -14471,9 +14471,9 @@ button.mfp-arrow:hover:before {
     -moz-transition: 300ms ease all;
     transition: 300ms ease all;
     text-shadow: 0 1px 3px rgba(24,24,24,.15);
-    background-image: -webkit-linear-gradient(top,#1976bc 50%,#8dc645 100%);
-    background-image: -moz-linear-gradient(top,#1976bc 50%,#8dc645 100%);
-    background-image: linear-gradient(to bottom,#1976bc 50%,#8dc645 100%);
+    background-image: -webkit-linear-gradient(top,#113e6d 50%,#0983ad 100%);
+    background-image: -moz-linear-gradient(top,#113e6d 50%,#0983ad 100%);
+    background-image: linear-gradient(to bottom,#113e6d 50%,#0983ad 100%);
     background-size: 1px 200%;
     white-space: normal;
     border-radius: 0;
@@ -14535,9 +14535,9 @@ div.wpcf7-response-output {
 }
 div.wpcf7-mail-sent-ok {
     border: 0;
-    background-image: -webkit-linear-gradient(left,#1976bc 0%,#8dc645 100%);
-    background-image: -moz-linear-gradient(left,#1976bc 0%,#8dc645 100%);
-    background-image: linear-gradient(to right,#1976bc 0%,#8dc645 100%);
+    background-image: -webkit-linear-gradient(left,#113e6d 0%,#0983ad 100%);
+    background-image: -moz-linear-gradient(left,#113e6d 0%,#0983ad 100%);
+    background-image: linear-gradient(to right,#113e6d 0%,#0983ad 100%);
     color: #fff;
     padding: -webkit-calc(.5em + 2px) -webkit-calc(1em + 2px);
     padding: -moz-calc(.5em + 2px) -moz-calc(1em + 2px);
@@ -14606,12 +14606,12 @@ div.wpcf7 .ajax-loader {
 .bt_bb_required:after {
     content: "*";
     display: inline-block;
-    color: #1976bc !important;
+    color: #113e6d !important;
     font-weight: 700;
     margin: 0 0 0 .5em;
 }
 .required {
-    color: #1976bc !important;
+    color: #113e6d !important;
     font-weight: 700;
     margin: 0 0 0 .5em;
 }
@@ -14769,9 +14769,9 @@ div.wpcf7 .ajax-loader {
 .btTourList .btSingleTourBlock .btSingleTourImage .btImageWrapper:after {
     height: 4px;
     z-index: 2;
-    background: -webkit-linear-gradient(left,#1976bc 0%,#8dc645 100%);
-    background: -moz-linear-gradient(left,#1976bc 0%,#8dc645 100%);
-    background: linear-gradient(to right,#1976bc 0%,#8dc645 100%);
+    background: -webkit-linear-gradient(left,#113e6d 0%,#0983ad 100%);
+    background: -moz-linear-gradient(left,#113e6d 0%,#0983ad 100%);
+    background: linear-gradient(to right,#113e6d 0%,#0983ad 100%);
     -webkit-transform: scaleX(0);
     -moz-transform: scaleX(0);
     -ms-transform: scaleX(0);
@@ -14788,9 +14788,9 @@ div.wpcf7 .ajax-loader {
     transform-origin: 100% 0;
 }
 .btReverseGradient .btTourList .btSingleTourBlock .btSingleTourImage .btImageWrapper:after {
-    background: -webkit-linear-gradient(left,#8dc645 0%,#1976bc 100%);
-    background: -moz-linear-gradient(left,#8dc645 0%,#1976bc 100%);
-    background: linear-gradient(to right,#8dc645 0%,#1976bc 100%);
+    background: -webkit-linear-gradient(left,#0983ad 0%,#113e6d 100%);
+    background: -moz-linear-gradient(left,#0983ad 0%,#113e6d 100%);
+    background: linear-gradient(to right,#0983ad 0%,#113e6d 100%);
 }
 .btListDesignList.btTourList .btSingleTourBlock .btSingleTourImage {
     -webkit-flex: 0 0 280px;
@@ -14821,7 +14821,7 @@ div.wpcf7 .ajax-loader {
     font-weight: 800;
     padding: 0;
     z-index: 1;
-    background: #8dc645;
+    background: #0983ad;
     color: #fff;
     text-shadow: 0 1px 3px rgba(24,24,24,.2);
     font-size: .75em;
@@ -15271,8 +15271,8 @@ div.wpcf7 .ajax-loader {
     padding: 1.333333em 1.666666em;
     white-space: nowrap;
     color: #1976bc;
-    -webkit-box-shadow: 0 0 0 2px #1976bc inset,0 0 0 rgba(24,24,24,.15);
-    box-shadow: 0 0 0 2px #1976bc inset,0 0 0 rgba(24,24,24,.15);
+    -webkit-box-shadow: 0 0 0 2px #113e6d inset,0 0 0 rgba(24,24,24,.15);
+    box-shadow: 0 0 0 2px #113e6d inset,0 0 0 rgba(24,24,24,.15);
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
     -ms-transform: translateY(0);
@@ -15284,8 +15284,8 @@ div.wpcf7 .ajax-loader {
 }
 .btTourList .btSingleTourBlock .btSingleTourContent .btListWrapper .btViewDetails a:hover {
     color: #fff;
-    -webkit-box-shadow: 0 0 0 2em #1976bc inset,0 3px 10px rgba(24,24,24,.15);
-    box-shadow: 0 0 0 2em #1976bc inset,0 3px 10px rgba(24,24,24,.15);
+    -webkit-box-shadow: 0 0 0 2em #113e6d inset,0 3px 10px rgba(24,24,24,.15);
+    box-shadow: 0 0 0 2em #113e6d inset,0 3px 10px rgba(24,24,24,.15);
     text-shadow: 0 1px 3px rgba(24,24,24,.15);
     -webkit-transform: translateY(-3px);
     -moz-transform: translateY(-3px);
@@ -15445,8 +15445,8 @@ body.single-tour .btPageHeadline.btTourVideoImageSlider .bt_bb_video .mejs-conta
     width: 64px;
     height: 64px;
     border: 2px solid transparent;
-    border-top: 2px solid #1976bc !important;
-    border-bottom: 2px solid #1976bc !important;
+    border-top: 2px solid #113e6d !important;
+    border-bottom: 2px solid #113e6d !important;
     border-radius: 50%;
     -webkit-animation: btLoader 2s infinite linear;
     -moz-animation: btLoader 2s infinite linear;
@@ -15467,8 +15467,8 @@ body.single-tour .btPageHeadline.btTourVideoImageSlider .bt_bb_video .mejs-conta
     animation: btLoader 5s infinite linear;
     border-radius: 50%;
     border: 2px solid transparent;
-    border-left: 2px solid #8dc645 !important;
-    border-right: 2px solid #8dc645 !important;
+    border-left: 2px solid #0983ad !important;
+    border-right: 2px solid #0983ad !important;
 }
 body.single-tour .btPageHeadline.btTourVideo .bt_bb_video .mejs-container .mejs-layers .mejs-overlay-play,
 body.single-tour .btPageHeadline.btTourVideoImageSlider .bt_bb_video .mejs-container .mejs-layers .mejs-overlay-play {
@@ -15476,9 +15476,9 @@ body.single-tour .btPageHeadline.btTourVideoImageSlider .bt_bb_video .mejs-conta
 }
 body.single-tour .btPageHeadline.btTourVideo .bt_bb_video .mejs-container .mejs-layers .mejs-overlay-play .mejs-overlay-button,
 body.single-tour .btPageHeadline.btTourVideoImageSlider .bt_bb_video .mejs-container .mejs-layers .mejs-overlay-play .mejs-overlay-button {
-    background: -webkit-linear-gradient(315deg,#1976bc 0%,#8dc645 100%);
-    background: -moz-linear-gradient(315deg,#1976bc 0%,#8dc645 100%);
-    background: linear-gradient(135deg,#1976bc 0%,#8dc645 100%);
+    background: -webkit-linear-gradient(315deg,#113e6d 0%,#0983ad 100%);
+    background: -moz-linear-gradient(315deg,#113e6d 0%,#0983ad 100%);
+    background: linear-gradient(135deg,#113e6d 0%,#0983ad 100%);
     border-radius: 50%;
     color: #fff;
     -webkit-box-shadow: 0 5px 15px rgba(24,24,24,.5);
@@ -15595,9 +15595,9 @@ body.single-tour .btPageHeadline.btTourVideo .bt_bb_video .mejs-container .mejs-
 body.single-tour .btPageHeadline.btTourVideo .bt_bb_video .mejs-container .mejs-controls.mejs-offscreen .mejs-time-rail .mejs-time-current,
 body.single-tour .btPageHeadline.btTourVideoImageSlider .bt_bb_video .mejs-container .mejs-controls .mejs-time-rail .mejs-time-current,
 body.single-tour .btPageHeadline.btTourVideoImageSlider .bt_bb_video .mejs-container .mejs-controls.mejs-offscreen .mejs-time-rail .mejs-time-current {
-    background: -webkit-linear-gradient(left,#1976bc 0%,#8dc645 100%);
-    background: -moz-linear-gradient(left,#1976bc 0%,#8dc645 100%);
-    background: linear-gradient(to right,#1976bc 0%,#8dc645 100%);
+    background: -webkit-linear-gradient(left,#113e6d 0%,#0983ad 100%);
+    background: -moz-linear-gradient(left,#113e6d 0%,#0983ad 100%);
+    background: linear-gradient(to right,#113e6d 0%,#0983ad 100%);
 }
 body.single-tour .btPageHeadline.btTourVideo .bt_bb_video .mejs-container .mejs-controls .mejs-time-rail .mejs-time-hovered,
 body.single-tour .btPageHeadline.btTourVideo .bt_bb_video .mejs-container .mejs-controls.mejs-offscreen .mejs-time-rail .mejs-time-hovered,
@@ -15721,9 +15721,9 @@ body.single-tour.btWithSidebar.btBelowMenu.btMenuBelowLogo.btHeaderWidgetsLeftRi
 }
 .btTourSingleItemStandard .btSingleTourInfo {
     margin-bottom: 3em;
-    background: -webkit-linear-gradient(left,#1976bc 0%,#8dc645 100%);
-    background: -moz-linear-gradient(left,#1976bc 0%,#8dc645 100%);
-    background: linear-gradient(to right,#1976bc 0%,#8dc645 100%);
+    background: -webkit-linear-gradient(left,#113e6d 0%,#0983ad 100%);
+    background: -moz-linear-gradient(left,#113e6d 0%,#0983ad 100%);
+    background: linear-gradient(to right,#113e6d 0%,#0983ad 100%);
     padding: 2.5em 1.875em;
     color: #fff;
     position: relative;
@@ -15733,9 +15733,9 @@ body.single-tour.btWithSidebar.btBelowMenu.btMenuBelowLogo.btHeaderWidgetsLeftRi
     margin-top: 0;
 }
 .btReverseGradient .btTourSingleItemStandard .btSingleTourInfo {
-    background: -webkit-linear-gradient(left,#8dc645 0%,#1976bc 100%);
-    background: -moz-linear-gradient(left,#8dc645 0%,#1976bc 100%);
-    background: linear-gradient(to right,#8dc645 0%,#1976bc 100%);
+    background: -webkit-linear-gradient(left,#0983ad 0%,#113e6d 100%);
+    background: -moz-linear-gradient(left,#0983ad 0%,#113e6d 100%);
+    background: linear-gradient(to right,#0983ad 0%,#113e6d 100%);
 }
 .btTourSingleItemStandard .btSingleTourInfo .btPromoPrice {
     position: absolute;
@@ -15746,7 +15746,7 @@ body.single-tour.btWithSidebar.btBelowMenu.btMenuBelowLogo.btHeaderWidgetsLeftRi
     font-weight: 800;
     padding: 0;
     z-index: 10;
-    background: #8dc645;
+    background: #0983ad;
     color: #fff;
     text-shadow: 0 1px 3px rgba(24,24,24,.2);
     font-size: .75em;
@@ -15799,7 +15799,7 @@ body.single-tour.btWithSidebar.btBelowMenu.btMenuBelowLogo.btHeaderWidgetsLeftRi
     background: #1976bc;
 }
 .btReverseGradient.rtl .btTourSingleItemStandard .btSingleTourInfo .btPromoPrice {
-    background: #8dc645;
+    background: #0983ad;
 }
 .btTourSingleItemStandard .btSingleTourInfo .btSingleTourInfoInner {
     display: -ms-flexbox;
@@ -15912,10 +15912,10 @@ body.single-tour.btWithSidebar.btBelowMenu.btMenuBelowLogo.btHeaderWidgetsLeftRi
     justify-content: center;
 }
 .btReverseGradient .btTourSingleItemStandard .btSingleTourInfo .btSingleTourInfoInner .btTourBook a {
-    background: #8dc645;
+    background: #0983ad;
 }
 .rtl .btTourSingleItemStandard .btSingleTourInfo .btSingleTourInfoInner .btTourBook a {
-    background: #8dc645;
+    background: #0983ad;
 }
 .btReverseGradient.rtl .btTourSingleItemStandard .btSingleTourInfo .btSingleTourInfoInner .btTourBook a {
     background: #1976bc;
@@ -15938,9 +15938,9 @@ body.single-tour.btWithSidebar.btBelowMenu.btMenuBelowLogo.btHeaderWidgetsLeftRi
     position: absolute;
     display: block;
     content: "";
-    background: -webkit-linear-gradient(bottom,#8dc645 0%,#1976bc 90%);
-    background: -moz-linear-gradient(bottom,#8dc645 0%,#1976bc 90%);
-    background: linear-gradient(to top,#8dc645 0%,#1976bc 90%);
+    background: -webkit-linear-gradient(bottom,#0983ad 0%,#113e6d 90%);
+    background: -moz-linear-gradient(bottom,#0983ad 0%,#113e6d 90%);
+    background: linear-gradient(to top,#0983ad 0%,#113e6d 90%);
     left: -1px;
     top: -1px;
     right: -1px;
@@ -15955,19 +15955,19 @@ body.single-tour.btWithSidebar.btBelowMenu.btMenuBelowLogo.btHeaderWidgetsLeftRi
     transition: all 300ms ease;
 }
 .btReverseGradient .btTourSingleItemStandard .btSingleTourInfo .btSingleTourInfoInner .btTourBook a:before {
-    background: -webkit-linear-gradient(bottom,#1976bc 0%,#8dc645 90%);
-    background: -moz-linear-gradient(bottom,#1976bc 0%,#8dc645 90%);
-    background: linear-gradient(to top,#1976bc 0%,#8dc645 90%);
+    background: -webkit-linear-gradient(bottom,#113e6d 0%,#0983ad 90%);
+    background: -moz-linear-gradient(bottom,#113e6d 0%,#0983ad 90%);
+    background: linear-gradient(to top,#113e6d 0%,#0983ad 90%);
 }
 .rtl .btTourSingleItemStandard .btSingleTourInfo .btSingleTourInfoInner .btTourBook a:before {
-    background: -webkit-linear-gradient(bottom,#1976bc 0%,#8dc645 90%);
-    background: -moz-linear-gradient(bottom,#1976bc 0%,#8dc645 90%);
-    background: linear-gradient(to top,#1976bc 0%,#8dc645 90%);
+    background: -webkit-linear-gradient(bottom,#113e6d 0%,#0983ad 90%);
+    background: -moz-linear-gradient(bottom,#113e6d 0%,#0983ad 90%);
+    background: linear-gradient(to top,#113e6d 0%,#0983ad 90%);
 }
 .btReverseGradient.rtl .btTourSingleItemStandard .btSingleTourInfo .btSingleTourInfoInner .btTourBook a:before {
-    background: -webkit-linear-gradient(bottom,#8dc645 0%,#1976bc 90%);
-    background: -moz-linear-gradient(bottom,#8dc645 0%,#1976bc 90%);
-    background: linear-gradient(to top,#8dc645 0%,#1976bc 90%);
+    background: -webkit-linear-gradient(bottom,#0983ad 0%,#113e6d 90%);
+    background: -moz-linear-gradient(bottom,#0983ad 0%,#113e6d 90%);
+    background: linear-gradient(to top,#0983ad 0%,#113e6d 90%);
 }
 .btTourSingleItemStandard .btSingleTourInfo .btSingleTourInfoInner .btTourBook a:hover {
     -webkit-transform: translateY(-3px);
@@ -16235,7 +16235,7 @@ body.single-tour.btWithSidebar.btBelowMenu.btMenuBelowLogo.btHeaderWidgetsLeftRi
     font-weight: 700;
 }
 .btTourSingleItemStandard .btTourIncludes .btTourSingleInclude .btTourSingleIncludeContent > .btTourSingleIncludeLink a {
-    color: #8dc645;
+    color: #0983ad;
     white-space: nowrap;
 }
 .btTourSingleItemStandard .btTourIncludes .btTourSingleInclude .btTourSingleIncludeContent > .btTourSingleIncludeLink a:after {
@@ -16451,7 +16451,7 @@ body.single-tour.btWithSidebar.btBelowMenu.btMenuBelowLogo.btHeaderWidgetsLeftRi
     display: none;
 }
 .btTourSingleItemStandard .btTourMainContent .btDiscoverLocation {
-    color: #8dc645;
+    color: #0983ad;
     font-weight: 700;
     letter-spacing: 0;
     font-size: .4666666em;
@@ -16539,8 +16539,8 @@ body.single-tour.btWithSidebar.btBelowMenu.btMenuBelowLogo.btHeaderWidgetsLeftRi
 }
 .btTourSingleItemStandard .btTourPlan .btTourPlanPaging ul li.on,
 .btTourSingleItemStandard .btTourPlan .btTourPlanPaging ul li:hover {
-    -webkit-box-shadow: 0 0 0 2em #1976bc inset;
-    box-shadow: 0 0 0 2em #1976bc inset;
+    -webkit-box-shadow: 0 0 0 2em #113e6d inset;
+    box-shadow: 0 0 0 2em #113e6d inset;
 }
 .btTourSingleItemStandard .btTourPlan .btTourPlanPaging ul li.on {
     pointer-events: none;
@@ -16767,9 +16767,9 @@ body.single-tour.btWithSidebar.btBelowMenu.btMenuBelowLogo.btHeaderWidgetsLeftRi
     border-radius: 50%;
     width: 170px;
     height: 170px;
-    background: -webkit-linear-gradient(top,#1976bc 0%,#8dc645 90%);
-    background: -moz-linear-gradient(top,#1976bc 0%,#8dc645 90%);
-    background: linear-gradient(to bottom,#1976bc 0%,#8dc645 90%);
+    background: -webkit-linear-gradient(top,#113e6d 0%,#0983ad 90%);
+    background: -moz-linear-gradient(top,#113e6d 0%,#0983ad 90%);
+    background: linear-gradient(to bottom,#113e6d 0%,#0983ad 90%);
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
@@ -16912,9 +16912,9 @@ body.single-tour.btWithSidebar.btBelowMenu.btMenuBelowLogo.btHeaderWidgetsLeftRi
     -moz-transition: transform 300ms ease;
     transition: transform 300ms ease;
     z-index: 1;
-    background-image: -webkit-linear-gradient(top,#1976bc 0%,#8dc645 100%);
-    background-image: -moz-linear-gradient(top,#1976bc 0%,#8dc645 100%);
-    background-image: linear-gradient(to bottom,#1976bc 0%,#8dc645 100%);
+    background-image: -webkit-linear-gradient(top,#113e6d 0%,#0983ad 100%);
+    background-image: -moz-linear-gradient(top,#113e6d 0%,#0983ad 100%);
+    background-image: linear-gradient(to bottom,#113e6d 0%,#0983ad 100%);
 }
 .btTourSingleItemStandard .btComments .show-more-comments .bt_bb_button .bt_bb_link:hover {
     -webkit-transform: translateY(-3px);
@@ -17215,9 +17215,9 @@ body.single-tour.btWithSidebar.btBelowMenu.btMenuBelowLogo.btHeaderWidgetsLeftRi
     position: absolute;
     display: block;
     content: "";
-    background: -webkit-linear-gradient(bottom,#8dc645 0%,#1976bc 90%);
-    background: -moz-linear-gradient(bottom,#8dc645 0%,#1976bc 90%);
-    background: linear-gradient(to top,#8dc645 0%,#1976bc 90%);
+    background: -webkit-linear-gradient(bottom,#0983ad 0%,#113e6d 90%);
+    background: -moz-linear-gradient(bottom,#0983ad 0%,#113e6d 90%);
+    background: linear-gradient(to top,#0983ad 0%,#113e6d 90%);
     left: -1px;
     top: -1px;
     right: -1px;
@@ -17623,24 +17623,24 @@ body.single-tour.btWithSidebar.btBelowMenu.btMenuBelowLogo.btHeaderWidgetsLeftRi
 
 @media (max-width: 480px) {
     .btTourSingleItemStandard .btSingleTourInfo {
-        background: -webkit-linear-gradient(315deg,#1976bc 0%,#8dc645 100%);
-        background: -moz-linear-gradient(315deg,#1976bc 0%,#8dc645 100%);
-        background: linear-gradient(135deg,#1976bc 0%,#8dc645 100%);
+        background: -webkit-linear-gradient(315deg,#113e6d 0%,#0983ad 100%);
+        background: -moz-linear-gradient(315deg,#113e6d 0%,#0983ad 100%);
+        background: linear-gradient(135deg,#113e6d 0%,#0983ad 100%);
     }
     .btReverseGradient .btTourSingleItemStandard .btSingleTourInfo {
-        background: -webkit-linear-gradient(315deg,#8dc645 0%,#1976bc 100%);
-        background: -moz-linear-gradient(315deg,#8dc645 0%,#1976bc 100%);
-        background: linear-gradient(135deg,#8dc645 0%,#1976bc 100%);
+        background: -webkit-linear-gradient(315deg,#0983ad 0%,#113e6d 100%);
+        background: -moz-linear-gradient(315deg,#0983ad 0%,#113e6d 100%);
+        background: linear-gradient(135deg,#0983ad 0%,#113e6d 100%);
     }
     .rtl .btTourSingleItemStandard .btSingleTourInfo {
-        background: -webkit-linear-gradient(315deg,#8dc645 0%,#1976bc 100%);
-        background: -moz-linear-gradient(315deg,#8dc645 0%,#1976bc 100%);
-        background: linear-gradient(135deg,#8dc645 0%,#1976bc 100%);
+        background: -webkit-linear-gradient(315deg,#0983ad 0%,#113e6d 100%);
+        background: -moz-linear-gradient(315deg,#0983ad 0%,#113e6d 100%);
+        background: linear-gradient(135deg,#0983ad 0%,#113e6d 100%);
     }
     .btReverseGradient.rtl .btTourSingleItemStandard .btSingleTourInfo {
-        background: -webkit-linear-gradient(315deg,#1976bc 0%,#8dc645 100%);
-        background: -moz-linear-gradient(315deg,#1976bc 0%,#8dc645 100%);
-        background: linear-gradient(135deg,#1976bc 0%,#8dc645 100%);
+        background: -webkit-linear-gradient(315deg,#113e6d 0%,#0983ad 100%);
+        background: -moz-linear-gradient(315deg,#113e6d 0%,#0983ad 100%);
+        background: linear-gradient(135deg,#113e6d 0%,#0983ad 100%);
     }
     .btTourSingleItemStandard .btSingleTourInfo .btSingleTourInfoInner .btTourIcon,
     .btTourSingleItemStandard .btSingleTourInfo .btSingleTourInfoInner .btTourIcon.btTourDestination {
@@ -17933,9 +17933,9 @@ body.single-tour.btWithSidebar.btBelowMenu.btMenuBelowLogo.btHeaderWidgetsLeftRi
     position: absolute;
     display: block;
     content: "";
-    background: -webkit-linear-gradient(bottom,#8dc645 0%,#1976bc 90%);
-    background: -moz-linear-gradient(bottom,#8dc645 0%,#1976bc 90%);
-    background: linear-gradient(to top,#8dc645 0%,#1976bc 90%);
+    background: -webkit-linear-gradient(bottom,#0983ad 0%,#113e6d 90%);
+    background: -moz-linear-gradient(bottom,#0983ad 0%,#113e6d 90%);
+    background: linear-gradient(to top,#0983ad 0%,#113e6d 90%);
     left: 0;
     top: 0;
     right: 0;
@@ -18160,9 +18160,9 @@ body.single-tour.btWithSidebar.btBelowMenu.btMenuBelowLogo.btHeaderWidgetsLeftRi
     position: absolute;
     display: block;
     content: "";
-    background: -webkit-linear-gradient(bottom,#8dc645 0%,#1976bc 90%);
-    background: -moz-linear-gradient(bottom,#8dc645 0%,#1976bc 90%);
-    background: linear-gradient(to top,#8dc645 0%,#1976bc 90%);
+    background: -webkit-linear-gradient(bottom,#0983ad 0%,#113e6d 90%);
+    background: -moz-linear-gradient(bottom,#0983ad 0%,#113e6d 90%);
+    background: linear-gradient(to top,#0983ad 0%,#113e6d 90%);
     left: -1px;
     top: -1px;
     right: -1px;
@@ -18255,8 +18255,8 @@ body.single-tour.btWithSidebar.btBelowMenu.btMenuBelowLogo.btHeaderWidgetsLeftRi
 .btDarkSkin .listing_results .btPagination .port .page-numbers.current,
 .btLightSkin .btDarkSkin .listing_results .btPagination .port .page-numbers.current,
 .btDarkSkin.btLightSkin .btDarkSkin .listing_results .btPagination .port .page-numbers.current {
-    -webkit-box-shadow: 0 0 0 2em #1976bc inset;
-    box-shadow: 0 0 0 2em #1976bc inset;
+    -webkit-box-shadow: 0 0 0 2em #113e6d inset;
+    box-shadow: 0 0 0 2em #113e6d inset;
     color: #fff;
     font-weight: 800;
     cursor: default;
@@ -18368,8 +18368,8 @@ body.single-tour.btWithSidebar.btBelowMenu.btMenuBelowLogo.btHeaderWidgetsLeftRi
     font-size: 6px;
     position: relative;
     border: 2px solid transparent;
-    border-top: 2px solid #1976bc !important;
-    border-bottom: 2px solid #1976bc !important;
+    border-top: 2px solid #113e6d !important;
+    border-bottom: 2px solid #113e6d !important;
     border-radius: 50%;
     -webkit-animation: btLoader 2s infinite linear;
     -moz-animation: btLoader 2s infinite linear;
@@ -18391,8 +18391,8 @@ body.single-tour.btWithSidebar.btBelowMenu.btMenuBelowLogo.btHeaderWidgetsLeftRi
     animation: btLoader 5s infinite linear;
     border-radius: 50%;
     border: 2px solid transparent;
-    border-left: 2px solid #8dc645 !important;
-    border-right: 2px solid #8dc645 !important;
+    border-left: 2px solid #0983ad !important;
+    border-right: 2px solid #0983ad !important;
 }
 
 /* Autocomplete for destinations */
@@ -18429,9 +18429,9 @@ body.single-tour.btWithSidebar.btBelowMenu.btMenuBelowLogo.btHeaderWidgetsLeftRi
     display: block;
     height: 2px;
     width: 2em;
-    background: -webkit-linear-gradient(left,#fff 0%,#8dc645 100%);
-    background: -moz-linear-gradient(left,#fff 0%,#8dc645 100%);
-    background: linear-gradient(to right,#fff 0%,#8dc645 100%);
+    background: -webkit-linear-gradient(left,#fff 0%,#0983ad 100%);
+    background: -moz-linear-gradient(left,#fff 0%,#0983ad 100%);
+    background: linear-gradient(to right,#fff 0%,#0983ad 100%);
     position: absolute;
     left: 0;
     bottom: .5em;
@@ -18574,9 +18574,9 @@ body.single-tour.btWithSidebar.btBelowMenu.btMenuBelowLogo.btHeaderWidgetsLeftRi
 
 /* Sidebar tour elements */
 .btSidebarNewsletterForm {
-    background: -webkit-linear-gradient(315deg,#1976bc 0%,#8dc645 100%);
-    background: -moz-linear-gradient(315deg,#1976bc 0%,#8dc645 100%);
-    background: linear-gradient(135deg,#1976bc 0%,#8dc645 100%);
+    background: -webkit-linear-gradient(315deg,#113e6d 0%,#0983ad 100%);
+    background: -moz-linear-gradient(315deg,#113e6d 0%,#0983ad 100%);
+    background: linear-gradient(135deg,#113e6d 0%,#0983ad 100%);
     padding: 1.875em;
     color: #fff;
 }
@@ -18656,7 +18656,7 @@ body.single-tour.btWithSidebar.btBelowMenu.btMenuBelowLogo.btHeaderWidgetsLeftRi
     border-color: transparent #104c78 transparent transparent;
 }
 .bt_bb_tour_tag.bt_bb_color_alternate {
-    background: #8dc645;
+    background: #0983ad;
 }
 .bt_bb_tour_tag.bt_bb_color_alternate:before {
     border-color: transparent #65922d transparent transparent;
@@ -18906,9 +18906,9 @@ body.single-tour.btWithSidebar.btBelowMenu.btMenuBelowLogo.btHeaderWidgetsLeftRi
     display: block;
     height: 2px;
     width: 2em;
-    background: -webkit-linear-gradient(left,#fff 0%,#8dc645 100%);
-    background: -moz-linear-gradient(left,#fff 0%,#8dc645 100%);
-    background: linear-gradient(to right,#fff 0%,#8dc645 100%);
+    background: -webkit-linear-gradient(left,#fff 0%,#0983ad 100%);
+    background: -moz-linear-gradient(left,#fff 0%,#0983ad 100%);
+    background: linear-gradient(to right,#fff 0%,#0983ad 100%);
     position: absolute;
     left: 0;
     bottom: .5em;
@@ -19141,17 +19141,17 @@ body.single-tour.btWithSidebar.btBelowMenu.btMenuBelowLogo.btHeaderWidgetsLeftRi
 }
 .ui-datepicker.tour-datepicker-div-widget .ui-datepicker-calendar td a.ui-state-highlight,
 .ui-datepicker.tour-datepicker-div .ui-datepicker-calendar td a.ui-state-highlight {
-    background: #8dc645;
+    background: #0983ad;
     color: #fff;
 }
 .ui-datepicker.tour-datepicker-div-widget .ui-datepicker-calendar td a.ui-state-hover,
 .ui-datepicker.tour-datepicker-div .ui-datepicker-calendar td a.ui-state-hover {
-    background: #1976bc !important;
+    background: #113e6d !important;
     color: #fff;
 }
 .ui-datepicker.tour-datepicker-div-widget .ui-datepicker-calendar td.up-datepicker-today a,
 .ui-datepicker.tour-datepicker-div .ui-datepicker-calendar td.up-datepicker-today a {
-    background: #8dc645;
+    background: #0983ad;
     color: #fff;
 }
 .ui-datepicker.tour-datepicker-div-widget .ui-datepicker-calendar td.ui-datepicker-current-day a,
@@ -19202,9 +19202,9 @@ body.single-tour.btWithSidebar.btBelowMenu.btMenuBelowLogo.btHeaderWidgetsLeftRi
     position: absolute;
     display: block;
     content: "";
-    background: -webkit-linear-gradient(bottom,#8dc645 0%,#1976bc 90%);
-    background: -moz-linear-gradient(bottom,#8dc645 0%,#1976bc 90%);
-    background: linear-gradient(to top,#8dc645 0%,#1976bc 90%);
+    background: -webkit-linear-gradient(bottom,#0983ad 0%,#113e6d 90%);
+    background: -moz-linear-gradient(bottom,#0983ad 0%,#113e6d 90%);
+    background: linear-gradient(to top,#0983ad 0%,#113e6d 90%);
     left: -1px;
     top: -1px;
     right: -1px;
@@ -19397,9 +19397,9 @@ body.single-tour.btWithSidebar.btBelowMenu.btMenuBelowLogo.btHeaderWidgetsLeftRi
     letter-spacing: -.05em;
     line-height: 1.25;
     padding-bottom: .8em;
-    background-image: -webkit-linear-gradient(left,#1976bc 0%,#8dc645 100%);
-    background-image: -moz-linear-gradient(left,#1976bc 0%,#8dc645 100%);
-    background-image: linear-gradient(to right,#1976bc 0%,#8dc645 100%);
+    background-image: -webkit-linear-gradient(left,#113e6d 0%,#0983ad 100%);
+    background-image: -moz-linear-gradient(left,#113e6d 0%,#0983ad 100%);
+    background-image: linear-gradient(to right,#113e6d 0%,#0983ad 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -19407,9 +19407,9 @@ body.single-tour.btWithSidebar.btBelowMenu.btMenuBelowLogo.btHeaderWidgetsLeftRi
     display: none;
 }
 .btReverseGradient .bt-forms-container-modal .bt-forms-container-modal-inner h3 {
-    background-image: -webkit-linear-gradient(right,#1976bc 0%,#8dc645 100%);
-    background-image: -moz-linear-gradient(right,#1976bc 0%,#8dc645 100%);
-    background-image: linear-gradient(to left,#1976bc 0%,#8dc645 100%);
+    background-image: -webkit-linear-gradient(right,#113e6d 0%,#0983ad 100%);
+    background-image: -moz-linear-gradient(right,#113e6d 0%,#0983ad 100%);
+    background-image: linear-gradient(to left,#113e6d 0%,#0983ad 100%);
 }
 .bt-forms-container-modal .bt-forms-container-modal-inner .btSingleTourInfo {
     display: -ms-flexbox;
@@ -19528,9 +19528,9 @@ body.single-tour.btWithSidebar.btBelowMenu.btMenuBelowLogo.btHeaderWidgetsLeftRi
     bottom: 0;
     right: 0;
     height: 2px;
-    background: -webkit-linear-gradient(left,#1976bc 0%,#8dc645 100%);
-    background: -moz-linear-gradient(left,#1976bc 0%,#8dc645 100%);
-    background: linear-gradient(to right,#1976bc 0%,#8dc645 100%);
+    background: -webkit-linear-gradient(left,#113e6d 0%,#0983ad 100%);
+    background: -moz-linear-gradient(left,#113e6d 0%,#0983ad 100%);
+    background: linear-gradient(to right,#113e6d 0%,#0983ad 100%);
     -webkit-transform: scaleX(0);
     -moz-transform: scaleX(0);
     -ms-transform: scaleX(0);
@@ -19540,9 +19540,9 @@ body.single-tour.btWithSidebar.btBelowMenu.btMenuBelowLogo.btHeaderWidgetsLeftRi
     transition: 300ms ease transform;
 }
 .btReverseGradient .bt-forms-container-modal .bt-forms-container-modal-inner .btFormTabs .bt-forms-container-toggle span:after {
-    background: -webkit-linear-gradient(left,#8dc645 0%,#1976bc 100%);
-    background: -moz-linear-gradient(left,#8dc645 0%,#1976bc 100%);
-    background: linear-gradient(to right,#8dc645 0%,#1976bc 100%);
+    background: -webkit-linear-gradient(left,#0983ad 0%,#113e6d 100%);
+    background: -moz-linear-gradient(left,#0983ad 0%,#113e6d 100%);
+    background: linear-gradient(to right,#0983ad 0%,#113e6d 100%);
 }
 .bt-forms-container-modal .bt-forms-container-modal-inner .btFormTabs .bt-forms-container-toggle.bt-tab-on {
     cursor: text;
@@ -19985,9 +19985,9 @@ ul.products li.product .btWooShopLoopItemInner .bt_bb_image:after {
     right: 0;
     bottom: 0;
     height: 4px;
-    background: -webkit-linear-gradient(left,#1976bc 0%,#8dc645 100%);
-    background: -moz-linear-gradient(left,#1976bc 0%,#8dc645 100%);
-    background: linear-gradient(to right,#1976bc 0%,#8dc645 100%);
+    background: -webkit-linear-gradient(left,#113e6d 0%,#0983ad 100%);
+    background: -moz-linear-gradient(left,#113e6d 0%,#0983ad 100%);
+    background: linear-gradient(to right,#113e6d 0%,#0983ad 100%);
     z-index: 2;
     -webkit-transition: 300ms ease all;
     -moz-transition: 300ms ease all;
@@ -20011,9 +20011,9 @@ ul.products li.product .btWooShopLoopItemInner .bt_bb_image:after {
 }
 .btReverseGradient .products ul li.product .btWooShopLoopItemInner .bt_bb_image:after,
 .btReverseGradient ul.products li.product .btWooShopLoopItemInner .bt_bb_image:after {
-    background: -webkit-linear-gradient(left,#8dc645 0%,#1976bc 100%);
-    background: -moz-linear-gradient(left,#8dc645 0%,#1976bc 100%);
-    background: linear-gradient(to right,#8dc645 0%,#1976bc 100%);
+    background: -webkit-linear-gradient(left,#0983ad 0%,#113e6d 100%);
+    background: -moz-linear-gradient(left,#0983ad 0%,#113e6d 100%);
+    background: linear-gradient(to right,#0983ad 0%,#113e6d 100%);
 }
 .products ul li.product .btWooShopLoopItemInner .bt_bb_image:before,
 ul.products li.product .btWooShopLoopItemInner .bt_bb_image:before {
@@ -20214,12 +20214,12 @@ ul.products li.product .btWooShopLoopItemInner .loading:after {
     background: transparent;
     background: transparent;
     border: 2px solid transparent;
-    border-top: 2px solid #8dc645;
+    border-top: 2px solid #0983ad;
 }
 .products ul li.product .btWooShopLoopItemInner .added:after,
 ul.products li.product .btWooShopLoopItemInner .added:after {
     content: "\e017";
-    background: #8dc645;
+    background: #0983ad;
 }
 .products ul li.product .btWooShopLoopItemInner .added_to_cart,
 ul.products li.product .btWooShopLoopItemInner .added_to_cart {
@@ -20270,7 +20270,7 @@ ul.products li.product .onsale {
     font-weight: 800;
     padding: 0;
     z-index: 10;
-    background: #8dc645;
+    background: #0983ad;
     color: #fff;
     text-shadow: 0 1px 3px rgba(24,24,24,.2);
     font-size: .75em;
@@ -20350,9 +20350,9 @@ ul.products li.product.product-category a:before {
     right: .7em;
     top: 0;
     height: 4px;
-    background: -webkit-linear-gradient(left,#1976bc 0%,#8dc645 100%);
-    background: -moz-linear-gradient(left,#1976bc 0%,#8dc645 100%);
-    background: linear-gradient(to right,#1976bc 0%,#8dc645 100%);
+    background: -webkit-linear-gradient(left,#113e6d 0%,#0983ad 100%);
+    background: -moz-linear-gradient(left,#113e6d 0%,#0983ad 100%);
+    background: linear-gradient(to right,#113e6d 0%,#0983ad 100%);
     z-index: 2;
     -webkit-transition: 300ms ease all;
     -moz-transition: 300ms ease all;
@@ -20376,9 +20376,9 @@ ul.products li.product.product-category a:before {
 }
 .btReverseGradient .products ul li.product.product-category a:before,
 .btReverseGradient ul.products li.product.product-category a:before {
-    background: -webkit-linear-gradient(left,#8dc645 0%,#1976bc 100%);
-    background: -moz-linear-gradient(left,#8dc645 0%,#1976bc 100%);
-    background: linear-gradient(to right,#8dc645 0%,#1976bc 100%);
+    background: -webkit-linear-gradient(left,#0983ad 0%,#113e6d 100%);
+    background: -moz-linear-gradient(left,#0983ad 0%,#113e6d 100%);
+    background: linear-gradient(to right,#0983ad 0%,#113e6d 100%);
 }
 .products ul li.product.product-category a h2,
 ul.products li.product.product-category a h2 {
@@ -20546,8 +20546,8 @@ nav.woocommerce-pagination ul li span {
 .btDarkSkin nav.woocommerce-pagination ul li span.current,
 .btLightSkin .btDarkSkin nav.woocommerce-pagination ul li span.current,
 .btDarkSkin.btLightSkin .btDarkSkin nav.woocommerce-pagination ul li span.current {
-    -webkit-box-shadow: 0 0 0 2em #1976bc inset;
-    box-shadow: 0 0 0 2em #1976bc inset;
+    -webkit-box-shadow: 0 0 0 2em #113e6d inset;
+    box-shadow: 0 0 0 2em #113e6d inset;
     color: #fff;
     font-weight: 800;
 }
@@ -20693,7 +20693,7 @@ div.product .onsale {
     font-weight: 800;
     padding: 0;
     z-index: 10;
-    background: #8dc645;
+    background: #0983ad;
     color: #fff;
     text-shadow: 0 1px 3px rgba(24,24,24,.2);
     font-size: .75em;
@@ -20802,9 +20802,9 @@ div.product div.images .woocommerce-product-gallery__wrapper .woocommerce-produc
     right: 0;
     bottom: 0;
     height: 4px;
-    background: -webkit-linear-gradient(left,#1976bc 0%,#8dc645 100%);
-    background: -moz-linear-gradient(left,#1976bc 0%,#8dc645 100%);
-    background: linear-gradient(to right,#1976bc 0%,#8dc645 100%);
+    background: -webkit-linear-gradient(left,#113e6d 0%,#0983ad 100%);
+    background: -moz-linear-gradient(left,#113e6d 0%,#0983ad 100%);
+    background: linear-gradient(to right,#113e6d 0%,#0983ad 100%);
     z-index: 2;
     -webkit-transition: 300ms ease all;
     -moz-transition: 300ms ease all;
@@ -20825,9 +20825,9 @@ div.product div.images .woocommerce-product-gallery__wrapper .woocommerce-produc
     transform-origin: 100% 0;
 }
 .btReverseGradient div.product div.images .woocommerce-product-gallery__wrapper .woocommerce-product-gallery__image a:after {
-    background: -webkit-linear-gradient(left,#8dc645 0%,#1976bc 100%);
-    background: -moz-linear-gradient(left,#8dc645 0%,#1976bc 100%);
-    background: linear-gradient(to right,#8dc645 0%,#1976bc 100%);
+    background: -webkit-linear-gradient(left,#0983ad 0%,#113e6d 100%);
+    background: -moz-linear-gradient(left,#0983ad 0%,#113e6d 100%);
+    background: linear-gradient(to right,#0983ad 0%,#113e6d 100%);
 }
 div.product div.images .woocommerce-product-gallery__wrapper .woocommerce-product-gallery__image a:hover:before {
     opacity: .55;
@@ -20954,7 +20954,7 @@ div.product div.images .woocommerce-product-gallery__trigger:after {
     border-radius: 3px;
 }
 div.product div.images .woocommerce-product-gallery__trigger:hover:after {
-    background: #8dc645;
+    background: #0983ad;
     text-shadow: 0 1px 3px rgba(24,24,24,.15);
 }
 div.product div.summary {
@@ -21171,7 +21171,7 @@ table.shop_table td.product-remove a.remove:before {
     font-weight: 700;
 }
 table.shop_table td.product-remove a.remove:hover {
-    background: #8dc645;
+    background: #0983ad;
 }
 table.shop_table td.product-thumbnail {
     width: 100px;
@@ -21366,18 +21366,18 @@ ul.woocommerce-shipping-methods li {
     -ms-transform: scaleX(0);
     transform: scaleX(0);
     bottom: 0;
-    background: -webkit-linear-gradient(left,#1976bc 0%,#8dc645 100%);
-    background: -moz-linear-gradient(left,#1976bc 0%,#8dc645 100%);
-    background: linear-gradient(to right,#1976bc 0%,#8dc645 100%);
+    background: -webkit-linear-gradient(left,#113e6d 0%,#0983ad 100%);
+    background: -moz-linear-gradient(left,#113e6d 0%,#0983ad 100%);
+    background: linear-gradient(to right,#113e6d 0%,#0983ad 100%);
     height: 2px;
     -webkit-transition: 300ms ease all;
     -moz-transition: 300ms ease all;
     transition: 300ms ease all;
 }
 .btReverseGradient .woocommerce-MyAccount-navigation ul li a:after {
-    background: -webkit-linear-gradient(left,#8dc645 0%,#1976bc 100%);
-    background: -moz-linear-gradient(left,#8dc645 0%,#1976bc 100%);
-    background: linear-gradient(to right,#8dc645 0%,#1976bc 100%);
+    background: -webkit-linear-gradient(left,#0983ad 0%,#113e6d 100%);
+    background: -moz-linear-gradient(left,#0983ad 0%,#113e6d 100%);
+    background: linear-gradient(to right,#0983ad 0%,#113e6d 100%);
 }
 .woocommerce-MyAccount-navigation ul li a:hover {
     -webkit-box-shadow: 0 0 15px rgba(24,24,24,.15);
@@ -21657,8 +21657,8 @@ form .form-row:-ms-input-placeholder {
     animation: btLoader 2s infinite linear;
     border-radius: 50%;
     border: 2px solid transparent;
-    border-top: 2px solid #1976bc !important;
-    border-bottom: 2px solid #1976bc !important;
+    border-top: 2px solid #113e6d !important;
+    border-bottom: 2px solid #113e6d !important;
     line-height: 1;
     text-align: center;
     font-size: 2em;
@@ -21679,8 +21679,8 @@ form .form-row:-ms-input-placeholder {
     animation: btLoader 5s infinite linear;
     border-radius: 50%;
     border: 2px solid transparent;
-    border-left: 2px solid #8dc645 !important;
-    border-right: 2px solid #8dc645 !important;
+    border-left: 2px solid #0983ad !important;
+    border-right: 2px solid #0983ad !important;
 }
 
 /* Messages */
@@ -22052,9 +22052,9 @@ div.woocommerce input.button:before {
     top: 0;
     bottom: 0;
     right: 0;
-    background-image: -webkit-linear-gradient(top,#1976bc 0%,#8dc645 100%);
-    background-image: -moz-linear-gradient(top,#1976bc 0%,#8dc645 100%);
-    background-image: linear-gradient(to bottom,#1976bc 0%,#8dc645 100%);
+    background-image: -webkit-linear-gradient(top,#113e6d 0%,#0983ad 100%);
+    background-image: -moz-linear-gradient(top,#113e6d 0%,#0983ad 100%);
+    background-image: linear-gradient(to bottom,#113e6d 0%,#0983ad 100%);
     display: block;
     content: "";
     -webkit-transition: transform 300ms ease;
@@ -22076,9 +22076,9 @@ div.woocommerce input.button:before {
 .woocommerce-page .btContent input.button,
 div.woocommerce input[type="submit"],
 div.woocommerce input.button {
-    background-image: -webkit-linear-gradient(top,#1976bc 50%,#8dc645 100%) !important;
-    background-image: -moz-linear-gradient(top,#1976bc 50%,#8dc645 100%) !important;
-    background-image: linear-gradient(to bottom,#1976bc 50%,#8dc645 100%) !important;
+    background-image: -webkit-linear-gradient(top,#113e6d 50%,#0983ad 100%) !important;
+    background-image: -moz-linear-gradient(top,#113e6d 50%,#0983ad 100%) !important;
+    background-image: linear-gradient(to bottom,#113e6d 50%,#0983ad 100%) !important;
     background-size: 1px 200% !important;
 }
 .woocommerce .btSidebar input[type="submit"]:before,
@@ -22217,8 +22217,8 @@ div.woocommerce .shipping-calculator-button {
     display: inline-block;
     width: auto;
     text-shadow: none;
-    -webkit-box-shadow: 0 0 0 2px #1976bc inset,0 0 0 rgba(24,24,24,.15);
-    box-shadow: 0 0 0 2px #1976bc inset,0 0 0 rgba(24,24,24,.15);
+    -webkit-box-shadow: 0 0 0 2px #113e6d inset,0 0 0 rgba(24,24,24,.15);
+    box-shadow: 0 0 0 2px #113e6d inset,0 0 0 rgba(24,24,24,.15);
 }
 .woocommerce .btSidebar input.alt:before,
 .woocommerce .btContent input.alt:before,
@@ -22272,8 +22272,8 @@ div.woocommerce a.button.alt:hover,
 div.woocommerce .button.alt:hover,
 div.woocommerce button.alt:hover,
 div.woocommerce .shipping-calculator-button:hover {
-    -webkit-box-shadow: 0 0 0 2.5em #1976bc inset,0 3px 10px rgba(24,24,24,.15);
-    box-shadow: 0 0 0 2.5em #1976bc inset,0 3px 10px rgba(24,24,24,.15);
+    -webkit-box-shadow: 0 0 0 2.5em #113e6d inset,0 3px 10px rgba(24,24,24,.15);
+    box-shadow: 0 0 0 2.5em #113e6d inset,0 3px 10px rgba(24,24,24,.15);
     -webkit-transform: translateY(-3px);
     -moz-transform: translateY(-3px);
     -ms-transform: translateY(-3px);
@@ -23141,9 +23141,9 @@ button.pswp__button.pswp__button--arrow--right:before {
     top: -1px;
     bottom: -1px;
     right: -1px;
-    background: -webkit-linear-gradient(top,#1976bc 0%,#8dc645 100%);
-    background: -moz-linear-gradient(top,#1976bc 0%,#8dc645 100%);
-    background: linear-gradient(to bottom,#1976bc 0%,#8dc645 100%);
+    background: -webkit-linear-gradient(top,#113e6d 0%,#0983ad 100%);
+    background: -moz-linear-gradient(top,#113e6d 0%,#0983ad 100%);
+    background: linear-gradient(to bottom,#113e6d 0%,#0983ad 100%);
     display: block;
     content: "";
     -webkit-transition: transform 300ms ease;
@@ -23580,9 +23580,9 @@ button.pswp__button.pswp__button--arrow--right:before {
     display: block;
     height: 2px;
     width: 2em;
-    background: -webkit-linear-gradient(left,#fff 0%,#8dc645 100%);
-    background: -moz-linear-gradient(left,#fff 0%,#8dc645 100%);
-    background: linear-gradient(to right,#fff 0%,#8dc645 100%);
+    background: -webkit-linear-gradient(left,#fff 0%,#0983ad 100%);
+    background: -moz-linear-gradient(left,#fff 0%,#0983ad 100%);
+    background: linear-gradient(to right,#fff 0%,#0983ad 100%);
     position: absolute;
     left: 0;
     bottom: .5em;
@@ -23646,9 +23646,9 @@ button.pswp__button.pswp__button--arrow--right:before {
 /* Slider handle
 -------------------------------------------*/
 .btQuoteBooking .ui-slider .ui-slider-handle {
-    background: -webkit-linear-gradient(top,#1976bc 50%,#8dc645 100%);
-    background: -moz-linear-gradient(top,#1976bc 50%,#8dc645 100%);
-    background: linear-gradient(to bottom,#1976bc 50%,#8dc645 100%);
+    background: -webkit-linear-gradient(top,#113e6d 50%,#0983ad 100%);
+    background: -moz-linear-gradient(top,#113e6d 50%,#0983ad 100%);
+    background: linear-gradient(to bottom,#113e6d 50%,#0983ad 100%);
     background-size: 1px 200%;
     font-family: Montserrat,Arial,Helvetica,sans-serif;
     font-weight: 800;
@@ -23872,8 +23872,8 @@ button.pswp__button.pswp__button--arrow--right:before {
 }
 .btQuoteBooking .btContactFieldMandatory.btContactFieldError input,
 .btQuoteBooking .btQuoteBooking .btContactFieldMandatory.btContactFieldError textarea {
-    -webkit-box-shadow: 0 0 0 1px #1976bc inset;
-    box-shadow: 0 0 0 1px #1976bc inset;
+    -webkit-box-shadow: 0 0 0 1px #113e6d inset;
+    box-shadow: 0 0 0 1px #113e6d inset;
     border-color: #1976bc;
 }
 .btLightSkin .btQuoteBooking .btContactFieldMandatory.btContactFieldError input:focus,
@@ -23918,8 +23918,8 @@ button.pswp__button.pswp__button--arrow--right:before {
 .btDarkSkin .btQuoteBooking .btContactFieldMandatory.btContactFieldError .dd.ddcommon.borderRadius .ddTitleText,
 .btLightSkin .btDarkSkin .btQuoteBooking .btContactFieldMandatory.btContactFieldError .dd.ddcommon.borderRadius .ddTitleText,
 .btDarkSkin.btLightSkin .btDarkSkin .btQuoteBooking .btContactFieldMandatory.btContactFieldError .dd.ddcommon.borderRadius .ddTitleText {
-    -webkit-box-shadow: 0 0 0 1px #1976bc inset;
-    box-shadow: 0 0 0 1px #1976bc inset;
+    -webkit-box-shadow: 0 0 0 1px #113e6d inset;
+    box-shadow: 0 0 0 1px #113e6d inset;
     border-color: #1976bc;
 }
 .btLightSkin .btQuoteBooking .btContactFieldMandatory.btContactFieldError .dd.ddcommon.borderRadiusTp .ddTitleText,
@@ -23934,8 +23934,8 @@ button.pswp__button.pswp__button--arrow--right:before {
 .btDarkSkin .btQuoteBooking .btContactFieldMandatory.btContactFieldError .dd.ddcommon.borderRadiusBtm .ddTitleText,
 .btLightSkin .btDarkSkin .btQuoteBooking .btContactFieldMandatory.btContactFieldError .dd.ddcommon.borderRadiusBtm .ddTitleText,
 .btDarkSkin.btLightSkin .btDarkSkin .btQuoteBooking .btContactFieldMandatory.btContactFieldError .dd.ddcommon.borderRadiusBtm .ddTitleText {
-    -webkit-box-shadow: 0 0 0 1px #1976bc inset;
-    box-shadow: 0 0 0 1px #1976bc inset;
+    -webkit-box-shadow: 0 0 0 1px #113e6d inset;
+    box-shadow: 0 0 0 1px #113e6d inset;
     border-color: #1976bc;
 }
 .btQuoteBooking .btSubmitMessage {
@@ -24034,9 +24034,9 @@ button.pswp__button.pswp__button--arrow--right:before {
     top: -1px;
     bottom: -1px;
     right: -1px;
-    background: -webkit-linear-gradient(top,#1976bc 0%,#8dc645 100%);
-    background: -moz-linear-gradient(top,#1976bc 0%,#8dc645 100%);
-    background: linear-gradient(to bottom,#1976bc 0%,#8dc645 100%);
+    background: -webkit-linear-gradient(top,#113e6d 0%,#0983ad 100%);
+    background: -moz-linear-gradient(top,#113e6d 0%,#0983ad 100%);
+    background: linear-gradient(to bottom,#113e6d 0%,#0983ad 100%);
     display: block;
     content: "";
     -webkit-transition: transform 300ms ease;
@@ -24396,8 +24396,8 @@ button.pswp__button.pswp__button--arrow--right:before {
     background-repeat: no-repeat;
 }
 .btQuoteBooking .btPayPalButton:hover {
-    -webkit-box-shadow: 0 0 0 #1976bc inset,0 1px 5px rgba(0,0,0,.2);
-    box-shadow: 0 0 0 #1976bc inset,0 1px 5px rgba(0,0,0,.2);
+    -webkit-box-shadow: 0 0 0 #113e6d inset,0 1px 5px rgba(0,0,0,.2);
+    box-shadow: 0 0 0 #113e6d inset,0 1px 5px rgba(0,0,0,.2);
 }
 .btQuoteBooking .btPayPalForm {
     width: 0;
@@ -25009,7 +25009,7 @@ p.has-background {
     font-weight: 400;
 }
 .wp-block-button__link:hover {
-    color: #1976bc !important;
+    color: #113e6d !important;
 }
 .btContent .wp-block-button__link:not(.has-text-color),
 .btContent .wp-block-button__link:not(.has-text-color):hover {

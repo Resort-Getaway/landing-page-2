@@ -1,0 +1,17 @@
+.rounded-20 {
+    border-radius: 20px;
+}
+
+.rounded-top-20 {
+    border-radius: 20px 20px 0 0;
+}
+
+.modal-dialog {
+    border-radius: 20px !important;
+    overflow: hidden;
+    box-shadow: 5px 5px 20px 1px #1b1e21;
+}
+
+.modal {
+    backdrop-filter: blur(5px);
+}
