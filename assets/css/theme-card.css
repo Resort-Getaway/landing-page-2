@@ -190,7 +190,7 @@ body {
 .btLightSkin {
     color: #181818;
     background-color: #fff;
-}
+}/*
 select,
 textarea,
 input,
@@ -234,9 +234,9 @@ input,
     background: #181818;
     color: #fff;
 }
-
+*/
 /* Form elements */
-select {
+/*select {
     line-height: 1;
 }
 .fancy-select select {
@@ -335,7 +335,7 @@ input:not([type='checkbox']):not([type='radio']),
 select {
     height: 3.5rem;
     line-height: 1rem;
-}
+}*/
 .fancy-select .trigger,
 .btQuoteBooking .ddcommon.borderRadiusTp .ddTitleText {
     height: 3.5rem;
@@ -508,7 +508,7 @@ select {
 .btHardRoundedButtons textarea {
     border-radius: 30px;
 }
-input:not([type='checkbox']):not([type='radio']):not([type='submit']),
+/*input:not([type='checkbox']):not([type='radio']):not([type='submit']),
 textarea,
 select,
 .fancy-select .trigger {
@@ -527,7 +527,7 @@ select:focus,
 textarea {
     resize: vertical;
     line-height: inherit;
-}
+}*/
 button {
     font: inherit;
     cursor: pointer;
@@ -24944,24 +24944,6 @@ button.pswp__button.pswp__button--arrow--right:before {
     .bt_bb_google_maps .bt_bb_google_maps_content .bt_bb_google_maps_content_wrapper {
         overflow: visible;
     }
-}
-
-/* Gutenberg */
-.wp-block-separator,
-hr {
-    margin: 1em auto;
-    max-width: 100px;
-}
-.wp-block-separator.is-style-wide,
-hr.is-style-wide {
-    max-width: 100%;
-}
-.wp-block-separator:not(.is-style-wide):not(.is-style-dots),
-hr:not(.is-style-wide):not(.is-style-dots) {
-    border-bottom: 1px solid #8f98a1;
-}
-.wp-block-gallery {
-    margin: 0;
 }
 
 /* Paragraph */

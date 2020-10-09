@@ -15,6 +15,230 @@
    </head>
    
    <body ng-app="landingTwo" ng-controller="landingCtrl">
+
+   <!--sign up popup first page-->
+   <div id="sign-up-modal" class="modal fade">
+       <div class="modal-dialog">
+           <div class="modal-content">
+               <div class="sign-up-hero-back-img modal-header-div">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <div class="row justify-content-center">
+                     <div class="col-sm-5 center">
+                        <p class="sign-up-welcome">Welcome to</p>
+                        <img  src="assets/images/logo/logo-white.png" alt="logo">
+                     </div>
+                  </div>
+                  <div class="row justify-content-center" style="margin-top: 20px;">
+                     <div class="col-sm-2 center">
+                        <p class="sign-up-welcome">Seriousness</p>
+                     </div>
+                     <div class="col-sm-2 center">
+                        <p class="sign-up-welcome">Confidence</p>
+                     </div>
+                     <div class="col-sm-1 center">
+                        <p class="sign-up-welcome">Free</p>
+                     </div>
+                     <div class="col-sm-2 center">
+                        <p class="sign-up-welcome">Free Quote</p>
+                     </div>
+                  </div>
+                  <!-- <div class="row justify-content-center">
+                     <div class="col-sm-4 center">
+                        <p class="sign-up-welcome">Cotizaclon Gratis</p>
+                     </div>
+                  </div> -->
+               </div>
+               <div class="modal-body">
+                  <div style="margin-top: 20px;">
+                     <div class="row justify-content-center">
+                        <div class="col-sm-8 center">
+                           <p class="sign-up-welcome" style="color: red;">Our clients save more than 50% of the original cost</p>
+                        </div>
+                     </div>
+                     <div class="row justify-content-center" style="margin-top: 20px;">
+                        <div class="col-sm-5 center">
+                           <p class="p-normal-txt">6 days all inclusive from $ 298.00 dollars per person</p>
+                           <img src="assets/images/sign-up/walmart.jpg" alt="walmart">
+                           <div>
+                               <a class="submit-btn-signin btn-social">Sign In</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-5 center phone-layout-sign-in">
+                           <hr>
+                           <p class="p-normal-txt">Join into Resort Getaway for more details</p>
+                           <a href="#" class="fb btn-social">
+                              <i class="fab fa-facebook-f fa-fw"></i> Continue with Facebook
+                           </a>
+                           <a href="#" class="google btn-social"><i class="fab fa-google-plus-g fa-fw">
+                              </i> Continue with Google +
+                           </a>
+                           <hr>
+                            <div style="margin-bottom:  5px;">
+                                <div class="right-inner-addon input-container">
+                                    <p><i class="fa fa-user"></i></p>
+                                    <input type="text" class="form-input-field" placeholder="User name" />
+                                </div>
+                            </div>
+                           <div style="margin-bottom:  5px;">
+                                <div class="right-inner-addon input-container">
+                                    <p><i class="fa fa-unlock-alt"></i></p>
+                                    <input type="text" class="form-input-field" placeholder="Password" />
+                                </div>
+                            </div>
+                            <div style="margin-bottom:  5px;">
+                               <div class="g-recaptcha g-recaptcha-sign-up" data-sitekey="6LcVtdQZAAAAAJR7pz8NQ_3Pjc4yrrt28e8tt0zZ"></div>
+                            </div>
+                            <div>
+                               <a class="submit-btn-login btn-social">Join Now</a>
+                            </div>
+                        </div>
+                     </div>
+                     <hr>
+                     <div class="row justify-content-center" style="margin-top: 20px;">
+                     <div class="col-sm-8 center">
+                        <p class="sign-up-p-black">Why You Should Join</p>
+                     </div>
+                     </div>
+                     <div class="row justify-content-center">
+                        <div class="col-sm-3">
+                           <div class="card-body text-center">
+                              <img src="assets/images/steps/call.svg" class="icon">
+                              <p class="p-normal-txt">Register your email</p>
+                                 <!-- <p class="gray-p-text">You can talk with our specialist</p> -->
+                           </div>
+                        </div>
+                        <div class="col-sm-3">
+                           <div class="card-body text-center">
+                              <img src="assets/images/steps/call.svg" class="icon">
+                              <p class="p-normal-txt">Check your email</p>
+                                 <!-- <p class="gray-p-text">You can talk with our specialist</p> -->
+                           </div>
+                        </div>
+                        <div class="col-sm-3">
+                           <div class="card-body text-center">
+                              <img src="assets/images/steps/call.svg" class="icon">
+                              <p class="p-normal-txt">87% discount</p>
+                                 <!-- <p class="gray-p-text">You can talk with our specialist</p> -->
+                           </div>
+                        </div>
+                     </div>
+                     <!-- <div class="row justify-content-center">
+                        <div class="col-sm-3">
+                           <div class="number-let">
+                              1
+                           </div>
+                           <div class="steps-desc f-sec flt lh-18 mar-15-l">See all pricing and best deals</div>
+                        </div>
+                        <div class="col-sm-3">
+                           <div class="number-let">
+                              2
+                           </div>
+                           <div class="steps-desc f-sec flt lh-18 mar-15-l">Earn Cash Back at the stores you love.</div>
+                        </div>
+                        <div class="col-sm-3">
+                           <div class="number-let">
+                              3
+                           </div>
+                           <div class="steps-desc f-sec flt lh-18 mar-15-l">Get our best customer service</div>
+                        </div>
+                     </div> -->
+                     <div class="row justify-content-center" style="margin-top: 10px;">
+                        <div class="col-sm-8">
+                           <p style="color: #888;">By joining, I agreed to Resort Getaway's <a href="https://resortgetaway.com/en/terminos-condiciones.php">Terms & Conditions and Privacy Policy.</a></p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+           </div>
+       </div>
+   </div>
+
+   <!--login popup page-->
+   <div id="sign-in-modal" class="modal fade">
+       <div class="modal-dialog">
+         <center>
+           <div class="modal-content modal-content-sign-in">
+               <div class="modal-body">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button> 
+                  <div style="margin-top: 20px;">
+                     <div class="row justify-content-center">
+                        <div class="col-sm-12 center">
+                           <p class="p-normal-txt">Sign In Resort Getaway for more details</p>
+                           <hr>
+                           <a href="#" class="fb btn-social">
+                              <i class="fab fa-facebook-f fa-fw"></i> Continue with Facebook
+                           </a>
+                           <a href="#" class="google btn-social"><i class="fab fa-google-plus-g fa-fw">
+                              </i> Continue with Google +
+                           </a>
+                           <hr>
+                            <div style="margin-bottom:  5px;">
+                                <div class="right-inner-addon input-container">
+                                    <p><i class="fa fa-user"></i></p>
+                                    <input type="text" class="form-input-field" placeholder="User name" />
+                                </div>
+                            </div>
+                           <div style="margin-bottom:  5px;">
+                                <div class="right-inner-addon input-container">
+                                    <p><i class="fa fa-unlock-alt"></i></p>
+                                    <input type="text" class="form-input-field" placeholder="Password" />
+                                </div>
+                            </div>
+                            <div style="margin-bottom:  5px;">
+                               <div class="g-recaptcha g-recaptcha-sign-in" data-sitekey="6LcVtdQZAAAAAJR7pz8NQ_3Pjc4yrrt28e8tt0zZ"></div>
+                            </div>
+                            <div>
+                               <a href="#" class="submit-btn-login btn-social">Sign In</a>
+                            </div>
+                            <div class="margin-bottom-sign-in">
+                               <a class="forgot-password">Forgot Password?</a>
+                            </div>
+                            <div  class="margin-bottom-sign-in">
+                               <p style="color: #888;">Not a member? <a class="send-to-join-now">Join Now</a></p>
+                            </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+           </div>
+        </center>
+       </div>
+   </div>
+
+   <!--forgot password popup page-->
+   <div id="forgot-password-modal" class="modal fade">
+       <div class="modal-dialog">
+         <center>
+           <div class="modal-content modal-content-sign-in">
+               <div class="modal-body">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button> 
+                  <div style="margin-top: 20px;">
+                     <div class="row justify-content-center">
+                        <div class="col-sm-12 center">
+                           <p class="p-normal-txt">Did you forgetyour password?</p>
+                           <p style="color: #888;">Enter your email address and we’ll send instructions over on how to reset your password.</p>
+                           <hr>
+                            <div style="margin-bottom:  5px;">
+                                <div class="right-inner-addon input-container">
+                                    <p><i class="fa fa-envelope"></i></p>
+                                    <input type="text" class="form-input-field" placeholder="Email" />
+                                </div>
+                            </div>
+                            <div style="margin-bottom:  5px;">
+                               <div class="g-recaptcha g-recaptcha-sign-in" data-sitekey="6LcVtdQZAAAAAJR7pz8NQ_3Pjc4yrrt28e8tt0zZ"></div>
+                            </div>
+                            <div>
+                               <a href="#" class="submit-btn-login btn-social">Reset Password</a>
+                            </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+           </div>
+        </center>
+       </div>
+   </div>
+
       <!-- Modal -->
       <div class="modal fade" id="package-click" role="dialog">
          <div class="modal-dialog">
@@ -887,6 +1111,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <script defer src="assets/fonts/fontawesome-free-5.14.0-web/js/all.min.js"></script>
+<script src='https://www.google.com/recaptcha/api.js'></script>
+
 <script type="text/javascript">
    package_list = [
        {
@@ -928,5 +1154,23 @@
            },
            'slow');
    });
-   
+
+$(document).ready(function(){
+   $("#sign-up-modal").modal('show');
+});
+
+$(".submit-btn-signin").click(function(){
+   $("#sign-up-modal").modal('hide');
+   $("#sign-in-modal").modal('show');
+});
+
+$(".send-to-join-now").click(function(){
+   $("#sign-in-modal").modal('hide');
+   $("#sign-up-modal").modal('show');
+});
+
+$(".forgot-password").click(function(){
+   $("#sign-in-modal").modal('hide');
+   $("#forgot-password-modal").modal('show');
+});
 </script>
