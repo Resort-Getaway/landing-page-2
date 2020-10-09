@@ -8502,7 +8502,7 @@ qhP5VgAAAABJRU5ErkJggg==" transform="matrix(0.24 0 0 0.24 -1302.1235 -45.5542)">
 	</image>
 	<g>
 		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-1279.1235" y1="342.2227" x2="321.1836" y2="342.2227">
-			<stop  offset="0.3388" style="stop-color:#113E6D"/>
+			<stop  offset="0.3388" style="stop-color:#113e6d "/>
 			<stop  offset="1" style="stop-color:#007189"/>
 		</linearGradient>
 		<path fill="url(#SVGID_1_)" d="M310.052,137.168L150.329-22.554h-601.116h-191.338h-177.343h-459.655V707h636.998h179.033h12.305
