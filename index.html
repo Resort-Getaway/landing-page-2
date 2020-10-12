@@ -48,7 +48,7 @@
 
        FB.getLoginStatus(function(response) { // Called after the JS SDK has been initialized.
          statusChangeCallback(response); // Returns the login status.
-       });
+       }, {scope: 'email'});
      };
 
       // Testing Graph API after login.  See statusChangeCallback() for when this call is made.
