@@ -8,6 +8,9 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="description" content="¡¡Quiero ir a Cancún o Punta Cana !! Oferta todo incluido ahora 2020-2021">
       <meta name="author" content="Resort Getaway">
+      <meta name="google-signin-scope" content="profile email">
+      <meta name="google-signin-client_id" content="730937818792-bhh6rm2d6rmtrv9l3sjcrckb9ikgdms2.apps.googleusercontent.com.apps.googleusercontent.com">
+
       <link rel="shortcut icon" href="favicon.png">
       <!-- Theme CSS -->
       <link rel="stylesheet" href="assets/css/main.css">
@@ -65,9 +68,102 @@
 
    </script>
 
+<!--    <script>
+      function onSignIn(googleUser) {
+        // Useful data for your client-side scripts:
+        var profile = googleUser.getBasicProfile();
+        console.log("ID: " + profile.getId()); // Don't send this directly to your server!
+        console.log('Full Name: ' + profile.getName());
+        console.log('Given Name: ' + profile.getGivenName());
+        console.log('Family Name: ' + profile.getFamilyName());
+        console.log("Image URL: " + profile.getImageUrl());
+        console.log("Email: " + profile.getEmail());
+
+        // The ID token you need to pass to your backend:
+        var id_token = googleUser.getAuthResponse().id_token;
+        console.log("ID Token: " + id_token);
+      }
+    </script> -->
+<script type="text/javascript">
+   var auth2; // The Sign-In object.
+   var googleUser; // The current user.
+
+   //Calls startAuth after Sign in V2 finishes setting up.
+   var appStart = function() {
+     gapi.load('auth2', initSigninV2);
+   };
+
+   //Initializes Signin v2 and sets up listeners.
+   var initSigninV2 = function() {
+     auth2 = gapi.auth2.init({
+         client_id: '730937818792-bhh6rm2d6rmtrv9l3sjcrckb9ikgdms2.apps.googleusercontent.com.apps.googleusercontent.com',
+         scope: 'profile'
+     });
+
+     // Listen for sign-in state changes.
+     auth2.isSignedIn.listen(signinChanged);
+
+     // Listen for changes to current user.
+     auth2.currentUser.listen(userChanged);
+
+     // Sign in the user if they are currently signed in.
+     if (auth2.isSignedIn.get() == true) {
+       auth2.signIn();
+     }
+
+     // Start with the current live values.
+     refreshValues();
+   };
+
+   //Listener method for sign-out live value.
+   //@param {boolean} val the updated signed out state.
+   var signinChanged = function (val) {
+     console.log('Signin state changed to ', val);
+   };
+
+   //Listener method for when the user changes.
+   //@param {GoogleUser} user the updated user.
+   var userChanged = function (user) {
+     console.log('User now: ', user);
+     googleUser = user;
+     updateGoogleUser();
+   };
+
+   //Updates the properties in the Google User table using the current user.
+   var updateGoogleUser = function () {
+     if (googleUser) {
+       document.getElementById('user-id').innerText = googleUser.getId();
+       document.getElementById('user-scopes').innerText =
+         googleUser.getGrantedScopes();
+       document.getElementById('auth-response').innerText =
+         JSON.stringify(googleUser.getAuthResponse(), undefined, 2);
+     } else {
+       document.getElementById('user-id').innerText = '--';
+       document.getElementById('user-scopes').innerText = '--';
+       document.getElementById('auth-response').innerText = '--';
+     }
+   };
+
+   //Retrieves the current user and signed in states from the GoogleAuth object.
+   var refreshValues = function() {
+     if (auth2){
+       console.log('Refreshing values...');
+
+       googleUser = auth2.currentUser.get();
+
+       document.getElementById('curr-user-cell').innerText =
+         JSON.stringify(googleUser, undefined, 2);
+       document.getElementById('signed-in-cell').innerText =
+         auth2.isSignedIn.get();
+
+       updateGoogleUser();
+     }
+   }  
+</script>    
 <!-- 
 <fb:login-button scope="public_profile,email" onlogin="checkLoginState();"> </fb:login-button>
  -->
+
    <!--sign up popup first page-->
    <div id="sign-up-modal" class="modal fade">
        <div class="modal-dialog">
@@ -126,6 +222,8 @@
                            <a href="#" class="google btn-social"><i class="fab fa-google-plus-g fa-fw">
                               </i> Continue with Google +
                            </a>
+                            <div class="g-signin2" data-onsuccess="onSignIn"></div>
+
                            <hr>
                             <div style="margin-bottom:  5px;">
                                 <div class="right-inner-addon input-container">
@@ -1139,6 +1237,8 @@
 <script src='https://www.google.com/recaptcha/api.js'></script>
 <!-- Load the JS SDK asynchronously -->
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+<!-- google login -->
+<script src="https://apis.google.com/js/platform.js" async defer></script>
 
 <script type="text/javascript">
    package_list = [
