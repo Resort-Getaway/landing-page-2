@@ -837,6 +837,14 @@ video.fillWidth {
   opacity: 0.85;
 }
 
+.abcRioButtonLightBlue{
+    height: 36px;
+    border-radius: 10px !important;
+    width: 100% !important;
+    margin-bottom: 10px !important;
+    margin-top: 10px !important;
+}
+
 .btn-social{
   font-weight: 600;
   padding: 0.875rem 2.5rem;
