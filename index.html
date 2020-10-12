@@ -65,9 +65,6 @@
 
    </script>
 
-<!-- 
-<fb:login-button scope="public_profile,email" onlogin="checkLoginState();"> </fb:login-button>
- -->
    <!--sign up popup first page-->
    <div id="sign-up-modal" class="modal fade">
        <div class="modal-dialog">
@@ -121,7 +118,7 @@
                            <!-- <a  onlogin="checkLoginState();" class="fb btn-social">
                               <i class="fab fa-facebook-f fa-fw"></i> Continue with Facebook
                            </a> -->
-                           <div class="fb fb-login-button" data-size="large" data-button-type="continue_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="true" data-width="" scope="public_profile,email"></div>
+                           <fb:login-button scope="public_profile,email" onlogin="checkLoginState();"> </fb:login-button>
 
                            <a href="#" class="google btn-social"><i class="fab fa-google-plus-g fa-fw">
                               </i> Continue with Google +
