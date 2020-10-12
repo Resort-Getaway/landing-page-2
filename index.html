@@ -12,10 +12,60 @@
       <!-- Theme CSS -->
       <link rel="stylesheet" href="assets/css/main.css">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
    </head>
    
    <body ng-app="landingTwo" ng-controller="landingCtrl">
 
+   <script>
+
+     function statusChangeCallback(response) {  // Called with the results from FB.getLoginStatus().
+       console.log('statusChangeCallback');
+       console.log(response);                   // The current login status of the person.
+       if (response.status === 'connected') {   // Logged into your webpage and Facebook.
+         testAPI();  
+       } else {                                 // Not logged into your webpage or we are unable to tell.
+         document.getElementById('status').innerHTML = 'Please log ' +
+           'into this webpage.';
+       }
+     }
+
+
+     function checkLoginState() {               // Called when a person is finished with the Login Button.
+       FB.getLoginStatus(function(response) {   // See the onlogin handler
+         statusChangeCallback(response);
+       });
+     }
+
+
+     window.fbAsyncInit = function() {
+       FB.init({
+         appId      : '2762128860711414',
+         cookie     : true,                     // Enable cookies to allow the server to access the session.
+         xfbml      : true,                     // Parse social plugins on this webpage.
+         version    : 'v8.0'           // Use this Graph API version for this call.
+       });
+
+
+       FB.getLoginStatus(function(response) {   // Called after the JS SDK has been initialized.
+         statusChangeCallback(response);        // Returns the login status.
+       });
+     };
+    
+     function testAPI() {                      // Testing Graph API after login.  See statusChangeCallback() for when this call is made.
+       console.log('Welcome!  Fetching your information.... ');
+       FB.api('/me', function(response) {
+         console.log('Successful login for: ' + response.name);
+         document.getElementById('status').innerHTML =
+           'Thanks for logging in, ' + response.name + '!';
+       });
+     }
+
+   </script>
+
+<!-- 
+<fb:login-button scope="public_profile,email" onlogin="checkLoginState();"> </fb:login-button>
+ -->
    <!--sign up popup first page-->
    <div id="sign-up-modal" class="modal fade">
        <div class="modal-dialog">
@@ -66,9 +116,11 @@
                         <div class="col-sm-5 center phone-layout-sign-in">
                            <hr>
                            <p class="p-normal-txt">Join into Resort Getaway for more details</p>
-                           <a href="#" class="fb btn-social">
+                           <!-- <a  onlogin="checkLoginState();" class="fb btn-social">
                               <i class="fab fa-facebook-f fa-fw"></i> Continue with Facebook
-                           </a>
+                           </a> -->
+                           <div class="fb fb-login-button" data-size="large" data-button-type="continue_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="true" data-width=""></div>
+
                            <a href="#" class="google btn-social"><i class="fab fa-google-plus-g fa-fw">
                               </i> Continue with Google +
                            </a>
@@ -1081,7 +1133,10 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <script defer src="assets/fonts/fontawesome-free-5.14.0-web/js/all.min.js"></script>
+
 <script src='https://www.google.com/recaptcha/api.js'></script>
+<!-- Load the JS SDK asynchronously -->
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
 
 <script type="text/javascript">
    package_list = [
