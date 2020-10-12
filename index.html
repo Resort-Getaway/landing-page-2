@@ -55,9 +55,10 @@
       function ifFbLoggedIn() { 
          console.log('Welcome!  Fetching your information.... ');
          FB.api('/me', function(response) {
-            console.log('Successful login for: ' + response.name);
-            console.log('Successful login for: ' + response.email);
-            console.log('Successful login for: ' + response.profile_pic);
+            console.log(response);
+            console.log('Successful login name: ' + response.name);
+            console.log('Successful login email: ' + response.email);
+            console.log('Successful login Profile pic: ' + response.profile_pic);
          });
       }
 
