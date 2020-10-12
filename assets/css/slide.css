@@ -821,9 +821,14 @@ video.fillWidth {
 }
 
 .fb {
-  background-color: #3B5998 !important;
+  border-radius: 10px;
+  background-color: #1877f2 !important;
   color: white !important;
   opacity: 0.85;
+}
+
+.fb_iframe_widget {
+    display: inherit !important;
 }
 
 .google {
