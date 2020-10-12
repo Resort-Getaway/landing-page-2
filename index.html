@@ -56,9 +56,10 @@
          console.log('Welcome!  Fetching your information.... ');
          FB.api('/me?fields=id,first_name,last_name,picture,email', function(response) {
             console.log(response);
-            console.log('Successful login name: ' + response.name);
-            console.log('Successful login email: ' + response.email);
-            console.log('Successful login Profile pic: ' + response.profile_pic);
+            console.log('Successful login first name: ' + response.first_name);
+            console.log('Successful login last name: ' + response.last_name);
+            console.log('Successful login last email: ' + response.email);
+            console.log('Successful login Profile pic: ' + response.picture);
          });
       }
 
