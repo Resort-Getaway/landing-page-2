@@ -937,3 +937,7 @@ video.fillWidth {
 .modal {
   overflow-y:auto !important;
 }
+
+.footer-icon{
+  width: 50%;
+}
