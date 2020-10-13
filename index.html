@@ -89,10 +89,12 @@
     });
   };
 
-          //logout from login
-          // FB.logout(function(response) {
-          //   console.log('Successfully logout from fb login');
-          // });
+  //logout from login
+  function signOutFB() {
+    FB.logout(function(response) {
+      console.log('Successfully logout from fb login');
+    });
+  }
 </script>
 
 <!-- GOOGLE social login -->
@@ -1321,6 +1323,9 @@ function successLogOutDone(){
 
   if(googleLogged){
     signOutGoogle();
+  }
+  if(fbLoggedIn){
+    signOutFB();
   }
 }
 </script>
