@@ -107,13 +107,14 @@
     successLoggingDone(userImgSrc, userFullName);
   }
 
-      function signOut() {
-        var auth2 = gapi.auth2.getAuthInstance();
-        auth2.signOut().then(function () {
-          googleLogged = false;
-          console.log('User signed out.');
-        });
-      }
+  //google sign out
+  function signOutGoogle() {
+    var auth2 = gapi.auth2.getAuthInstance();
+    auth2.signOut().then(function () {
+      googleLogged = false;
+      console.log('User signed out.');
+    });
+  }
 
       // function onLoad() {
       //   gapi.load('auth2', function() {
@@ -1275,6 +1276,11 @@ $(".forgot-password").click(function(){
    $("#forgot-password-modal").modal({backdrop: 'static', keyboard: false});
 });
 
+//logout btn click
+$(".loggedOutUsers").click(function(){
+  successLogOutDone();
+});
+
 //when login success modal close
 function successLoggingDone(userImgSrc,userFullName){
   $("#sign-up-modal").modal('hide'); 
@@ -1289,5 +1295,22 @@ function successLoggingDone(userImgSrc,userFullName){
   $(".loggedOutUsers img").attr("src", userImgSrc);
   $(".loggedOutUsers p").text(userFullName + " | LOGOUT");
   $(".loggedOutUsers").show();
+}
+
+function successLogOutDone(){
+
+  //price shown
+  $(".logIntoSeePrice").css("display", 'block');
+  $(".notLoggedIn").css("display", 'none');
+
+  //user login header
+  $(".loggedInUsers").show();
+  $(".loggedOutUsers img").attr("src", "");
+  $(".loggedOutUsers p").text("");
+  $(".loggedOutUsers").hide();
+
+  if(googleLogged){
+    signOutGoogle();
+  }
 }
 </script>
