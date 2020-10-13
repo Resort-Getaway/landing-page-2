@@ -954,3 +954,48 @@ video.fillWidth {
 .footer-icon{
   width: 50%;
 }
+
+.header-sticky {
+  z-index: 1049;
+  background: white;
+  color: #f1f1f1;
+  position: fixed;
+  width: 100%;
+  border-bottom: 2px solid #113e
+}
+
+.avatar {
+  padding: 6px;
+  margin: 0 20px 0 10px;
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.header_login-name{
+  margin-top: 2px;
+  color: #113e6d;
+  font-weight: 600;
+  font-size: 16px;
+  display: inline;
+}
+
+.a-tag-head{
+  float: right;
+  cursor: pointer;
+}
+
+.img-logo-header{
+  height: 50px; 
+  padding: 6px;
+  margin: 0 0 0 30px;
+}
+
+.logIntoSeePrice{
+  background-color: #b21206 !important;
+}
+
+.notLoggedIn{
+  display: none;
+}
