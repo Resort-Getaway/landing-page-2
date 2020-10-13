@@ -21,8 +21,12 @@
    <body ng-app="landingTwo" ng-controller="landingCtrl">
 
    <script>
+    //check wethere logged in
+    let fbLoggedIn = false;
+    let googleLogged = false;
 
-     function statusChangeCallback(response) {  // Called with the results from FB.getLoginStatus().
+     function statusChangeCallback(response) {  
+        // Called with the results from FB.getLoginStatus().
        //console.log('statusChangeCallback');
        //console.log(response); // The current login status of the person.
        if (response.status === 'connected') { // Logged into your webpage and Facebook.
@@ -32,13 +36,11 @@
        }
      }
 
-
      function checkLoginState() { // Called when a person is finished with the Login Button.
        FB.getLoginStatus(function(response) { // See the onlogin handler
          statusChangeCallback(response);
        });
      }
-
 
      window.fbAsyncInit = function() {
        FB.init({
@@ -64,6 +66,11 @@
             console.log('Successful login last email: ' + response.email);
             console.log('Successful login Profile pic: ' + response.picture);
          });
+
+          //logout from login
+          FB.logout(function(response) {
+            console.log('Successfully logout from fb login');
+          });
       }
 
    </script>
@@ -134,7 +141,7 @@
 
                            <div onlogin="checkLoginState();" class="fb fb-login-button" data-size="large" data-button-type="continue_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="true" data-width="" scope="public_profile,email"></div>
 
-                            <div class="g-signin2" data-onsuccess="onSignIn"></div>
+                            <div class="g-signin2" data-onsuccess="onSignIn" ></div>
 
                            <hr>
                             <div style="margin-bottom:  5px;">
