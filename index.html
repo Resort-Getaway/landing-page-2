@@ -17,12 +17,12 @@
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
       <!-- google login -->
-      <script src="https://apis.google.com/js/platform.js?onload=onLoad" async defer></script>
+      <script src="https://apis.google.com/js/platform.js" async defer></script>
 
    </head>
    
    <body ng-app="landingTwo" ng-controller="landingCtrl">
-
+<a href="#" onclick="signOut();">Sign out</a>
    <!--sign up popup first page-->
    <div id="sign-up-modal" class="modal fade">
        <div class="modal-dialog">
@@ -1231,11 +1231,9 @@ $(".forgot-password").click(function(){
         });
       }
 
-      function onLoad() {
-        gapi.load('auth2', function() {
-          gapi.auth2.init();
-        });
-        
-      signOut()
-      }
+      // function onLoad() {
+      //   gapi.load('auth2', function() {
+      //     gapi.auth2.init();
+      //   });
+      // }
     </script>
