@@ -984,6 +984,7 @@ video.fillWidth {
 .a-tag-head{
   float: right;
   cursor: pointer;
+  margin-right: 30px;
 }
 
 .img-logo-header{
