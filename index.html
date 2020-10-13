@@ -52,11 +52,11 @@
   //See statusChangeCallback() for when this call is made.
   function ifFbLoggedIn() { 
   //console.log('Welcome!  Fetching your information.... ');
-    FB.api('/me?fields=id,first_name,last_name,picture.redirect(false),email', function(response) {
+    FB.api('/me?fields=id,first_name,last_name,picture.redirect(true),email', function(response) {
       console.log('Successful login first name: ' + response.first_name);
       console.log('Successful login last name: ' + response.last_name);
       console.log('Successful login last email: ' + response.email);
-      console.log('Successful login Profile pic: ' + typeof(response.picture));
+      console.log('Successful login Profile pic: ' + response.picture );
 
       userFullName = response.first_name + " " + response.last_name;
       userImgSrc = response.picture;
