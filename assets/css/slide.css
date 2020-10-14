@@ -14,14 +14,15 @@ body{
 }
 
 @media (max-width: 767px) {
-    .slide-base {
-        height: 70vh;
-        position: relative;
-    }
+  .slide-base {
+    height: 70vh;
+    position: relative;
+  }
 
   .subscribe-phone{
     display: block !important;
   }
+
 }
 
 @media (min-width: 767px) {
@@ -58,6 +59,12 @@ body{
     .slide-image-beach {
         height: 90vh;
     }
+}
+
+.sign-up-welcome{
+  font-size: 20px;
+  font-weight: 700; 
+  color: white;
 }
 
 .duplicate-image {
@@ -767,17 +774,30 @@ video.fillWidth {
     max-width: 400px !important;
   }
 
-.g-recaptcha-sign-up{
-  margin: 10px 20px;
-}
+  .g-recaptcha-sign-up{
+    margin: 10px 20px;
+  }
 
-.g-recaptcha-sign-in{
-  margin: 10px 12px;
-}
+  .g-recaptcha-sign-in{
+    margin: 10px 12px;
+  }
 
-.phone-layout-sign-in hr{
-  display: none;
-}
+  .phone-layout-sign-in hr{
+    display: none;
+  }
+
+  .p-normal-txt{
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  .sign-up-welcome-b{
+    font-size: 20px;
+    font-weight: 700; 
+    color: white;
+  }
+
 }
 
 @media (max-width: 576px){
@@ -791,6 +811,19 @@ video.fillWidth {
     border-radius: 10px;
     font-size: 20px;
   }
+
+  .p-normal-txt{
+    font-size: 10px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  .sign-up-welcome-b{
+    font-size: 10px;
+    font-weight: 700; 
+    color: white;
+  }
+
 }
 
   .reopenDiv{
@@ -802,12 +835,6 @@ video.fillWidth {
 
 .sign-up-hero-back-img{
     background-image: -webkit-linear-gradient(left,#113e6d 0%,#0983ad 100%);
-}
-
-.sign-up-welcome{
-  font-size: 20px;
-  font-weight: 700; 
-  color: white;
 }
 
 .modal-header-div{
@@ -900,12 +927,6 @@ video.fillWidth {
   opacity: 0.85;   
 }
 
-.p-normal-txt{
-  font-size: 16px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
 .number-let{
   color: #99ca67;
   border-color: #99ca67;
@@ -982,9 +1003,19 @@ video.fillWidth {
 }
 
 .a-tag-head{
-  float: right;
-  cursor: pointer;
-  margin-right: 30px;
+    z-index: 1049;
+    position: fixed;
+    /*float: right;*/
+    cursor: pointer;
+    background-color: white;
+    /*margin-right: 30px;*/
+    right: 0;
+    top: 10px;
+    padding: 0 0 0 15px;
+    border-radius: 10px 0 0 10px;
+    border-top: 3px solid #113e6d;
+    border-bottom: 3px solid #113e6d;
+    border-left: 3px solid #113e6d;
 }
 
 .img-logo-header{
