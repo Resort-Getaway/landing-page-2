@@ -9,7 +9,7 @@
 .modal-dialog {
     border-radius: 20px !important;
     overflow: hidden;
-    box-shadow: 5px 5px 20px 1px #1b1e21;
+/*    box-shadow: 5px 5px 20px 1px #1b1e21;*/
 }
 
 .modal {
