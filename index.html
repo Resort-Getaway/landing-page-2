@@ -16,125 +16,10 @@
       <link rel="stylesheet" href="assets/css/main.css">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
-      <!-- google login -->
-      <script src="https://apis.google.com/js/platform.js" async defer></script>
-
    </head>
    
    <body ng-app="landingTwo" ng-controller="landingCtrl">
 <!-- <a href="#" onclick="signOut();">Sign out</a> -->
-
-<!-- FB social login -->
-<script>
-  //check wethere logged in
-  let fbLoggedIn = false;
-  let googleLogged = false;
-  let accountLogged = false;
-
-  //user details
-  let userImgSrc = "assets/images/logo/avatar.jpg";
-  let userFullName = "";
-
-  // Called with the results from FB.getLoginStatus().
-  function statusChangeCallback(response) {  
-    //The current login status of the person.
-    if (response.status === 'connected') { // Logged into your webpage and Facebook.
-      ifFbLoggedIn();  
-    }
-    else { 
-    // Not logged into your webpage or we are unable to tell.
-      fbLoggedIn = false;
-      console.log("Not logged into your webpage or we are unable to tell")
-    }
-  }
-
-  // Testing Graph API after login.  
-  //See statusChangeCallback() for when this call is made.
-  function ifFbLoggedIn() { 
-  //console.log('Welcome!  Fetching your information.... ');
-    FB.api('/me?fields=id,first_name,last_name,picture.redirect(true),email', function(response) {
-      console.log('Successful login first name: ' + response.first_name);
-      console.log('Successful login last name: ' + response.last_name);
-      console.log('Successful login last email: ' + response.email);
-      console.log('Successful login Profile pic: ' + response.picture.data.url );
-      console.log(response)
-      userFullName = response.first_name + " " + response.last_name;
-      userImgSrc = response.picture.data.url;
-
-      fbLoggedIn = true;
-
-      successLoggingDone(userImgSrc,userFullName);
-    });
-  }
-
-  // Called when a person is finished with the Login Button.
-  function checkLoginState() { 
-    FB.getLoginStatus(function(response) { 
-      statusChangeCallback(response); // See the onlogin handler
-    });
-  }
-
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '2762128860711414',
-      cookie     : true, // Enable cookies to allow the server to access the session.
-      xfbml      : true, // Parse social plugins on this webpage.
-      version    : 'v8.0' // Use this Graph API version for this call.
-    });
-
-    // Called after the JS SDK has been initialized.
-    FB.getLoginStatus(function(response) { 
-      // Returns the login status.
-      statusChangeCallback(response); 
-    });
-  };
-
-  //logout from login
-  function signOutFB() {
-    FB.logout(function(response) {
-      fbLoggedIn = false;
-      console.log('Successfully logout from fb login');
-    });
-  }
-</script>
-
-<!-- GOOGLE social login -->
-<script>
-  function onSignIn(googleUser) {
-    // Useful data for your client-side scripts:
-    let profile = googleUser.getBasicProfile();
-    console.log("ID: " + profile.getId()); // Don't send this directly to your server!
-    console.log('Full Name: ' + profile.getName());
-    console.log('Given Name: ' + profile.getGivenName());
-    console.log('Family Name: ' + profile.getFamilyName());
-    console.log("Image URL: " + profile.getImageUrl());
-    console.log("Email: " + profile.getEmail());
-
-    userImgSrc = profile.getImageUrl();
-    userFullName = profile.getName();
-    // The ID token you need to pass to your backend:
-    // var id_token = googleUser.getAuthResponse().id_token;
-    // console.log("ID Token: " + id_token);
-    googleLogged = true;
-    console.log(fbLoggedIn,googleLogged,accountLogged);
-    successLoggingDone(userImgSrc, userFullName);
-  }
-
-  //google sign out
-  function signOutGoogle() {
-    var auth2 = gapi.auth2.getAuthInstance();
-    auth2.signOut().then(function () {
-      googleLogged = false;
-      console.log('User signed out.');
-    });
-  }
-
-      // function onLoad() {
-      //   gapi.load('auth2', function() {
-      //     gapi.auth2.init();
-      //   });
-      // }
-</script>
 
    <!--sign up popup first page-->
    <div id="sign-up-modal" class="modal fade">
@@ -908,10 +793,6 @@
                      </div>
                   </div>
                   <div class="col-sm-6 form-section-start" style="background-color: white;">
-                     <script
-                        src="https://code.jquery.com/jquery-2.2.4.min.js"
-                        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-                        crossorigin="anonymous"></script>
                      <script id="bx24_form_inline" data-skip-moving="true">
                         (function (w, d, u, b) {
                             w['Bitrix24FormObject'] = b;
@@ -1212,6 +1093,8 @@
       </div>
    </body>
 </html>
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <script defer src="assets/fonts/fontawesome-free-5.14.0-web/js/all.min.js"></script>
@@ -1219,6 +1102,9 @@
 <script src='https://www.google.com/recaptcha/api.js'></script>
 <!-- Load the JS SDK asynchronously -->
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+
+<!-- google login -->
+<script src="https://apis.google.com/js/platform.js" async defer></script>
 
 <script type="text/javascript">
    package_list = [
@@ -1329,4 +1215,116 @@ function successLogOutDone(){
     signOutFB();
   }
 }
+</script>
+
+<!-- FB social login -->
+<script>
+  //check wethere logged in
+  let fbLoggedIn = false;
+  let googleLogged = false;
+  let accountLogged = false;
+
+  //user details
+  let userImgSrc = "assets/images/logo/avatar.jpg";
+  let userFullName = "";
+
+  // Called with the results from FB.getLoginStatus().
+  function statusChangeCallback(response) {  
+    //The current login status of the person.
+    if (response.status === 'connected') { // Logged into your webpage and Facebook.
+      ifFbLoggedIn();  
+    }
+    else { 
+    // Not logged into your webpage or we are unable to tell.
+      fbLoggedIn = false;
+      console.log("Not logged into your webpage or we are unable to tell")
+    }
+  }
+
+  // Testing Graph API after login.  
+  //See statusChangeCallback() for when this call is made.
+  function ifFbLoggedIn() { 
+  //console.log('Welcome!  Fetching your information.... ');
+    FB.api('/me?fields=id,first_name,last_name,picture.redirect(true),email', function(response) {
+      console.log('Successful login first name: ' + response.first_name);
+      console.log('Successful login last name: ' + response.last_name);
+      console.log('Successful login last email: ' + response.email);
+      console.log('Successful login Profile pic: ' + response.picture.data.url );
+      console.log(response)
+      userFullName = response.first_name + " " + response.last_name;
+      userImgSrc = response.picture.data.url;
+
+      fbLoggedIn = true;
+
+      successLoggingDone(userImgSrc,userFullName);
+    });
+  }
+
+  // Called when a person is finished with the Login Button.
+  function checkLoginState() { 
+    FB.getLoginStatus(function(response) { 
+      statusChangeCallback(response); // See the onlogin handler
+    });
+  }
+
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '2762128860711414',
+      cookie     : true, // Enable cookies to allow the server to access the session.
+      xfbml      : true, // Parse social plugins on this webpage.
+      version    : 'v8.0' // Use this Graph API version for this call.
+    });
+
+    // Called after the JS SDK has been initialized.
+    FB.getLoginStatus(function(response) { 
+      // Returns the login status.
+      statusChangeCallback(response); 
+    });
+  };
+
+  //logout from login
+  function signOutFB() {
+    FB.logout(function(response) {
+      fbLoggedIn = false;
+      console.log('Successfully logout from fb login');
+    });
+  }
+</script>
+
+<!-- GOOGLE social login -->
+<script>
+  function onSignIn(googleUser) {
+    // Useful data for your client-side scripts:
+    let profile = googleUser.getBasicProfile();
+    console.log("ID: " + profile.getId()); // Don't send this directly to your server!
+    console.log('Full Name: ' + profile.getName());
+    console.log('Given Name: ' + profile.getGivenName());
+    console.log('Family Name: ' + profile.getFamilyName());
+    console.log("Image URL: " + profile.getImageUrl());
+    console.log("Email: " + profile.getEmail());
+
+    userImgSrc = profile.getImageUrl();
+    userFullName = profile.getName();
+    // The ID token you need to pass to your backend:
+    // var id_token = googleUser.getAuthResponse().id_token;
+    // console.log("ID Token: " + id_token);
+    googleLogged = true;
+    console.log(fbLoggedIn,googleLogged,accountLogged);
+    successLoggingDone(userImgSrc, userFullName);
+  }
+
+  //google sign out
+  function signOutGoogle() {
+    var auth2 = gapi.auth2.getAuthInstance();
+    auth2.signOut().then(function () {
+      googleLogged = false;
+      console.log('User signed out.');
+    });
+  }
+
+      // function onLoad() {
+      //   gapi.load('auth2', function() {
+      //     gapi.auth2.init();
+      //   });
+      // }
 </script>
