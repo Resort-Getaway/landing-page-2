@@ -989,8 +989,8 @@ video.fillWidth {
   padding: 6px;
   margin: 0 20px 0 10px;
   vertical-align: middle;
-  width: 50px;
-  height: 50px;
+  width: 35px;
+  height: 35px;
   border-radius: 50%;
 }
 
@@ -998,7 +998,7 @@ video.fillWidth {
   margin-top: 2px;
   color: #113e6d;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 14px;
   display: inline;
 }
 
@@ -1029,5 +1029,36 @@ video.fillWidth {
 }
 
 .notLoggedIn{
+  display: none;
+}
+
+.join-now-error-msg, .login-now-error-msg, .reset-now-error-msg, .update-now-error-msg{
+  color: red;
+  display: none;
+}
+
+.disableClick{
+  pointer-events: none !important;
+  opacity: 0.3 !important;
+}
+
+.verify-mail-msg, .fogot-password-sent-div, .update-password-mail-msg{
+  background-color: #99ca67;
+    padding: 5p;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    display: none;
+}
+
+.verify-msg-div{
+  background-color: #99ca67;
+    padding: 5p;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+.back-to-main{
   display: none;
 }

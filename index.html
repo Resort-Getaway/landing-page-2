@@ -74,22 +74,37 @@
 
                            <hr>
                             <div style="margin-bottom:  5px;">
+                                <p class="join-now-error-msg"></p>
+                            </div>
+                            <div style="margin-bottom:  5px;">
                                 <div class="right-inner-addon input-container">
                                     <p><i class="fa fa-user"></i></p>
-                                    <input type="text" class="form-input-field" placeholder="User name" />
+                                    <input type="text" class="form-input-field user-name" placeholder="Enter Name" />
+                                </div>
+                            </div>
+                            <div style="margin-bottom:  5px;">
+                                <div class="right-inner-addon input-container">
+                                    <p><i class="fa fa-envelope"></i></p>
+                                    <input type="text" class="form-input-field user-email" placeholder="Enter Email" />
                                 </div>
                             </div>
                            <div style="margin-bottom:  5px;">
                                 <div class="right-inner-addon input-container">
                                     <p><i class="fa fa-unlock-alt"></i></p>
-                                    <input type="text" class="form-input-field" placeholder="Password" />
+                                    <input type="text" class="form-input-field user-password" placeholder="Password" />
+                                </div>
+                            </div>
+                            <div style="margin-bottom:  5px;">
+                                <div class="right-inner-addon input-container">
+                                    <p><i class="fa fa-unlock-alt"></i></p>
+                                    <input type="text" class="form-input-field user-confirm-password" placeholder="Confirm Password" />
                                 </div>
                             </div>
                             <div style="margin-bottom:  5px;">
                                <div class="g-recaptcha g-recaptcha-sign-up" data-sitekey="6LcVtdQZAAAAAJR7pz8NQ_3Pjc4yrrt28e8tt0zZ"></div>
                             </div>
                             <div>
-                               <a class="submit-btn-login btn-social">Join Now</a>
+                               <a class="submit-btn-login btn-social join-now-btn">Join Now</a>
                             </div>
                         </div>
                      </div>
@@ -173,23 +188,30 @@
 
                            <hr>
                            
+                           <div style="margin-bottom:  5px;">
+                                <p class="verify-mail-msg"></p>
+                            </div>
+
+                           <div style="margin-bottom:  5px;">
+                                <p class="login-now-error-msg"></p>
+                            </div>
                             <div style="margin-bottom:  5px;">
                                 <div class="right-inner-addon input-container">
-                                    <p><i class="fa fa-user"></i></p>
-                                    <input type="text" class="form-input-field" placeholder="User name" />
+                                    <p><i class="fa fa-envelope"></i></p>
+                                    <input type="text" class="form-input-field user-email-login" placeholder="User Email" />
                                 </div>
                             </div>
                            <div style="margin-bottom:  5px;">
                                 <div class="right-inner-addon input-container">
                                     <p><i class="fa fa-unlock-alt"></i></p>
-                                    <input type="text" class="form-input-field" placeholder="Password" />
+                                    <input type="text" class="form-input-field user-password-login" placeholder="Password" />
                                 </div>
                             </div>
                             <div style="margin-bottom:  5px;">
                                <div class="g-recaptcha g-recaptcha-sign-in" data-sitekey="6LcVtdQZAAAAAJR7pz8NQ_3Pjc4yrrt28e8tt0zZ"></div>
                             </div>
                             <div>
-                               <a href="#" class="submit-btn-login btn-social">Sign In</a>
+                               <a href="#" class="submit-btn-login btn-social sign-in-click">Sign In</a>
                             </div>
                             <div class="margin-bottom-sign-in">
                                <a class="forgot-password">Forgot Password?</a>
@@ -215,22 +237,28 @@
                   <button type="button" class="close" data-dismiss="modal">&times;</button> 
                   <div style="margin-top: 20px;">
                      <div class="row justify-content-center">
-                        <div class="col-sm-12 center">
+                        <div class="col-sm-12 center fogot-password-init-div">
                            <p class="p-normal-txt">Did you forgetyour password?</p>
                            <p style="color: #888;">Enter your email address and we’ll send instructions over on how to reset your password.</p>
                            <hr>
                             <div style="margin-bottom:  5px;">
+                                <p class="reset-now-error-msg"></p>
+                            </div>
+                            <div style="margin-bottom:  5px;">
                                 <div class="right-inner-addon input-container">
                                     <p><i class="fa fa-envelope"></i></p>
-                                    <input type="text" class="form-input-field" placeholder="Email" />
+                                    <input type="text" class="form-input-field user-email-reset" placeholder="Email" />
                                 </div>
                             </div>
                             <div style="margin-bottom:  5px;">
                                <div class="g-recaptcha g-recaptcha-sign-in" data-sitekey="6LcVtdQZAAAAAJR7pz8NQ_3Pjc4yrrt28e8tt0zZ"></div>
                             </div>
                             <div>
-                               <a href="#" class="submit-btn-login btn-social">Reset Password</a>
+                               <a class="submit-btn-login btn-social reset-password-mail-send-click">Reset Password</a>
                             </div>
+                        </div>
+                        <div style="margin-bottom:  5px;">
+                          <p class="fogot-password-sent-div"></p>
                         </div>
                      </div>
                   </div>
@@ -1091,6 +1119,8 @@
          <!--//author-section--><!--add comment-->
       </div>
       </div>
+
+      <p class="user_ip_set" style="display: none;"></p>
    </body>
 </html>
 
@@ -1148,12 +1178,19 @@
            'slow');
    });
 
+  //get user IP
+  $.getJSON("https://api.ipify.org?format=json", function(data) { 
+    // Setting text of element P with id gfg 
+    $('.user_ip_set').text(data.ip);
+  });
+
+
 //when loading first time
 $(document).ready(function(){
   console.log(fbLoggedIn,googleLogged,accountLogged);
   if( fbLoggedIn || googleLogged || accountLogged){
     $(".logIntoSeePrice").css("display", 'none');
-    $(".notLoggedIn").css("display", 'block'); 
+    $(".notLoggedIn").css("display", 'block');
   }
   else{
     $("#sign-up-modal").modal({backdrop: 'static', keyboard: false});
@@ -1182,7 +1219,7 @@ $(".loggedOutUsers").click(function(){
 
 //when login success modal close
 function successLoggingDone(userImgSrc,userFullName){
-  $("#sign-up-modal").modal('hide'); 
+  $("#sign-up-modal").modal('hide');
   $("#sign-in-modal").modal('hide');
 
   //price shown
@@ -1197,6 +1234,14 @@ function successLoggingDone(userImgSrc,userFullName){
 }
 
 function successLogOutDone(){
+
+  userDetails['firstName'] = "";
+  userDetails['lastName'] = "";
+  userDetails['email'] = "";
+  userDetails['phoneNumber'] = "";
+  userDetails['city'] = "";
+  userDetails['ipAddress'] = "";
+  userDetails['accountType'] = "";
 
   //price shown
   $(".logIntoSeePrice").css("display", 'block');
@@ -1224,6 +1269,18 @@ function successLogOutDone(){
   let googleLogged = false;
   let accountLogged = false;
 
+  //user details array
+  let userDetails = [];
+  userDetails['firstName'] = "";
+  userDetails['lastName'] = "";
+  userDetails['email'] = "";
+  userDetails['phoneNumber'] = "";
+  userDetails['city'] = "";
+  userDetails['ipAddress'] = "";
+  userDetails['accountType'] = "";
+
+  console.log(userDetails);
+
   //user details
   let userImgSrc = "assets/images/logo/avatar.jpg";
   let userFullName = "";
@@ -1245,16 +1302,30 @@ function successLogOutDone(){
   //See statusChangeCallback() for when this call is made.
   function ifFbLoggedIn() { 
   //console.log('Welcome!  Fetching your information.... ');
-    FB.api('/me?fields=id,first_name,last_name,picture.redirect(true),email', function(response) {
+    FB.api('/me?fields=id,first_name,last_name,picture.redirect(true),email,address,primary_phone,location', function(response) {
       console.log('Successful login first name: ' + response.first_name);
       console.log('Successful login last name: ' + response.last_name);
       console.log('Successful login last email: ' + response.email);
       console.log('Successful login Profile pic: ' + response.picture.data.url );
+      console.log('Successful login address: ' + response.address);
+      console.log('Successful login primary_phone: ' + response.primary_phone);
+      console.log('Successful login location: ' + response.location);
+
       console.log(response)
       userFullName = response.first_name + " " + response.last_name;
       userImgSrc = response.picture.data.url;
 
       fbLoggedIn = true;
+
+      // userDetails['firstName'] = response.first_name;
+      // userDetails['lastName'] = response.last_name;
+      // userDetails['email'] = response.email;
+      // userDetails['phoneNumber'] = "";
+      // userDetails['city'] = "";
+      // userDetails['ipAddress'] = $('.user_ip_set').text();
+      // userDetails['accountType'] = "FB";
+
+      // console.log(userDetails);
 
       successLoggingDone(userImgSrc,userFullName);
     });
@@ -1309,6 +1380,18 @@ function successLogOutDone(){
     // var id_token = googleUser.getAuthResponse().id_token;
     // console.log("ID Token: " + id_token);
     googleLogged = true;
+    // googleUser.disconnect();
+
+      userDetails['firstName'] = profile.getGivenName();
+      userDetails['lastName'] = profile.getFamilyName();
+      userDetails['email'] = profile.getEmail();
+      userDetails['phoneNumber'] = "";
+      userDetails['city'] = "";
+      userDetails['ipAddress'] = $('.user_ip_set').text();
+      userDetails['accountType'] = "Google";
+
+      console.log(userDetails);
+
     console.log(fbLoggedIn,googleLogged,accountLogged);
     successLoggingDone(userImgSrc, userFullName);
   }
@@ -1327,4 +1410,276 @@ function successLogOutDone(){
       //     gapi.auth2.init();
       //   });
       // }
+</script>
+
+<!-- account login -->
+<script type="text/javascript">
+
+  //email validation
+  function validateEmail(email) {
+      var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+      if( !emailReg.test( email ) || email.length == 0 ) {
+          return false;
+      } else {
+          return true;
+      }
+  }
+
+  $('.join-now-btn').click(function(){
+
+    $('.join-now-btn').text("Processing....");
+    $('.join-now-btn').addClass( "disableClick" );
+
+    //get values
+    let user_name = $('.user-name').val();
+    let user_email = $('.user-email').val();
+    let user_password = $('.user-password').val();
+    let user_confirm_password = $('.user-confirm-password').val();
+    
+    let error_list = [];
+
+    if(!user_name){
+      error_list.push("Name Required!");
+    }
+    else if( user_name.length>=55 ){
+      error_list.push("Name must be less than 55 characters!");
+    }
+
+    if(!user_email){
+      error_list.push("Email Required!");
+    }
+    else if(!validateEmail(user_email)){
+      error_list.push("Enter valid Email!");
+    }
+    else if( user_email.length>=100 ){
+      error_list.push("Email must be less than 100 characters!");
+    }
+
+    if(!user_password){
+      error_list.push("Password Required!");
+    }
+    else if( user_password.length<=5 ){
+      error_list.push("Password must be greater than 6 characters!");
+    }
+
+    if(!user_confirm_password){
+      error_list.push("Confirm Password Required!");
+    }
+    else if( user_password != user_confirm_password ){
+      error_list.push("Password mismatch!");
+    }
+
+    if(error_list.length>0){
+      $('.join-now-error-msg').text(error_list);
+      $('.join-now-error-msg').show();
+
+      $('.join-now-btn').text("Join Now");
+      $('.join-now-btn').removeClass( "disableClick" );
+    }
+    else{ 
+      $('.join-now-error-msg').hide();
+
+        $.ajax({
+            url: 'http://localhost/myapp/ResortGetaway-backend/public/api/register',
+            type: 'POST',
+            data: {
+                name: user_name,
+                email: user_email,
+                password: user_password,
+                password_confirmation: user_confirm_password
+            },
+            success: function(msg) {
+
+              console.log(!msg["errors"])
+              console.log(user_name,user_email,user_password,user_confirm_password)
+
+              $('.join-now-btn').text("Join Now");
+              $('.join-now-btn').removeClass( "disableClick" );
+
+              if( msg["errors"] ){
+                $('.join-now-error-msg').text(msg["errors"]);
+                $('.join-now-error-msg').show();
+              }
+              else if( msg["user"] ){
+                $('.join-now-error-msg').hide();
+
+                $('.verify-mail-msg').text("Thank you for Registration " + msg["user"].name + ". Please Verify Your " + msg["user"].email + " email Address!");
+                $('.verify-mail-msg').show();
+
+                $("#sign-up-modal").modal('hide');
+                $("#sign-in-modal").modal({backdrop: 'static', keyboard: false});
+
+                $('.user-name').val("");
+                $('.user-email').val("");
+                $('.user-password').val("");
+                $('.user-confirm-password').val("");
+
+                userDetails['firstName'] = msg["user"].name;
+                userDetails['email'] = msg["user"].email;
+                userDetails['ipAddress'] = $('.user_ip_set').text();
+                userDetails['accountType'] = "ResortGetaway";
+
+                console.log(userDetails);
+
+              }
+              else{
+                $('.join-now-error-msg').hide();
+                console.log(msg)
+              }
+            },
+            error: function(xhr, status, error) {
+              console.log(status);
+            }
+        });
+
+    }
+
+  });
+
+  $('.sign-in-click').click(function(){
+    $('.verify-mail-msg').hide();
+    $('.sign-in-click').text("Processing....");
+    $('.sign-in-click').addClass( "disableClick" );
+
+    let user_email = $('.user-email-login').val();
+    let user_password = $('.user-password-login').val();
+    let error_list_login = [];
+
+    if(!user_email){
+      error_list_login.push("Email Required!");
+    }
+    else if(!validateEmail(user_email)){
+      error_list_login.push("Enter valid Email!");
+    }
+    else if( user_email.length>=100 ){
+      error_list_login.push("Email must be less than 100 characters!");
+    }
+
+    if(!user_password){
+      error_list_login.push("Password Required!");
+    }
+    else if( user_password.length<=5 ){
+      error_list_login.push("Password must be greater than 6 characters!");
+    }
+
+    if(error_list_login.length>0){
+      $('.login-now-error-msg').text(error_list_login);
+      $('.login-now-error-msg').show();
+
+      $('.sign-in-click').text("Sign In");
+      $('.sign-in-click').removeClass( "disableClick" );
+    }
+    else{
+      $('.login-now-error-msg').hide();
+
+        $.ajax({
+            url: 'http://localhost/myapp/ResortGetaway-backend/public/api/login',
+            type: 'POST',
+            data: {
+                email: user_email,
+                password: user_password,
+            },
+            success: function(msg) {
+
+              console.log(!msg["errors"])
+              console.log(user_email,user_password)
+
+              $('.sign-in-click').text("Sign In");
+              $('.sign-in-click').removeClass( "disableClick" );
+
+              if( msg["errors"] ){
+                $('.login-now-error-msg').text(msg["errors"]);
+                $('.login-now-error-msg').show();
+              }
+              else if( msg["user"] ){
+                $('.login-now-error-msg').hide();
+
+                accountLogged = true;
+                successLoggingDone("assets/images/logo/avatar.jpg", msg["user"].name);
+
+                $('.user-email-login').val("");
+                $('.user-password-login').val("");
+              }
+              else{
+                $('.login-now-error-msg').hide();
+                console.log(msg)
+              }
+            },
+            error: function(xhr, status, error) {
+              console.log(status);
+            }
+        });
+    } 
+
+  });
+
+  $('.reset-password-mail-send-click').click(function(){
+    $('.verify-mail-msg').hide();
+    $('.reset-password-mail-send-click').text("Processing....");
+    $('.reset-password-mail-send-click').addClass( "disableClick" );
+
+    let user_email = $('.user-email-reset').val();
+
+    let error_list_reset = [];
+
+    if(!user_email){
+      error_list_reset.push("Email Required!");
+    }
+    else if(!validateEmail(user_email)){
+      error_list_reset.push("Enter valid Email!");
+    }
+    else if( user_email.length>=100 ){
+      error_list_reset.push("Email must be less than 100 characters!");
+    }
+
+    if(error_list_reset.length>0){
+      $('.reset-now-error-msg').text(error_list_reset);
+      $('.reset-now-error-msg').show();
+
+      $('.reset-password-mail-send-click').text("Reset Password");
+      $('.reset-password-mail-send-click').removeClass( "disableClick" );
+    }
+    else{
+      $('.reset-now-error-msg').hide();
+
+        $.ajax({
+            url: 'http://localhost/myapp/ResortGetaway-backend/public/api/password/email',
+            type: 'POST',
+            data: {
+                email: user_email,
+            },
+            success: function(msg) {
+
+              console.log(!msg["email"])
+              console.log(user_email)
+
+              $('.reset-password-mail-send-click').text("Reset Password");
+              $('.reset-password-mail-send-click').removeClass( "disableClick" );
+
+              if( msg["email"] ){
+                $('.reset-now-error-msg').text(msg["email"]);
+                $('.reset-now-error-msg').show();
+              }
+              else if( msg["status"] ){
+                $('.reset-now-error-msg').hide();
+
+                $('.user-email-reset').val("");
+                $('.user-password-reset').val("");
+
+                $('.fogot-password-init-div').hide();
+                $('.fogot-password-sent-div').text("We have emailed your password reset link. Please check " + user_email + " mailbox.");
+                $('.fogot-password-sent-div').show();
+              }
+              else{
+                $('.reset-now-error-msg').hide();
+                console.log(msg)
+              }
+            },
+            error: function(xhr, status, error) {
+              console.log(status);
+            }
+        });
+    } 
+
+  });
 </script>
