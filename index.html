@@ -1316,15 +1316,15 @@ function successLogOutDone(){
 
       fbLoggedIn = true;
 
-      // userDetails['firstName'] = response.first_name;
-      // userDetails['lastName'] = response.last_name;
-      // userDetails['email'] = response.email;
-      // userDetails['phoneNumber'] = "";
-      // userDetails['city'] = "";
-      // userDetails['ipAddress'] = $('.user_ip_set').text();
-      // userDetails['accountType'] = "FB";
+      userDetails['firstName'] = response.first_name;
+      userDetails['lastName'] = response.last_name;
+      userDetails['email'] = response.email;
+      userDetails['phoneNumber'] = "";
+      userDetails['city'] = "";
+      userDetails['ipAddress'] = $('.user_ip_set').text();
+      userDetails['accountType'] = "FB";
 
-      // console.log(userDetails);
+      console.log(userDetails);
 
       successLoggingDone(userImgSrc,userFullName);
     });
