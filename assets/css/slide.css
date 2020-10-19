@@ -1032,7 +1032,7 @@ video.fillWidth {
   display: none;
 }
 
-.join-now-error-msg, .login-now-error-msg, .reset-now-error-msg, .update-now-error-msg{
+.join-now-error-msg, .login-now-error-msg, .reset-now-error-msg, .update-now-error-msg, .captcha-join-error, .captcha-signin-error, .captcha-forgot-error{
   color: red;
   display: none;
 }
@@ -1053,7 +1053,7 @@ video.fillWidth {
 
 .verify-msg-div{
   background-color: #99ca67;
-    padding: 5p;
+    padding: 5px;
     padding: 10px;
     border-radius: 5px;
     color: white;

@@ -52,17 +52,20 @@
                            <div style="margin-bottom:  5px;">
                                 <div class="right-inner-addon input-container">
                                     <p><i class="fa fa-unlock-alt"></i></p>
-                                    <input type="text" class="form-input-field user-password-update" placeholder="New Password" />
+                                    <input type="password" class="form-input-field user-password-update" placeholder="New Password" />
                                 </div>
                             </div>
                             <div style="margin-bottom:  5px;">
                                 <div class="right-inner-addon input-container">
                                     <p><i class="fa fa-unlock-alt"></i></p>
-                                    <input type="text" class="form-input-field user-confirm-password-update" placeholder="Confirm Password" />
+                                    <input type="password" class="form-input-field user-confirm-password-update" placeholder="Confirm Password" />
                                 </div>
                             </div>
                             <div style="margin-bottom:  5px;">
                                <div class="g-recaptcha g-recaptcha-sign-in" data-sitekey="6LcVtdQZAAAAAJR7pz8NQ_3Pjc4yrrt28e8tt0zZ"></div>
+                            </div>
+                            <div style="margin-bottom:  5px;">
+                                <p class="captcha-forgot-error">Please verify that your not a robot!</p>
                             </div>
                             <div>
                                <a class="submit-btn-login btn-social update-password-click">Update password</a>
@@ -88,6 +91,9 @@
 
 <script src='https://www.google.com/recaptcha/api.js'></script>
 
+<script defer src="assets/fonts/fontawesome-free-5.14.0-web/js/all.min.js"></script>
+
+
 <script type="text/javascript">
 
   //email validation
@@ -104,6 +110,7 @@
 
   $('.update-password-click').click(function(){
 
+    $('.captcha-forgot-error').hide();
     $('.update-password-click').text("Processing....");
     $('.update-password-click').addClass( "disableClick" );
 
@@ -150,6 +157,18 @@
     else{ 
       $('.update-now-error-msg').hide();
 
+      var response = grecaptcha.getResponse();
+      if(response.length == 0) 
+      { 
+        $('.captcha-forgot-error').show();
+
+        $('.update-password-click').text("Update password");
+        $('.update-password-click').removeClass( "disableClick" );
+        return false;
+      }
+      else{
+        $('.captcha-forgot-error').hide();
+
         $.ajax({
             url: 'http://localhost/myapp/ResortGetaway-backend/public/api/password/reset',
             type: 'POST',
@@ -194,6 +213,7 @@
               console.log(status);
             }
         });
+      }
 
     }
 

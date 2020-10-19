@@ -91,17 +91,20 @@
                            <div style="margin-bottom:  5px;">
                                 <div class="right-inner-addon input-container">
                                     <p><i class="fa fa-unlock-alt"></i></p>
-                                    <input type="text" class="form-input-field user-password" placeholder="Password" />
+                                    <input type="password" class="form-input-field user-password" placeholder="Password" />
                                 </div>
                             </div>
                             <div style="margin-bottom:  5px;">
                                 <div class="right-inner-addon input-container">
                                     <p><i class="fa fa-unlock-alt"></i></p>
-                                    <input type="text" class="form-input-field user-confirm-password" placeholder="Confirm Password" />
+                                    <input type="password" class="form-input-field user-confirm-password" placeholder="Confirm Password" />
                                 </div>
                             </div>
                             <div style="margin-bottom:  5px;">
                                <div class="g-recaptcha g-recaptcha-sign-up" data-sitekey="6LcVtdQZAAAAAJR7pz8NQ_3Pjc4yrrt28e8tt0zZ"></div>
+                            </div>
+                            <div style="margin-bottom:  5px;">
+                                <p class="captcha-join-error">Please verify that your not a robot!</p>
                             </div>
                             <div>
                                <a class="submit-btn-login btn-social join-now-btn">Join Now</a>
@@ -204,14 +207,17 @@
                            <div style="margin-bottom:  5px;">
                                 <div class="right-inner-addon input-container">
                                     <p><i class="fa fa-unlock-alt"></i></p>
-                                    <input type="text" class="form-input-field user-password-login" placeholder="Password" />
+                                    <input type="password" class="form-input-field user-password-login" placeholder="Password" />
                                 </div>
                             </div>
                             <div style="margin-bottom:  5px;">
                                <div class="g-recaptcha g-recaptcha-sign-in" data-sitekey="6LcVtdQZAAAAAJR7pz8NQ_3Pjc4yrrt28e8tt0zZ"></div>
                             </div>
+                            <div style="margin-bottom:  5px;">
+                                <p class="captcha-signin-error">Please verify that your not a robot!</p>
+                            </div>
                             <div>
-                               <a href="#" class="submit-btn-login btn-social sign-in-click">Sign In</a>
+                               <a class="submit-btn-login btn-social sign-in-click">Sign In</a>
                             </div>
                             <div class="margin-bottom-sign-in">
                                <a class="forgot-password">Forgot Password?</a>
@@ -238,7 +244,7 @@
                   <div style="margin-top: 20px;">
                      <div class="row justify-content-center">
                         <div class="col-sm-12 center fogot-password-init-div">
-                           <p class="p-normal-txt">Did you forgetyour password?</p>
+                           <p class="p-normal-txt">Did you forget your password?</p>
                            <p style="color: #888;">Enter your email address and we’ll send instructions over on how to reset your password.</p>
                            <hr>
                             <div style="margin-bottom:  5px;">
@@ -251,7 +257,10 @@
                                 </div>
                             </div>
                             <div style="margin-bottom:  5px;">
-                               <div class="g-recaptcha g-recaptcha-sign-in" data-sitekey="6LcVtdQZAAAAAJR7pz8NQ_3Pjc4yrrt28e8tt0zZ"></div>
+                               <div class="g-recaptcha g-recaptcha-password" data-sitekey="6LcVtdQZAAAAAJR7pz8NQ_3Pjc4yrrt28e8tt0zZ"></div>
+                            </div>
+                            <div style="margin-bottom:  5px;">
+                                <p class="captcha-forgot-error">Please verify that your not a robot!</p>
                             </div>
                             <div>
                                <a class="submit-btn-login btn-social reset-password-mail-send-click">Reset Password</a>
@@ -1264,6 +1273,10 @@ function successLogOutDone(){
 
 <!-- FB social login -->
 <script>
+
+  //domain
+  domain_name = 'http://localhost/myapp/ResortGetaway-backend/public/api/';
+
   //check wethere logged in
   let fbLoggedIn = false;
   let googleLogged = false;
@@ -1302,13 +1315,11 @@ function successLogOutDone(){
   //See statusChangeCallback() for when this call is made.
   function ifFbLoggedIn() { 
   //console.log('Welcome!  Fetching your information.... ');
-    FB.api('/me?fields=id,first_name,last_name,picture.redirect(true),email,location,address', function(response) {
+    FB.api('/me?fields=id,first_name,last_name,picture.redirect(true),email', function(response) {
       console.log('Successful login first name: ' + response.first_name);
       console.log('Successful login last name: ' + response.last_name);
       console.log('Successful login last email: ' + response.email);
       console.log('Successful login Profile pic: ' + response.picture.data.url );
-      console.log('Successful login address: ' + response.address);
-      console.log('Successful login location: ' + response.location);
 
       console.log(response)
       userFullName = response.first_name + " " + response.last_name;
@@ -1426,6 +1437,7 @@ function successLogOutDone(){
 
   $('.join-now-btn').click(function(){
 
+    $('.captcha-join-error').hide();
     $('.join-now-btn').text("Processing....");
     $('.join-now-btn').addClass( "disableClick" );
 
@@ -1478,14 +1490,28 @@ function successLogOutDone(){
     else{ 
       $('.join-now-error-msg').hide();
 
+      var response = grecaptcha.getResponse(0);
+      console.log(response)
+      if(response.length == 0) 
+      { 
+        $('.captcha-join-error').show();
+
+        $('.join-now-btn').text("Join Now");
+        $('.join-now-btn').removeClass( "disableClick" );
+        return false;
+      }
+      else{
+        $('.captcha-join-error').hide();
+
         $.ajax({
-            url: 'http://localhost/myapp/ResortGetaway-backend/public/api/register',
+            url: domain_name + 'register',
             type: 'POST',
             data: {
                 name: user_name,
                 email: user_email,
                 password: user_password,
-                password_confirmation: user_confirm_password
+                password_confirmation: user_confirm_password,
+                recaptcha_value: response
             },
             success: function(msg) {
 
@@ -1529,14 +1555,18 @@ function successLogOutDone(){
             error: function(xhr, status, error) {
               console.log(status);
             }
-        });
+        });               
+      }
 
     }
 
   });
 
   $('.sign-in-click').click(function(){
+
+    $('.captcha-signin-error').hide();
     $('.verify-mail-msg').hide();
+
     $('.sign-in-click').text("Processing....");
     $('.sign-in-click').addClass( "disableClick" );
 
@@ -1571,12 +1601,26 @@ function successLogOutDone(){
     else{
       $('.login-now-error-msg').hide();
 
+      var response = grecaptcha.getResponse(1);
+      console.log(response)
+      if(response.length == 0) 
+      { 
+        $('.captcha-signin-error').show();
+
+        $('.sign-in-click').text("Sign In");
+        $('.sign-in-click').removeClass( "disableClick" );
+        return false;
+      }
+      else{
+        $('.captcha-signin-error').hide();
+
         $.ajax({
-            url: 'http://localhost/myapp/ResortGetaway-backend/public/api/login',
+            url: domain_name + 'login',
             type: 'POST',
             data: {
                 email: user_email,
                 password: user_password,
+                recaptcha_value: response
             },
             success: function(msg) {
 
@@ -1608,12 +1652,16 @@ function successLogOutDone(){
               console.log(status);
             }
         });
+      }
     } 
 
   });
 
   $('.reset-password-mail-send-click').click(function(){
+
+    $('.captcha-forgot-error').hide();
     $('.verify-mail-msg').hide();
+
     $('.reset-password-mail-send-click').text("Processing....");
     $('.reset-password-mail-send-click').addClass( "disableClick" );
 
@@ -1641,11 +1689,24 @@ function successLogOutDone(){
     else{
       $('.reset-now-error-msg').hide();
 
+      var response = grecaptcha.getResponse(2);
+      if(response.length == 0) 
+      { 
+        $('.captcha-forgot-error').show();
+
+        $('.reset-password-mail-send-click').text("Reset Password");
+        $('.reset-password-mail-send-click').removeClass( "disableClick" );
+        return false;
+      }
+      else{
+        $('.captcha-forgot-error').hide();
+
         $.ajax({
-            url: 'http://localhost/myapp/ResortGetaway-backend/public/api/password/email',
+            url: domain_name + 'password/email',
             type: 'POST',
             data: {
                 email: user_email,
+                recaptcha_value: response
             },
             success: function(msg) {
 
@@ -1678,6 +1739,8 @@ function successLogOutDone(){
               console.log(status);
             }
         });
+      }
+
     } 
 
   });
