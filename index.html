@@ -277,7 +277,12 @@
        </div>
    </div>
 
+<div id="msg" style="font-size:largest;">
+<!-- you can set whatever style you want on this -->
+Loading, please wait...
+</div>
 
+<div id="body" style="display:none;">
       <!-- Modal -->
       <div class="modal fade" id="package-click" role="dialog">
          <div class="modal-dialog">
@@ -1130,7 +1135,8 @@
       </div>
 
       <p class="user_ip_set" style="display: none;"></p>
-   </body>
+</div>
+</body>
 </html>
 
 <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
@@ -1191,11 +1197,18 @@
   $.getJSON("https://api.ipify.org?format=json", function(data) { 
     // Setting text of element P with id gfg 
     $('.user_ip_set').text(data.ip);
-  });
 
+    console.log(data.ip)
+    isUserFirstTime(data.ip);
+
+  });
 
 //when loading first time
 $(document).ready(function(){
+
+  $('#body').show();
+  $('#msg').hide();
+
   console.log(fbLoggedIn,googleLogged,accountLogged);
   if( fbLoggedIn || googleLogged || accountLogged){
     $(".logIntoSeePrice").css("display", 'none');
@@ -1277,6 +1290,8 @@ function successLogOutDone(){
   //domain
   domain_name = 'http://localhost/myapp/ResortGetaway-backend/public/api/';
 
+  let findFirstTimeUser = false;
+
   //check wethere logged in
   let fbLoggedIn = false;
   let googleLogged = false;
@@ -1335,6 +1350,7 @@ function successLogOutDone(){
       userDetails['ipAddress'] = $('.user_ip_set').text();
       userDetails['accountType'] = "FB";
 
+      crmDataSave(userDetails);
       console.log(userDetails);
 
       successLoggingDone(userImgSrc,userFullName);
@@ -1390,7 +1406,7 @@ function successLogOutDone(){
     // var id_token = googleUser.getAuthResponse().id_token;
     // console.log("ID Token: " + id_token);
     googleLogged = true;
-    // googleUser.disconnect();
+    googleUser.disconnect();
 
       userDetails['firstName'] = profile.getGivenName();
       userDetails['lastName'] = profile.getFamilyName();
@@ -1400,6 +1416,7 @@ function successLogOutDone(){
       userDetails['ipAddress'] = $('.user_ip_set').text();
       userDetails['accountType'] = "Google";
 
+      crmDataSave(userDetails);
       console.log(userDetails);
 
     console.log(fbLoggedIn,googleLogged,accountLogged);
@@ -1507,11 +1524,13 @@ function successLogOutDone(){
             url: domain_name + 'register',
             type: 'POST',
             data: {
+                firstName: user_name,
                 name: user_name,
                 email: user_email,
                 password: user_password,
                 password_confirmation: user_confirm_password,
-                recaptcha_value: response
+                recaptcha_value: response,
+                ipAddress: $('.user_ip_set').text()
             },
             success: function(msg) {
 
@@ -1544,6 +1563,7 @@ function successLogOutDone(){
                 userDetails['ipAddress'] = $('.user_ip_set').text();
                 userDetails['accountType'] = "ResortGetaway";
 
+                crmDataSave(userDetails);
                 console.log(userDetails);
 
               }
@@ -1554,6 +1574,11 @@ function successLogOutDone(){
             },
             error: function(xhr, status, error) {
               console.log(status);
+              $('.join-now-error-msg').text("Server Error! Try again Later.");
+              $('.join-now-error-msg').show();
+
+              $('.join-now-btn').text("Join Now");
+              $('.join-now-btn').removeClass( "disableClick" );
             }
         });               
       }
@@ -1744,4 +1769,54 @@ function successLogOutDone(){
     } 
 
   });
+
+//data pass to CRM
+function crmDataSave(userDetailsSet){
+
+  $.ajax({
+    url: domain_name + 'crmLeadAdd',
+    type: 'POST',
+    data: {
+      firstName: userDetailsSet['firstName'],
+      lastName: userDetailsSet['lastName'],
+      email: userDetailsSet['email'],
+      phoneNumber: userDetailsSet['phoneNumber'],
+      city: userDetailsSet['city'],
+      ipAddress: userDetailsSet['ipAddress'],
+      accountType: userDetailsSet['accountType']
+    },
+    success: function(msg) {
+      console.log(msg);
+    },
+    error: function(xhr, status, error) {
+      console.log(status);
+    }
+  });
+}
+
+        //new user identify
+        function isUserFirstTime(userAddress){
+
+          $.ajax({
+            url: domain_name + 'is-new-user',
+            type: 'POST',
+            data: {
+              ipAddress: userAddress
+            },
+            success: function(msg) {
+              console.log(msg);
+              if(msg==1){
+                console.log(1);
+                $("#sign-up-modal").modal('hide');
+              }
+              else{
+                console.log(0);  
+              }
+            },
+            error: function(xhr, status, error) {
+              console.log(status);
+            }
+          });
+        }
+
 </script>
