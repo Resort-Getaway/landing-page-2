@@ -265,6 +265,9 @@
                             <div>
                                <a class="submit-btn-login btn-social reset-password-mail-send-click">Reset Password</a>
                             </div>
+                            <div  class="margin-bottom-sign-in">
+                               <p style="color: #888;">Not a member? <a class="send-to-join-now">Join Now</a></p>
+                            </div>
                         </div>
                         <div style="margin-bottom:  5px;">
                           <p class="fogot-password-sent-div"></p>
@@ -1222,16 +1225,25 @@ $(document).ready(function(){
 $(".submit-btn-signin, .loggedInUsers").click(function(){
    $("#sign-up-modal").modal('hide');
    $("#sign-in-modal").modal({backdrop: 'static', keyboard: false});
+
 });
 
 $(".send-to-join-now").click(function(){
    $("#sign-in-modal").modal('hide');
    $("#sign-up-modal").modal({backdrop: 'static', keyboard: false});
+
+    grecaptcha.reset(0);
+    grecaptcha.reset(1);
+    grecaptcha.reset(2);
 });
 
 $(".forgot-password").click(function(){
    $("#sign-in-modal").modal('hide');
    $("#forgot-password-modal").modal({backdrop: 'static', keyboard: false});
+
+    grecaptcha.reset(0);
+    grecaptcha.reset(1);
+    grecaptcha.reset(2);
 });
 
 //logout btn click
@@ -1241,6 +1253,7 @@ $(".loggedOutUsers").click(function(){
 
 //when login success modal close
 function successLoggingDone(userImgSrc,userFullName){
+
   $("#sign-up-modal").modal('hide');
   $("#sign-in-modal").modal('hide');
 
@@ -1587,6 +1600,8 @@ function successLogOutDone(){
 
     }
     grecaptcha.reset(0);
+    grecaptcha.reset(1);
+    grecaptcha.reset(2);
   });
 
   $('.sign-in-click').click(function(){
@@ -1681,7 +1696,9 @@ function successLogOutDone(){
         });
       }
     } 
+    grecaptcha.reset(0);
     grecaptcha.reset(1);
+    grecaptcha.reset(2);
   });
 
   $('.reset-password-mail-send-click').click(function(){
@@ -1769,6 +1786,8 @@ function successLogOutDone(){
       }
 
     } 
+    grecaptcha.reset(0);
+    grecaptcha.reset(1);
     grecaptcha.reset(2);
   });
 
