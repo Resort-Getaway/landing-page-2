@@ -170,7 +170,7 @@
         $('.captcha-forgot-error').hide();
 
         $.ajax({
-            url: 'http://localhost/myapp/ResortGetaway-backend/public/api/password/reset',
+            url: 'https://backend.resortgetaway.com/public/api/password/reset',
             type: 'POST',
             data: {
                 email: user_email,
