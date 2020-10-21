@@ -1062,3 +1062,35 @@ video.fillWidth {
 .back-to-main{
   display: none;
 }
+
+  #loader {
+    border: 12px solid #0983ad;
+    border-radius: 50%;
+    border-top: 12px solid #113e6d;
+    width: 70px;
+    height: 70px;
+    animation-name: spin;
+    margin: auto;
+  }
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+  .loader-div{
+    margin-top: 12%;
+    margin-bottom: 12%;
+  }
+
+.loader_div_h1{
+  text-align: center;
+  color: #0983ad ;
+  font-size: 3vw;
+  text-transform: uppercase;    
+}
+
