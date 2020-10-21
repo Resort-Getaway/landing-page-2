@@ -1,6 +1,6 @@
 <?php
 /**
- * Write data to log file.
+ * Write data to log file.1
  *
  * @param mixed $data
  * @param string $title
