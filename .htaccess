@@ -1,6 +1,7 @@
 ## EXPIRES CACHING ##
 <IfModule mod_expires.c>
 ExpiresActive On
+ExpiresByType image/svg "access plus 1 month"
 ExpiresByType image/jpg "access plus 1 month"
 ExpiresByType image/jpeg "access plus 1 month"
 ExpiresByType image/gif "access plus 1 month"
